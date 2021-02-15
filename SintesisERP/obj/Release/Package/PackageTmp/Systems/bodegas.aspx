@@ -1,0 +1,1 @@
+﻿<!-- #include virtual="../Pages/Inventario/Bodegas.aspx" --> 

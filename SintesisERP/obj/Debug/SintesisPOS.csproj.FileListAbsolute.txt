@@ -1,0 +1,19 @@
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\bin\SintesisPOS.dll.config
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\bin\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\bin\SintesisPOS.pdb
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\obj\Debug\SintesisPOS.csprojResolveAssemblyReference.cache
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\obj\Debug\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\obj\Debug\SintesisPOS.pdb
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.dll.config
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.pdb
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Debug\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Debug\SintesisPOS.pdb
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.dll.config
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.pdb
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Debug\SintesisPOS.csproj.CoreCompileInputs.cache
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Debug\SintesisPOS.csproj.CopyComplete
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Debug\SintesisPOS.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Debug\SintesisPOS.pdb
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Debug\SintesisPOS.csprojResolveAssemblyReference.cache

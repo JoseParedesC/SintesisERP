@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="12/26/2020 11:20:31" ReportInfo.Modified="01/27/2021 13:24:58" ReportInfo.CreatorVersion="2017.4.6.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqQRIeWQgrhgwq27vFdAritd83C/yH26JkNZVfrt4vyj3gmA3QnKreuQ5kNxsU8ywoO5PXSZQASQUsGIYU2N487+A2aQ4Dhf60tDXx8dlY8YE8UHgCfi/moYJqRyAnorbBxOEqy070nDWCLEy+tcnbBQQn+y/kG81CFC12KsvFNts8fhQMIJBU/JXWpuS4DJiBBROFnesVkb+Y/X+rUMTqIakOiLWgT2b0OwYEpswxtKw=">
+      <TableDataSource Name="Table" Alias="BodySolicitud" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [dbo].[ST_Rpt_SolicitudCredito]&#13;&#10;@id_solicitud= @id,  @op = 'SO', @id_user = @id_usuario;">
+        <Column Name="id_persol" DataType="System.Int64"/>
+        <Column Name="id_sol" DataType="System.Int64"/>
+        <Column Name="direccion" DataType="System.String"/>
+        <Column Name="consecutivo" DataType="System.String"/>
+        <Column Name="dia" DataType="System.Int32"/>
+        <Column Name="mes" DataType="System.Int32"/>
+        <Column Name="ano" DataType="System.Int32"/>
+        <Column Name="numcuotas" DataType="System.Int32"/>
+        <Column Name="fechapago" DataType="System.String"/>
+        <Column Name="usuario" DataType="System.String"/>
+        <Column Name="codnom" DataType="System.String"/>
+        <Column Name="codiden" DataType="System.String"/>
+        <Column Name="descuento" DataType="System.Decimal"/>
+        <Column Name="subtotal" DataType="System.Decimal"/>
+        <Column Name="cuotamen" DataType="System.Decimal"/>
+        <Column Name="total" DataType="System.Decimal"/>
+        <Column Name="nombreemp" DataType="System.String"/>
+        <Column Name="nombreart" DataType="System.String"/>
+        <Column Name="id_cotizacion" DataType="System.Int64"/>
+        <Column Name="inicial" DataType="System.Decimal"/>
+        <CommandParameter Name="@id" DataType="8" Expression="id" DefaultValue="12"/>
+        <CommandParameter Name="@id_usuario" Expression="id" DefaultValue="10"/>
+      </TableDataSource>
+      <TableDataSource Name="Table2" Alias="BodyCodeudor" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [dbo].[ST_Rpt_SolicitudCredito]&#13;&#10;@id_solicitud= @id, @op = 'CD', @id_user = 0;">
+        <Column Name="nombre" DataType="System.String"/>
+        <Column Name="identificacion" DataType="System.String"/>
+        <Column Name="fechaexpedicion" DataType="System.DateTime"/>
+        <Column Name="direccion" DataType="System.String"/>
+        <Column Name="telefono" DataType="System.String"/>
+        <Column Name="correo" DataType="System.String"/>
+        <Column Name="estadocivil" DataType="System.String"/>
+        <Column Name="percargo" DataType="System.Int32"/>
+        <Column Name="edad" DataType="System.Int32"/>
+        <Column Name="genero" DataType="System.String"/>
+        <Column Name="estrato" DataType="System.String"/>
+        <Column Name="viveinmueble" DataType="System.String"/>
+        <Column Name="valorarriendo" DataType="System.Decimal"/>
+        <Column Name="profesion" DataType="System.String"/>
+        <Column Name="fincaraiz" DataType="System.String"/>
+        <Column Name="vehiculo" DataType="System.String"/>
+        <Column Name="counted" DataType="System.Int32"/>
+        <Column Name="connombre" DataType="System.String"/>
+        <Column Name="coniden" DataType="System.String"/>
+        <Column Name="contelefono" DataType="System.String"/>
+        <Column Name="condireccionemp" DataType="System.String"/>
+        <Column Name="contelefonoemp" DataType="System.String"/>
+        <Column Name="consalario" DataType="System.Decimal"/>
+        <Column Name="id" DataType="System.Int64"/>
+        <Column Name="conempresa" DataType="System.String"/>
+        <CommandParameter Name="@id" DataType="8" Expression="id" DefaultValue="12"/>
+      </TableDataSource>
+      <TableDataSource Name="Table1" Alias="BodySolicitante" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [dbo].[ST_Rpt_SolicitudCredito]&#13;&#10;@id_solicitud= @id, @op = 'CL', @id_user = 0;">
+        <Column Name="id_per" DataType="System.Int64"/>
+        <Column Name="nombre" DataType="System.String"/>
+        <Column Name="identificacion" DataType="System.String"/>
+        <Column Name="fechaexpedicion" DataType="System.String"/>
+        <Column Name="direccion" DataType="System.String"/>
+        <Column Name="telefono" DataType="System.String"/>
+        <Column Name="correo" DataType="System.String"/>
+        <Column Name="estadocivil" DataType="System.String"/>
+        <Column Name="percargo" DataType="System.Int32"/>
+        <Column Name="escolaridad" DataType="System.String"/>
+        <Column Name="edad" DataType="System.Int32"/>
+        <Column Name="genero" DataType="System.String"/>
+        <Column Name="estrato" DataType="System.String"/>
+        <Column Name="viveinmueble" DataType="System.String"/>
+        <Column Name="valorarriendo" DataType="System.Decimal"/>
+        <Column Name="profesion" DataType="System.String"/>
+        <Column Name="fincaraiz" DataType="System.String"/>
+        <Column Name="vehiculo" DataType="System.String"/>
+        <Column Name="connombre" DataType="System.String"/>
+        <Column Name="coniden" DataType="System.String"/>
+        <Column Name="contelefono" DataType="System.String"/>
+        <Column Name="condireccionemp" DataType="System.String"/>
+        <Column Name="contelefonoemp" DataType="System.String"/>
+        <Column Name="consalario" DataType="System.Decimal"/>
+        <Column Name="empresalab" DataType="System.String"/>
+        <Column Name="direccionemp" DataType="System.String"/>
+        <Column Name="telefonoemp" DataType="System.String"/>
+        <Column Name="cargo" DataType="System.String"/>
+        <Column Name="tiemposervicio" DataType="System.String"/>
+        <Column Name="salarioemp" DataType="System.Decimal"/>
+        <Column Name="otroingreso" DataType="System.Decimal"/>
+        <Column Name="concepto" DataType="System.String"/>
+        <Column Name="banco" DataType="System.String"/>
+        <Column Name="tipocuenta" DataType="System.String"/>
+        <Column Name="numcuenta" DataType="System.String"/>
+        <Column Name="tiporef" DataType="System.String"/>
+        <Column Name="ref_nombre" DataType="System.String"/>
+        <Column Name="ref_dir" DataType="System.String"/>
+        <Column Name="ref_tel" DataType="System.String"/>
+        <Column Name="conempresa" DataType="System.String"/>
+        <CommandParameter Name="@id" DataType="8" Expression="id" DefaultValue="12"/>
+      </TableDataSource>
+      <TableDataSource Name="Table5" Alias="CoudeudorReferencia" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [dbo].[ST_Rpt_SolicitudCredito]&#13;&#10;@id_solicitud= @id, @op = 'CR', @id_user = 0;">
+        <Column Name="tiporef" DataType="System.String"/>
+        <Column Name="ref_nombre" DataType="System.String"/>
+        <Column Name="ref_dir" DataType="System.String"/>
+        <Column Name="ref_tel" DataType="System.String"/>
+        <CommandParameter Name="@id" Expression="[BodyCodeudor.id]" DefaultValue="0"/>
+      </TableDataSource>
+      <TableDataSource Name="Table6" Alias="CodeudorCountImp" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [dbo].[ST_Rpt_SolicitudCredito]&#13;&#10;@id_solicitud= @id, @op = 'CI', @id_user = 0;">
+        <Column Name="coun" DataType="System.Int64"/>
+        <Column Name="ide" DataType="System.Int64"/>
+        <Column Name="nom" DataType="System.String"/>
+        <CommandParameter Name="@id" DataType="8" Expression="[BodySolicitud.id_sol]" DefaultValue="12"/>
+      </TableDataSource>
+      <TableDataSource Name="Table8" Alias="CodeudorCountPar" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [dbo].[ST_Rpt_SolicitudCredito]&#13;&#10;@id_solicitud= @id, @op = 'CP', @id_user = 0;">
+        <Column Name="coun" DataType="System.Int64"/>
+        <Column Name="ide" DataType="System.Int64"/>
+        <Column Name="nom" DataType="System.String"/>
+        <CommandParameter Name="@id" DataType="8" Expression="[BodySolicitud.id_sol]" DefaultValue="12"/>
+      </TableDataSource>
+      <TableDataSource Name="Table11" Alias="BodyProduc" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [dbo].[ST_Rpt_SolicitudCredito]&#13;&#10;@id_solicitud= @id_Sol,@op = 'PD', @id_user = @id_Cot;">
+        <Column Name="nombre" DataType="System.String"/>
+        <Column Name="cantidad" DataType="System.Decimal"/>
+        <Column Name="precio" DataType="System.Decimal"/>
+        <Column Name="iva" DataType="System.Decimal"/>
+        <Column Name="descuento" DataType="System.Decimal"/>
+        <Column Name="total" DataType="System.Decimal"/>
+        <CommandParameter Name="@id_Sol" DataType="8" Expression="[BodySolicitud.id_sol]" DefaultValue="7"/>
+        <CommandParameter Name="@id_Cot" DataType="8" Expression="[BodySolicitud.id_cotizacion]" DefaultValue="0"/>
+      </TableDataSource>
+      <TableDataSource Name="Table21" Alias="CabeceraRPT" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [dbo].[ST_Rpt_CabeceraCompania]">
+        <Column Name="usuario" DataType="System.String"/>
+        <Column Name="nombre" DataType="System.String"/>
+        <Column Name="nit" DataType="System.String"/>
+        <Column Name="ciudad" DataType="System.String"/>
+        <Column Name="telefono" DataType="System.String"/>
+        <Column Name="direccion" DataType="System.String"/>
+        <Column Name="urlimg" DataType="System.String"/>
+        <Column Name="email" DataType="System.String"/>
+        <Column Name="urlfirma" DataType="System.String"/>
+        <Column Name="nitfe" DataType="System.String"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+    <Parameter Name="id" DataType="System.String"/>
+    <Parameter Name="@id_usuario" DataType="System.String"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Guides="708.75">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="415.8">
+      <TextObject Name="Text3" Left="217.35" Top="37.8" Width="283.5" Height="28.35" Text="[CabeceraRPT.direccion]" HorzAlign="Center" VertAlign="Bottom" Font="Arial Narrow, 10pt, style=Italic"/>
+      <ShapeObject Name="Shape30" Left="-1.89" Top="359.1" Width="723.87" Height="18.9" Border.Color="DarkGray" Fill.Color="106, 192, 192, 192"/>
+      <ShapeObject Name="Shape29" Left="-1.89" Top="274.05" Width="723.87" Height="18.9" Border.Color="DarkGray" Fill.Color="106, 192, 192, 192"/>
+      <ShapeObject Name="Shape28" Left="-1.89" Top="141.75" Width="723.87" Height="18.9" Border.Color="DarkGray" Fill.Color="106, 192, 192, 192"/>
+      <LineObject Name="Line1" Left="-9.45" Top="103.95" Width="718.2"/>
+      <TextObject Name="Text1" Left="236.25" Width="236.25" Height="37.8" Text="[CabeceraRPT.nombre]" HorzAlign="Center" Font="Arial Narrow, 11pt, style=Bold, Italic"/>
+      <TextObject Name="Text12" Left="198.45" Top="113.4" Width="311.85" Height="18.9" Text="DEUDOR" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text13" Left="217.35" Top="141.75" Width="283.5" Height="18.9" Text="INFORMACION PERSONAL" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text31" Left="288.35" Top="274.05" Width="94.5" Height="18.9" Text="CONYUGE" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text38" Left="275.94" Top="359.1" Width="122.85" Height="18.9" Text="REFERENCIAS" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <TableObject Name="Table7" Left="0.04" Top="387.45" Width="720.08" Height="18.9">
+        <TableColumn Name="Column55" Width="77.49"/>
+        <TableColumn Name="Column56" Width="209.77"/>
+        <TableColumn Name="Column57" Width="86.95"/>
+        <TableColumn Name="Column58" Width="115.29"/>
+        <TableColumn Name="Column59" Width="105.84"/>
+        <TableColumn Name="Column60" Width="124.74"/>
+        <TableRow Name="Row8">
+          <TableCell Name="Cell176" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text39" Width="47.25" Height="18.9" Text="Banco" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell177" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text116" Width="198.45" Height="18.9" Text="[BodySolicitante.banco]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell178" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text40" Width="66.15" Height="18.9" Text="Tipo Cuenta" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell179" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text117" Width="94.5" Height="18.9" Text="[BodySolicitante.tipocuenta]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell180" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text41" Width="94.5" Height="18.9" Text="Numero de cuenta" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell201" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text118" Width="141.75" Height="18.9" Text="[BodySolicitante.numcuenta]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table12" Top="179.55" Width="718.2" Height="75.6">
+        <TableColumn Name="Column139" Width="63.5"/>
+        <TableColumn Name="Column140" Width="82.4"/>
+        <TableColumn Name="Column141" Width="82.4"/>
+        <TableColumn Name="Column142" Width="82.4"/>
+        <TableColumn Name="Column143" Width="63.5"/>
+        <TableColumn Name="Column176" Width="110.75"/>
+        <TableColumn Name="Column177" Width="54.05"/>
+        <TableColumn Name="Column178" Width="91.85"/>
+        <TableColumn Name="Column179" Width="44.6"/>
+        <TableColumn Name="Column180" Width="42.75"/>
+        <TableRow Name="Row26">
+          <TableCell Name="Cell346" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text203" Width="47.25" Height="18.9" Text="Nombre" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell347" Border.Lines="All" Border.Color="DarkGray" ColSpan="3">
+            <TextObject Name="Text204" Width="236.25" Height="18.9" Text="[BodySolicitante.nombre]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+            <TextObject Name="Text205" Left="245.7" Width="75.6" Height="18.9" Text="Identificacion" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell348" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell349" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell350" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220"/>
+          <TableCell Name="Cell403" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text206" Width="132.3" Height="18.9" Text="[BodySolicitante.identificacion]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell404" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell405" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text207" Width="56.7" Height="18.9" Text="Expedida" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell406" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text208" Width="103.95" Height="18.9" Text="[BodySolicitante.fechaexpedicion]" Format="Date" Format.Format="d" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell407" Border.Lines="All" Border.Color="DarkGray"/>
+        </TableRow>
+        <TableRow Name="Row27">
+          <TableCell Name="Cell351" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text234" Width="66.15" Height="18.9" Text="Residencia" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell352" Border.Lines="All" Border.Color="DarkGray" ColSpan="3">
+            <TextObject Name="Text209" Width="236.25" Height="18.9" Text="[BodySolicitante.direccion]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell353" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell354" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell355" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text210" Width="56.7" Height="18.9" Text="Telefono" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell408" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text211" Width="113.4" Height="18.9" Text="[BodySolicitante.telefono]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell409" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text212" Width="47.25" Height="18.9" Text="Correo" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell410" Border.Lines="All" Border.Color="DarkGray" ColSpan="3">
+            <TextObject Name="Text213" Width="179.55" Height="18.9" CanGrow="true" GrowToBottom="true" Text="[BodySolicitante.correo]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell411" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell412" Border.Lines="All" Border.Color="DarkGray"/>
+        </TableRow>
+        <TableRow Name="Row28">
+          <TableCell Name="Cell356" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text233" Width="66.15" Height="18.9" Text="Estado civil" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell357" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text214" Width="85.05" Height="18.9" Text="[BodySolicitante.estadocivil]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell358" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text215" Width="94.5" Height="18.9" Text="Personas a Cargo" VertAlign="Center" Font="Arial, 6.4pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell359" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text216" Left="9.45" Width="66.15" Height="18.9" Text="[BodySolicitante.percargo]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell360" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text227" Width="56.7" Height="18.9" Text="Profesion" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell413" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text226" Width="113.4" Height="18.9" Text="[BodySolicitante.profesion]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell414" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text219" Width="47.25" Height="18.9" Text="Genero" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell415" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text220" Width="75.6" Height="18.9" Text="[BodySolicitante.genero]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell416" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text221" Width="37.8" Height="18.9" Text="Estato" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell417" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text222" Width="37.8" Height="18.9" Text="[BodySolicitante.estrato]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+        <TableRow Name="Row29">
+          <TableCell Name="Cell361" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text232" Width="66.15" Height="18.9" Text="Tipo Vivienda " VertAlign="Center" Font="Arial, 6.5pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell362" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text224" Width="85.05" Height="18.9" Text="[BodySolicitante.viveinmueble]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell363" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text223" Width="75.6" Height="18.9" Text="Valor Arriendo" VertAlign="Center" Font="Arial, 6.4pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell364" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text225" Width="85.05" Height="18.9" Text="[BodySolicitante.valorarriendo]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell365" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text228" Left="2.65" Width="66.15" Height="18.9" Text="Finca Raiz" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell418" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text229" Width="113.4" Height="18.9" Text="[BodySolicitante.fincaraiz]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell419" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text230" Width="47.25" Height="18.9" Text="Vehículo" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell420" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text231" Width="85.05" Height="18.9" Text="[BodySolicitante.vehiculo]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell421" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text217" Width="56.7" Height="18.9" Text="Edad" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell422" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text218" Left="6.8" Width="113.4" Height="18.9" Text="[BodySolicitante.edad]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table13" Top="302.4" Width="720.1" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TableColumn Name="Column181" Width="101.44"/>
+        <TableColumn Name="Column182" Width="158.14"/>
+        <TableColumn Name="Column183" Width="54.19"/>
+        <TableColumn Name="Column184" Width="148.69"/>
+        <TableColumn Name="Column185" Width="44.74"/>
+        <TableColumn Name="Column186" Width="82.54"/>
+        <TableColumn Name="Column187" Width="47.82"/>
+        <TableColumn Name="Column188" Width="82.54"/>
+        <TableRow Name="Row35">
+          <TableCell Name="Cell423" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text149" Width="56.7" Height="18.9" Text="Nombre" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell424" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text156" Width="198.45" Height="18.9" Text="[BodySolicitante.connombre]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell425" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell426" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text150" Width="75.6" Height="18.9" Text="Identificacion" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell427" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text157" Width="122.85" Height="18.9" Text="[BodySolicitante.coniden]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell448" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell449" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text151" Width="66.15" Height="18.9" Text="Telefono" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell450" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text158" Width="94.5" Height="18.9" Text="[BodySolicitante.contelefono]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+        <TableRow Name="Row36">
+          <TableCell Name="Cell428" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text152" Width="122.85" Height="18.9" Text="Empresa donde labora" VertAlign="Center" Font="Arial, 6.4pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell429" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text159" Width="160.65" Height="18.9" Text="[BodySolicitante.conempresa]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell430" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text153" Width="56.7" Height="18.9" Text="Dirección" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell431" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text160" Width="151.2" Height="18.9" Text="[BodySolicitante.condireccionemp]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell432" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text154" Width="47.25" Height="18.9" Text="Telefono" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell451" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text161" Width="85.05" Height="18.9" Text="[BodySolicitante.contelefonoemp]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell452" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text155" Width="47.25" Height="18.9" Text="Salario" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell453" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text162" Width="94.5" Height="18.9" Text="[BodySolicitante.consalario]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+      </TableObject>
+      <TextObject Name="Text2" Left="236.25" Top="28.35" Width="236.25" Height="18.9" Text="NIT: [CabeceraRPT.nit]" HorzAlign="Center" Font="Arial Narrow, 10pt, style=Italic"/>
+      <TextObject Name="Text4" Left="236.25" Top="66.15" Width="236.25" Height="28.35" Text="SOLICITUD DE CREDITO" HorzAlign="Center" VertAlign="Center" Font="Arial Narrow, 11pt, style=Bold, Italic"/>
+      <TextObject Name="Text6" Left="557.55" Top="47.25" Width="47.25" Height="18.9" Border.Lines="All" Border.Color="Silver" Fill.Color="Gainsboro" Text="DÍA" HorzAlign="Center" VertAlign="Center" Font="Calibri Light, 6pt, style=Bold"/>
+      <TextObject Name="Text10" Left="557.55" Top="66.15" Width="47.25" Height="28.35" Border.Lines="All" Border.Color="Silver" Text="[BodySolicitud.dia]" HorzAlign="Center" VertAlign="Center" Font="Calibri Light, 9pt, style=Bold"/>
+      <TextObject Name="Text5" Left="585.9" Top="9.45" Width="122.85" Height="28.35" Border.ShadowWidth="2" Border.ShadowColor="DarkGray" Border.Lines="All" Border.Color="Silver" Text="[BodySolicitud.consecutivo]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text7" Left="604.8" Top="47.25" Width="47.25" Height="18.9" Border.Lines="All" Border.Color="Silver" Fill.Color="Gainsboro" Text="MES" HorzAlign="Center" VertAlign="Center" Font="Calibri Light, 6pt, style=Bold"/>
+      <TextObject Name="Text9" Left="604.8" Top="66.15" Width="47.25" Height="28.35" Border.Lines="All" Border.Color="Silver" Text="[BodySolicitud.mes]" HorzAlign="Center" VertAlign="Center" Font="Calibri Light, 9pt, style=Bold"/>
+      <TextObject Name="Text8" Left="652.05" Top="47.25" Width="56.7" Height="18.9" Border.Lines="All" Border.Color="Silver" Fill.Color="Gainsboro" Text="AÑO" HorzAlign="Center" VertAlign="Center" Font="Calibri Light, 6pt, style=Bold"/>
+      <TextObject Name="Text11" Left="652.05" Top="66.15" Width="56.7" Height="28.35" Border.Lines="All" Border.Color="Silver" Text="[BodySolicitud.ano]" HorzAlign="Center" VertAlign="Center" Font="Calibri Light, 9pt, style=Bold"/>
+      <PictureObject Name="Picture3" Left="18.9" Top="9.45" Width="141.75" Height="75.6" DataColumn="CabeceraRPT.urlimg"/>
+    </ReportTitleBand>
+    <DataBand Name="Data1" Top="418.47" Width="718.2" Height="18.9" CanGrow="true" DataSource="Table1" KeepTogether="true">
+      <TableObject Name="Table10" Width="720.13" Height="18.9">
+        <TableColumn Name="Column67" Width="34.2"/>
+        <TableColumn Name="Column68" Width="90.9"/>
+        <TableColumn Name="Column69" Width="53.1"/>
+        <TableColumn Name="Column70" Width="232.65"/>
+        <TableColumn Name="Column71" Width="53.1"/>
+        <TableColumn Name="Column72" Width="128.7"/>
+        <TableColumn Name="Column73" Width="53.1"/>
+        <TableColumn Name="Column74" Width="74.38"/>
+        <TableRow Name="Row10">
+          <TableCell Name="Cell234" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text44" Width="37.8" Height="18.9" Text="Tipo" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell235" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text119" Width="85.05" Height="18.9" Text="[BodySolicitante.tiporef]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell236" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text45" Width="56.7" Height="18.9" Text="Nombre" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell237" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text120" Left="9.45" Width="226.8" Height="18.9" Text="[BodySolicitante.ref_nombre]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell238" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text46" Width="56.7" Height="18.9" Text="Dirección" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell259" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text121" Width="132.3" Height="18.9" Text="[BodySolicitante.ref_dir]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell260" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text47" Width="56.7" Height="18.9" Text="Teléfono" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell261" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text122" Width="85.05" Height="18.9" Text="[BodySolicitante.ref_tel]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <DataBand Name="Data4" Top="440.03" Width="718.2" Height="292.95" CanGrow="true" DataSource="Table2" KeepTogether="true">
+      <ShapeObject Name="Shape34" Left="-1.89" Top="56.7" Width="723.87" Height="18.9" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220"/>
+      <TextObject Name="Text42" Top="28.35" Width="718.2" Height="18.9" Text="CODEUDOR [BodyCodeudor.counted]" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt"/>
+      <LineObject Name="Line3" Top="18.9" Width="718.2"/>
+      <TextObject Name="Text43" Left="9.45" Top="56.7" Width="699.3" Height="18.9" Text="INFORMACION GENERAL" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <TableObject Name="Table9" Top="94.5" Width="720.05" Height="75.6">
+        <TableColumn Name="Column199" Width="63.5"/>
+        <TableColumn Name="Column200" Width="82.4"/>
+        <TableColumn Name="Column201" Width="82.4"/>
+        <TableColumn Name="Column202" Width="82.4"/>
+        <TableColumn Name="Column203" Width="63.5"/>
+        <TableColumn Name="Column204" Width="110.75"/>
+        <TableColumn Name="Column205" Width="54.05"/>
+        <TableColumn Name="Column206" Width="82.4"/>
+        <TableColumn Name="Column207" Width="44.6"/>
+        <TableColumn Name="Column208" Width="54.05"/>
+        <TableRow Name="Row41">
+          <TableCell Name="Cell494" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text267" Width="47.25" Height="18.9" Text="Nombre" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell495" Border.Lines="All" Border.Color="DarkGray" ColSpan="3">
+            <TextObject Name="Text268" Width="236.25" Height="18.9" Text="[BodyCodeudor.nombre]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+            <TextObject Name="Text269" Left="245.7" Width="75.6" Height="18.9" Text="Identificacion" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell496" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell497" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell498" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220"/>
+          <TableCell Name="Cell499" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text270" Width="132.3" Height="18.9" Text="[BodyCodeudor.identificacion]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell500" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell501" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text271" Width="56.7" Height="18.9" Text="Expedida" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell502" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text272" Width="113.4" Height="18.9" Text="[BodyCodeudor.fechaexpedicion]" Format="Date" Format.Format="dd/MM/yyyy" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell503" Border.Lines="All" Border.Color="DarkGray"/>
+        </TableRow>
+        <TableRow Name="Row42">
+          <TableCell Name="Cell504" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text273" Width="66.15" Height="18.9" Text="Residencia" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell505" Border.Lines="All" Border.Color="DarkGray" ColSpan="3">
+            <TextObject Name="Text274" Width="236.25" Height="18.9" Text="[BodyCodeudor.direccion]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell506" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell507" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell508" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text276" Width="56.7" Height="18.9" Text="Telefono" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell509" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text277" Width="113.4" Height="18.9" Text="[BodyCodeudor.telefono]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell510" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text275" Width="47.25" Height="18.9" Text="Correo" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell511" Border.Lines="All" Border.Color="DarkGray" ColSpan="3">
+            <TextObject Name="Text278" Width="189" Height="18.9" CanGrow="true" GrowToBottom="true" Text="[BodyCodeudor.correo]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell512" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell513" Border.Lines="All" Border.Color="DarkGray"/>
+        </TableRow>
+        <TableRow Name="Row43">
+          <TableCell Name="Cell514" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text280" Width="66.15" Height="18.9" Text="Estado civil" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell515" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text279" Width="85.05" Height="18.9" Text="[BodyCodeudor.estadocivil]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell516" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text281" Width="103.95" Height="18.9" Text="Personas a Cargo" VertAlign="Center" Font="Arial, 6.4pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell517" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text282" Width="56.7" Height="18.9" Text="[BodyCodeudor.percargo]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell518" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text293" Width="56.7" Height="18.9" Text="Profesion" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell519" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text295" Width="113.4" Height="18.9" Text="[BodyCodeudor.profesion]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell520" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text284" Width="47.25" Height="18.9" Text="Genero" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell521" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text286" Width="85.05" Height="18.9" Text="[BodyCodeudor.genero]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell522" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text287" Width="37.8" Height="18.9" Text="Estato" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell523" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text288" Width="66.15" Height="18.9" Text="[BodyCodeudor.estrato]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+        <TableRow Name="Row44">
+          <TableCell Name="Cell524" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text290" Width="75.6" Height="18.9" Text="Tipo Vivienda " VertAlign="Center" Font="Arial, 6.5pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell525" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text289" Width="85.05" Height="18.9" Text="[BodyCodeudor.viveinmueble]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell526" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text291" Width="75.6" Height="18.9" Text="Valor Arriendo" VertAlign="Center" Font="Arial, 6.4pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell527" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text292" Width="85.05" Height="18.9" Text="[BodyCodeudor.valorarriendo]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell528" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text297" Width="47.25" Height="18.9" Text="Vehículo" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell529" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text298" Width="113.4" Height="18.9" Text="[BodyCodeudor.vehiculo]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell530" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text294" Width="56.7" Height="18.9" Text="Finca Raiz" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell531" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text296" Width="85.05" Height="18.9" Text="[BodyCodeudor.fincaraiz]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell532" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text283" Width="37.8" Height="18.9" Text="Edad" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell533" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text285" Left="6.8" Width="113.4" Height="18.9" Text="[BodyCodeudor.edad]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+      </TableObject>
+      <ShapeObject Name="Shape1" Top="189" Width="720.09" Height="18.9" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220"/>
+      <TextObject Name="Text14" Top="189" Width="727.65" Height="18.9" Text="CONYUGE" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <TableObject Name="Table4" Top="217.35" Width="720.1" Height="37.8">
+        <TableColumn Name="Column217" Width="104.19"/>
+        <TableColumn Name="Column218" Width="160.89"/>
+        <TableColumn Name="Column219" Width="56.94"/>
+        <TableColumn Name="Column220" Width="151.44"/>
+        <TableColumn Name="Column221" Width="47.49"/>
+        <TableColumn Name="Column222" Width="66.39"/>
+        <TableColumn Name="Column223" Width="47.48"/>
+        <TableColumn Name="Column224" Width="85.28"/>
+        <TableRow Name="Row47">
+          <TableCell Name="Cell550" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text299" Width="56.7" Height="18.9" Text="Nombre" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell551" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text300" Width="198.45" Height="18.9" Text="[BodyCodeudor.connombre]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell552" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell553" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text301" Width="75.6" Height="18.9" Text="Identificacion" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell554" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text302" Width="113.4" Height="18.9" Text="[BodyCodeudor.coniden]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell575" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell577" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text303" Width="66.15" Height="18.9" Text="Telefono" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell578" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text304" Width="85.05" Height="18.9" Text="[BodyCodeudor.contelefono]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+        <TableRow Name="Row48">
+          <TableCell Name="Cell555" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text305" Width="103.95" Height="18.9" Text="Empresa donde labora" VertAlign="Center" Font="Arial, 6.4pt, style=Bold"/>
+            <TextObject Name="Text306" Left="103.95" Width="160.65" Height="18.9" Text="[BodyCodeudor.conempresa]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell556" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text307" Left="160.65" Width="56.7" Height="18.9" Text="Dirección" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell557" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text308" Left="56.7" Width="151.2" Height="18.9" Text="[BodyCodeudor.condireccionemp]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell558" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text309" Left="151.2" Width="47.25" Height="18.9" Text="Telefono" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell559" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text310" Left="47.25" Width="66.15" Height="18.9" Text="[BodyCodeudor.contelefonoemp]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell576" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell579" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text311" Width="47.25" Height="18.9" Text="Salario" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell580" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text312" Width="85.05" Height="18.9" Text="[BodyCodeudor.consalario]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+      </TableObject>
+      <ShapeObject Name="Shape75" Left="-1.89" Top="264.6" Width="723.87" Height="18.9" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220"/>
+      <TextObject Name="Text95" Left="18.9" Top="264.6" Width="680.4" Height="18.9" Text="REFERENCIAS" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <DataBand Name="Data8" Top="735.65" Width="718.2" Height="18.9" DataSource="Table5">
+        <TableObject Name="Table3" Left="-1.93" Width="720.13" Height="18.9">
+          <TableColumn Name="Column113" Width="34.2"/>
+          <TableColumn Name="Column114" Width="90.9"/>
+          <TableColumn Name="Column115" Width="53.1"/>
+          <TableColumn Name="Column116" Width="232.65"/>
+          <TableColumn Name="Column117" Width="53.1"/>
+          <TableColumn Name="Column118" Width="128.7"/>
+          <TableColumn Name="Column119" Width="53.1"/>
+          <TableColumn Name="Column120" Width="74.38"/>
+          <TableRow Name="Row16">
+            <TableCell Name="Cell320" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+              <TextObject Name="Text195" Width="37.8" Height="18.9" Text="Tipo" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+            </TableCell>
+            <TableCell Name="Cell321" Border.Lines="All" Border.Color="DarkGray">
+              <TextObject Name="Text196" Width="85.05" Height="18.9" Text="[CoudeudorReferencia.tiporef]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+            </TableCell>
+            <TableCell Name="Cell322" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+              <TextObject Name="Text197" Width="56.7" Height="18.9" Text="Nombre" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+            </TableCell>
+            <TableCell Name="Cell323" Border.Lines="All" Border.Color="DarkGray">
+              <TextObject Name="Text198" Left="9.45" Width="226.8" Height="18.9" Text="[CoudeudorReferencia.ref_nombre]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+            </TableCell>
+            <TableCell Name="Cell324" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+              <TextObject Name="Text199" Width="56.7" Height="18.9" Text="Dirección" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+            </TableCell>
+            <TableCell Name="Cell325" Border.Lines="All" Border.Color="DarkGray">
+              <TextObject Name="Text200" Width="132.3" Height="18.9" Text="[CoudeudorReferencia.ref_dir]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+            </TableCell>
+            <TableCell Name="Cell326" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+              <TextObject Name="Text201" Width="56.7" Height="18.9" Text="Teléfono" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+            </TableCell>
+            <TableCell Name="Cell327" Border.Lines="All" Border.Color="DarkGray">
+              <TextObject Name="Text202" Width="85.05" Height="18.9" Text="[CoudeudorReferencia.ref_tel]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+            </TableCell>
+          </TableRow>
+        </TableObject>
+      </DataBand>
+    </DataBand>
+    <DataBand Name="Data3" Top="757.22" Width="718.2" Height="75.6" StartNewPage="true" PrintIfDatasourceEmpty="true">
+      <TableObject Name="Table20" Top="56.7" Width="719.19" Height="18.9">
+        <TableColumn Name="Column225" Width="168.69"/>
+        <TableColumn Name="Column226" Width="64.74"/>
+        <TableColumn Name="Column227" Width="121.44"/>
+        <TableColumn Name="Column228" Width="121.44"/>
+        <TableColumn Name="Column229" Width="121.44"/>
+        <TableColumn Name="Column230" Width="121.44"/>
+        <TableRow Name="Row49">
+          <TableCell Name="Cell581" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Nombre" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          <TableCell Name="Cell582" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Cantidad" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          <TableCell Name="Cell583" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Precio" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          <TableCell Name="Cell584" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Iva" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          <TableCell Name="Cell585" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Desceunto" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+          <TableCell Name="Cell606" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+      <ShapeObject Name="Shape78" Top="18.9" Width="720.09" Height="18.9" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220"/>
+      <TextObject Name="Text317" Top="18.9" Width="727.65" Height="18.9" Text="INFORMACION DEL CREDITO" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <DataBand Name="Data5" Top="835.48" Width="718.2" Height="18.9" CanGrow="true" DataSource="Table11">
+        <TableObject Name="Table9" Width="719.19" Height="18.9">
+          <TableColumn Name="Column231" Width="168.69"/>
+          <TableColumn Name="Column232" Width="64.74"/>
+          <TableColumn Name="Column233" Width="121.44"/>
+          <TableColumn Name="Column234" Width="121.44"/>
+          <TableColumn Name="Column235" Width="121.44"/>
+          <TableColumn Name="Column236" Width="121.44"/>
+          <TableRow Name="Row50">
+            <TableCell Name="Cell607" Border.Lines="All" Border.Color="DarkGray" Text="[BodyProduc.nombre]" Format="Custom" Format.Format="G" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/>
+            <TableCell Name="Cell608" Border.Lines="All" Border.Color="DarkGray" Text="[BodyProduc.cantidad]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="" Format.NegativePattern="1" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/>
+            <TableCell Name="Cell609" Border.Lines="All" Border.Color="DarkGray" Text="[BodyProduc.precio]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/>
+            <TableCell Name="Cell610" Border.Lines="All" Border.Color="DarkGray" Text="[BodyProduc.iva]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/>
+            <TableCell Name="Cell611" Border.Lines="All" Border.Color="DarkGray" Text="[BodyProduc.descuento]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/>
+            <TableCell Name="Cell612" Border.Lines="All" Border.Color="DarkGray" Text="[BodyProduc.total]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/>
+          </TableRow>
+        </TableObject>
+      </DataBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="857.05" Width="718.2" Height="56.7" CanGrow="true">
+      <TextObject Name="Text48" Left="510.3" Top="18.9" Width="217.35" Height="18.9" Text="Página [Page#] de [TotalPages#]" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <PictureObject Name="Picture1" Top="18.9" Width="37.8" Height="37.8" Image="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"/>
+    </PageFooterBand>
+  </ReportPage>
+  <ReportPage Name="Page2">
+    <ReportTitleBand Name="ReportTitle2" Width="718.2" Height="500.85">
+      <ShapeObject Name="Shape70" Left="9.45" Top="18.9" Width="718.2" Height="18.9" Border.Color="Gainsboro" Fill.Color="106, 192, 192, 192"/>
+      <TextObject Name="Text94" Left="9.45" Top="18.9" Width="718.2" Height="18.9" Text="CONDICIONES FINALES" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text60" Left="66.15" Top="160.65" Width="264.6" Height="18.9" Text="[CabeceraRPT.nombre]" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text59" Top="170.1" Width="718.2" Height="160.65" Text="Autorizo a 					, Para consultar ante la central de información de asociación bancaria o cualquier otra entidad autorizada, mi endeudamiento directo o indirecto con las entidades del sector financiero del país, así como la información disponible sobre el cumplimiento y manejo dado a los compromisos con dicho sector, en especial los relativos a las cuentas corrientes, tarjetas de crédito, crédito otorgados y demás obligaciones. De igual forma, autorizo las consultas ante dicha Central o ante cualquier otra entidad autorizada, la información que estas posean sobre mí en virtud de convenios con entidades como la Superintendencia de Sociedades, Cámara de comercio, Superintendencia de Notariado y Registro, Superintendencia de Cambio, Dirección General de Aduanas, Registraduria Nacional del estado Civil, etc… Y que, en general, sirva como antecedentes y referencias para los propósitos de esta relación comercial.&#13;&#10;Esta autorización no se extiende a los datos de carácter íntimo que posea la entidad de virtud de las relaciones comerciales vigentes (o contratos) se acoge en todo al reglamento de funcionamiento de la Central de Información de la Asociación Bancaria de Colombia o de cualquier otra entidad autorizada para tal fin.&#13;&#10;" Font="Arial, 9pt"/>
+      <ShapeObject Name="Shape48" Left="37.8" Top="368.55" Width="75.6" Height="75.6" Border.Color="DimGray" Shape="RoundRectangle"/>
+      <TextObject Name="Text61" Left="122.85" Top="396.9" Width="226.8" Height="37.8" Text="Firma Solicitante&#13;&#10;[BodySolicitante.nombre]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <LineObject Name="Line2" Left="141.75" Top="396.9" Width="189" Border.Color="DimGray"/>
+      <TextObject Name="Text62" Left="141.75" Top="434.7" Width="189" Height="18.9" Text="C. C. [BodySolicitante.identificacion]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <ShapeObject Name="Shape77" Left="387.45" Top="368.55" Width="75.6" Height="75.6" Border.Color="DimGray" Shape="RoundRectangle"/>
+      <TextObject Name="Text315" Left="472.5" Top="396.9" Width="226.8" Height="37.8" Text="Firma Codeudor 1&#13;&#10;[BodySolicitud.codnom]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <LineObject Name="Line7" Left="491.4" Top="396.9" Width="189" Border.Color="DimGray"/>
+      <TextObject Name="Text316" Left="491.4" Top="434.7" Width="189" Height="18.9" Text="C. C. [BodySolicitud.codiden]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TableObject Name="Table23" Left="18.9" Top="56.7" Width="699.19" Height="37.8" Border.Lines="All" Border.Color="DarkGray">
+        <TableColumn Name="Column239" Width="107.48"/>
+        <TableColumn Name="Column240" Width="107.48"/>
+        <TableColumn Name="Column241" Width="116.93"/>
+        <TableColumn Name="Column242" Width="41.33"/>
+        <TableColumn Name="Column243" Width="98.03"/>
+        <TableColumn Name="Column244" Width="79.13"/>
+        <TableColumn Name="Column245" Width="79.13"/>
+        <TableColumn Name="Column246" Width="69.68"/>
+        <TableRow Name="Row52">
+          <TableCell Name="Cell615" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text53" Width="85.05" Height="18.9" Text="Descuentos" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell616" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text88" Width="103.95" Height="18.9" Text="[BodySolicitud.descuento]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell617" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text54" Width="85.05" Height="18.9" Text="Cuota inicial" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell618" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text89" Width="141.75" Height="18.9" Text="[BodySolicitud.inicial]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell619" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell640" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text15" Width="75.6" Height="18.9" Text="Sub Total" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell641" Border.Lines="All" Border.Color="DarkGray" ColSpan="2">
+            <TextObject Name="Text16" Width="122.85" Height="18.9" Text="[BodySolicitud.subtotal]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell642" Border.Lines="All" Border.Color="DarkGray"/>
+        </TableRow>
+        <TableRow Name="Row53">
+          <TableCell Name="Cell620" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" TextFill.Color="Beige">
+            <TextObject Name="Text55" Width="113.4" Height="18.9" Text="Valor a Financiar" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell621" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text90" Width="103.95" Height="18.9" Text="[BodySolicitud.total]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell622" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text56" Width="122.85" Height="18.9" Text="Numero de cuotas" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell623" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text91" Width="37.8" Height="18.9" Text="[BodySolicitud.numcuotas]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell624" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text57" Width="103.95" Height="18.9" Text="Cuota Mensual" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell643" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text92" Width="85.05" Height="18.9" Text="[BodySolicitud.cuotamen]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+          <TableCell Name="Cell644" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220">
+            <TextObject Name="Text58" Width="85.05" Height="18.9" Text="Fecha pago" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell645" Border.Lines="All" Border.Color="DarkGray">
+            <TextObject Name="Text93" Width="75.6" Height="18.9" Text="[BodySolicitud.fechapago]" VertAlign="Center" Font="Calibri Light, 9pt"/>
+          </TableCell>
+        </TableRow>
+      </TableObject>
+    </ReportTitleBand>
+    <DataBand Name="Data2" Top="503.52" Width="718.2" Height="18.9" CanShrink="true" CanBreak="true">
+      <SubreportObject Name="Subreport1" Left="37.8" Width="94.5" Height="18.9" ReportPage="Page3"/>
+      <SubreportObject Name="Subreport3" Left="387.45" Width="94.5" Height="18.9" ReportPage="Page5"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter2" Top="525.08" Width="718.2" Height="132.3">
+      <TextObject Name="Text49" Left="378" Top="103.95" Width="340.2" Height="28.35" Text="Página [Page#] de [TotalPages#]" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text96" Top="47.25" Width="236.25" Height="18.9" Text="[BodySolicitud.usuario]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <LineObject Name="Line4" Top="75.6" Width="236.25"/>
+      <TextObject Name="Text147" Top="75.6" Width="236.25" Height="18.9" Text="Impreso por" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text148" Left="18.9" Top="103.95" Width="236.25" Height="18.9" Text="Realizado por Sintesis Cloud S.A.S." HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+      <PictureObject Name="Picture2" Top="94.5" Width="37.8" Height="37.8" Image="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"/>
+    </PageFooterBand>
+  </ReportPage>
+  <ReportPage Name="Page3">
+    <DataBand Name="Data6" Width="718.2" Height="103.95" CanBreak="true" StartNewPage="true" DataSource="Table8">
+      <ShapeObject Name="Shape51" Top="18.14" Width="75.6" Height="75.6" Border.Color="DimGray" Shape="RoundRectangle"/>
+      <TextObject Name="Text67" Left="85.05" Top="47.25" Width="226.8" Height="37.8" Text="Firma Codeudor [CodeudorCountPar.coun]&#13;&#10;[CodeudorCountPar.nom]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <LineObject Name="Line5" Left="103.95" Top="47.25" Width="189" Border.Color="DimGray"/>
+      <TextObject Name="Text68" Left="103.95" Top="85.05" Width="189" Height="18.9" Text="C. C. [CodeudorCountPar.ide]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page5">
+    <DataBand Name="Data7" Width="718.2" Height="103.95" DataSource="Table6">
+      <ShapeObject Name="Shape76" Top="18.9" Width="75.6" Height="75.6" Border.Color="DimGray" Shape="RoundRectangle"/>
+      <TextObject Name="Text313" Left="85.05" Top="47.25" Width="226.8" Height="37.8" Text="Firma Codeudor [CodeudorCountImp.coun]&#13;&#10;[CodeudorCountImp.nom]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <LineObject Name="Line6" Left="103.95" Top="47.25" Width="189" Border.Color="DimGray"/>
+      <TextObject Name="Text314" Left="103.95" Top="85.05" Width="189" Height="18.9" Text="C. C. [CodeudorCountImp.ide]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+    </DataBand>
+  </ReportPage>
+</Report>

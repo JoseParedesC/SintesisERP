@@ -1,0 +1,29 @@
+G:\Desarrollo\Sintesis Tecnologia\Contabilidad\Version 1.0\SintesisContabilidad\SintesisContabilidad\bin\SintesisPOS.dll.config
+G:\Desarrollo\Sintesis Tecnologia\Contabilidad\Version 1.0\SintesisContabilidad\SintesisContabilidad\bin\SintesisPOS.dll
+G:\Desarrollo\Sintesis Tecnologia\Contabilidad\Version 1.0\SintesisContabilidad\SintesisContabilidad\bin\SintesisPOS.pdb
+G:\Desarrollo\Sintesis Tecnologia\Contabilidad\Version 1.0\SintesisContabilidad\SintesisContabilidad\obj\Debug\SintesisContabilidad.csproj.CoreCompileInputs.cache
+G:\Desarrollo\Sintesis Tecnologia\Contabilidad\Version 1.0\SintesisContabilidad\SintesisContabilidad\obj\Debug\SintesisContabilidad.csproj.CopyComplete
+G:\Desarrollo\Sintesis Tecnologia\Contabilidad\Version 1.0\SintesisContabilidad\SintesisContabilidad\obj\Debug\SintesisPOS.dll
+G:\Desarrollo\Sintesis Tecnologia\Contabilidad\Version 1.0\SintesisContabilidad\SintesisContabilidad\obj\Debug\SintesisPOS.pdb
+D:\SintesisERP\SintesisContabilidad\bin\SintesisPOS.dll.config
+D:\SintesisERP\SintesisContabilidad\bin\SintesisPOS.dll
+D:\SintesisERP\SintesisContabilidad\bin\SintesisPOS.pdb
+D:\SintesisERP\SintesisContabilidad\obj\Debug\SintesisContabilidad.csprojAssemblyReference.cache
+D:\SintesisERP\SintesisContabilidad\obj\Debug\SintesisContabilidad.csproj.CopyComplete
+D:\SintesisERP\SintesisContabilidad\obj\Debug\SintesisPOS.dll
+D:\SintesisERP\SintesisContabilidad\obj\Debug\SintesisPOS.pdb
+F:\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll.config
+F:\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll
+F:\SintesisERP\SintesisContabilidad\bin\SintesisERP.pdb
+F:\SintesisERP\SintesisContabilidad\obj\Debug\SintesisContabilidad.csproj.CopyComplete
+F:\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.dll
+F:\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.pdb
+F:\SintesisERP\SintesisContabilidad\obj\Debug\SintesisContabilidad.csprojAssemblyReference.cache
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll.config
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\bin\SintesisERP.pdb
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisContabilidad.csprojAssemblyReference.cache
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisContabilidad.csproj.CoreCompileInputs.cache
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisContabilidad.csproj.CopyComplete
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.dll
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.pdb

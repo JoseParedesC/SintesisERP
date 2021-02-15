@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Sintesis-Web.config Connection String" description="Sintesis Connection String used in web.config by the application to access the database." defaultValue="Data Source=localhost\SQL2014;Initial Catalog=SintesisCloudMotoCredito2;Persist Security Info=True;User ID=sa;Password=sintesis2018" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Desarrollo\\OneDrive\\Sintesis\ Tecnologia\\SintesisERP\\Version1\.0\\SintesisERP\\SintesisERP\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Sintesis']/@connectionString" />
+  </parameter>
+</parameters>

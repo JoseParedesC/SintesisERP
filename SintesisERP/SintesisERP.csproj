@@ -1,0 +1,1505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\build\MSBuild.Microsoft.VisualStudio.Web.targets.props" Condition="Exists('..\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\build\MSBuild.Microsoft.VisualStudio.Web.targets.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C37CC8D-68A5-459C-8E17-2E54246831D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SintesisERP</RootNamespace>
+    <AssemblyName>SintesisERP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicClassLoader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DynamicClassLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Estructura">
+      <HintPath>bin\Estructura.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport, Version=2017.4.6.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FastReport.DLL</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2017.4.6.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Web, Version=2017.4.6.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FastReport.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="FirmaXadesNet, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FirmaXadesNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="J_W.Herramientas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\J_W.Herramientas.dll</HintPath>
+    </Reference>
+    <Reference Include="Licenciamiento, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Licenciamiento.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=1.12.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Xades, Version=1.0.7.0, Culture=neutral, PublicKeyToken=52bc0bff8bc72d48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Xades.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=1.12.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="S22.Imap, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\S22.Imap.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiciosDian, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiciosDian.dll</HintPath>
+    </Reference>
+    <Reference Include="SintesisSecurity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SintesisSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\DocumentFormat.OpenXml.dll" />
+    <Content Include="bin\DynamicClassLoader.dll" />
+    <Content Include="bin\Estructura.dll" />
+    <Content Include="bin\J_W.Herramientas.dll" />
+    <Content Include="bin\Licenciamiento.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\SintesisERP.dll" />
+    <Content Include="bin\SintesisERP.pdb" />
+    <Content Include="bin\SintesisSecurity.dll" />
+    <Content Include="Components\Contents\images\favicon.ico" />
+    <Content Include="Components\Contents\styles\custom.css" />
+    <Content Include="Filetemp\Principal.png" />
+    <Content Include="Images\Principal.png" />
+    <Content Include="Images\sesion2.jpg" />
+    <Content Include="Images\SINTESIS_CLOUD_LOGO.png" />
+    <Content Include="Images\SINTESIS_CLOUD_LOGO_.png" />
+    <Content Include="Images\SINTESIS_CLOUD_LOGO__.png" />
+    <Content Include="Images\user.jpg" />
+    <Content Include="Imgarticulos\Principal.png" />
+    <Content Include="Package\Others\css\bootstrap-datepicker.css" />
+    <Content Include="Package\Others\js\bootstrap-datepicker.js" />
+    <Content Include="Package\Vendor\css\plugins\fileinput\fileinput-rtl.css" />
+    <Content Include="Package\Vendor\css\plugins\fileinput\fileinput-rtl.min.css" />
+    <Content Include="Package\Vendor\css\plugins\fileinput\fileinput.css" />
+    <Content Include="Package\Vendor\css\plugins\fileinput\fileinput.min.css" />
+    <Content Include="Package\Vendor\css\plugins\iCheck\green1.png" />
+    <Content Include="Package\Vendor\css\plugins\iCheck\green_.png" />
+    <Content Include="Package\Vendor\css\plugins\logscroll\style-albe-timeline.css" />
+    <Content Include="Package\Vendor\css\plugins\steps\jquery.steps.css" />
+    <Content Include="Package\Vendor\css\plugins\Tooltipminimal\jquery.minimalTips.css" />
+    <Content Include="Package\Vendor\css\style2.css" />
+    <Content Include="Package\Vendor\font-awesome1\css\font-awesome.css" />
+    <Content Include="Package\Vendor\font-awesome1\css\font-awesome.min.css" />
+    <Content Include="Package\Vendor\font-awesome1\fonts\fontawesome-webfont.svg" />
+    <Content Include="Package\Vendor\font-awesome\fonts\icomoon.svg" />
+    <Content Include="Package\Vendor\js\bootstrap.min.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\.gitignore" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\daterangepicker.css" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\daterangepicker.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\demo.html" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\drp.png" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\amd\index.html" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\amd\main.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\amd\require.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\browserify\bundle.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\browserify\index.html" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\browserify\main.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\daterangepicker.css" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\daterangepicker.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\moment.min.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\package.js" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\website\index.html" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\website\website.css" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\website\website.js" />
+    <Content Include="Package\Vendor\js\jquery-2.1.4.js" />
+    <Content Include="Package\Vendor\js\jquery-ui.js" />
+    <Content Include="Package\Vendor\js\numeral.min.js" />
+    <Content Include="Package\Vendor\js\plugins\chart-js\utils.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\fileinput.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\fileinput.min.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\ar.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\az.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\bg.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\ca.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\cr.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\cs.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\da.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\de.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\el.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\es.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\et.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\fa.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\fi.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\fr.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\gl.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\hu.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\id.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\it.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\ja.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\ka.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\kr.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\kz.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\LANG.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\lt.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\nl.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\no.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\pl.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\pt-BR.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\pt.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\ro.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\ru.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\sk.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\sl.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\sv.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\th.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\tr.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\uk.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\vi.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\zh-TW.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\locales\zh.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\plugins\piexif.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\plugins\piexif.min.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\plugins\purify.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\plugins\purify.min.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\plugins\sortable.js" />
+    <Content Include="Package\Vendor\js\plugins\fileinput\plugins\sortable.min.js" />
+    <Content Include="Package\Vendor\js\plugins\logscroll\jquery-albe-timeline.min.js" />
+    <Content Include="Package\Vendor\js\plugins\steps\jquery.steps.js" />
+    <Content Include="Package\Vendor\js\plugins\steps\jquery.steps.min.js" />
+    <Content Include="Package\Vendor\js\plugins\Tooltipminimal\jquery.minimalTips.js" />
+    <Content Include="Package\Vendor\js\plugins\Tooltipminimal\jquery.minimalTips.min.js" />
+    <Content Include="Pages\Contabilidad\CierreContable.aspx" />
+    <Content Include="Pages\Contabilidad\Consolidacion.aspx" />
+    <Content Include="Pages\Contabilidad\listsncount.aspx" />
+    <Content Include="Pages\Contabilidad\NotasCartera.aspx" />
+    <Content Include="Pages\Controles\AnalisisCre.ascx" />
+    <Content Include="Pages\Controles\ClienteInfo.ascx" />
+    <Content Include="Pages\Controles\Solicitud.ascx" />
+    <Content Include="Pages\Credito\Analisis.aspx" />
+    <Content Include="Pages\Credito\Solicitudes.aspx" />
+    <Content Include="Pages\Facturacion\FacturacionElectronica.aspx" />
+    <Content Include="Pages\Financiero\LineasCredito.aspx" />
+    <Content Include="Pages\Financiero\RecaudoCartera.aspx" />
+    <Content Include="Pages\Financiero\ServiciosFinanciero.aspx" />
+    <Content Include="Pages\Gestion\GestionCartera.aspx" />
+    <Content Include="Pages\Gestion\SearchCliente.aspx" />
+    <Content Include="Pages\Inventario\Cajas.aspx" />
+    <Content Include="Pages\Contabilidad\Categoriafiscal.aspx" />
+    <Content Include="Pages\Contabilidad\Tercerointegral.aspx" />
+    <Content Include="Pages\Inventario\Cotizacion.aspx" />
+    <Content Include="Pages\Contabilidad\Devolucionanticipos.aspx" />
+    <Content Include="Pages\Inventario\FacturasRecurrentes.aspx" />
+    <Content Include="Pages\Parametrizacion\Perfiles.aspx" />
+    <Content Include="Pages\Parametrizacion\Permisos.aspx" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\CierreContable.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\Consolidacion.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\listsncount.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\notascartera.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\Solicitudes.js" />
+    <Content Include="Pages\ScriptsPage\Credito\Analisis.js" />
+    <Content Include="Pages\ScriptsPage\Credito\AnalisisExc.js" />
+    <Content Include="Pages\ScriptsPage\Credito\Solicitudes.js" />
+    <Content Include="Pages\ScriptsPage\Facturacion\FacturacionElectronica.js" />
+    <Content Include="Pages\ScriptsPage\Financiero\LineasCreditos.js" />
+    <Content Include="Pages\ScriptsPage\Financiero\RecaudoCartera.js" />
+    <Content Include="Pages\ScriptsPage\Financiero\ServicioFinanciero.js" />
+    <Content Include="Pages\ScriptsPage\Gestion\ClienteGestion.js" />
+    <Content Include="Pages\ScriptsPage\Gestion\SearchCliente.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Cotizacion.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\Devanticipos.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\TerceroIntegral.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\FacturasRecurrentes.js" />
+    <Content Include="Pages\ScriptsPage\Parametrizacion\Parametros.js" />
+    <Content Include="Pages\ScriptsPage\Parametrizacion\Perfiles.js" />
+    <Content Include="Pages\ScriptsPage\Parametrizacion\Permisos.js" />
+    <Content Include="Pages\Seguridad\CierreCaja.aspx" />
+    <Content Include="Pages\Seguridad\Periodos.aspx" />
+    <Content Include="Pages\Inventario\Lote.aspx" />
+    <Content Include="Pages\Parametrizacion\Turnos.aspx" />
+    <Content Include="Pages\Inventario\Vendedores.aspx" />
+    <Content Include="Pages\Inventario\Marcas.aspx" />
+    <Content Include="Pages\Inventario\CategoriaProducto.aspx" />
+    <Content Include="Pages\Contabilidad\Formaspago.aspx" />
+    <Content Include="Pages\Contabilidad\CNTImpuestos.aspx" />
+    <Content Include="Pages\Contabilidad\CNTTipodocumentos.aspx" />
+    <Content Include="Pages\Contabilidad\CNTCentrocostos.aspx" />
+    <Content Include="Pages\Contabilidad\ReciboCajas.aspx" />
+    <Content Include="Pages\Contabilidad\ComprobantesContables.aspx" />
+    <Content Include="Pages\Inventario\FacturaPos.aspx" />
+    <Content Include="Pages\Contabilidad\ComprobanteEgreso.aspx" />
+    <Content Include="Pages\Inventario\Traslados.aspx" />
+    <Content Include="Pages\Contabilidad\Anticipos.aspx" />
+    <Content Include="Pages\Inventario\Conversionarticulos.aspx" />
+    <Content Include="Pages\Inventario\Devolucionentradas.aspx" />
+    <Content Include="Pages\Inventario\Devolucionfacturas.aspx" />
+    <Content Include="Pages\Inventario\Ajustes.aspx" />
+    <Content Include="Pages\Inventario\Facturas.aspx" />
+    <Content Include="Pages\Inventario\PagoProveedoresOld.aspx" />
+    <Content Include="Pages\Inventario\OrdenCompras.aspx" />
+    <Content Include="Pages\Inventario\Entradas.aspx" />
+    <Content Include="Pages\Parametrizacion\Reporteador.aspx" />
+    <Content Include="Pages\Parametrizacion\Empresas.aspx" />
+    <Content Include="Pages\Parametrizacion\Parametrosp.aspx" />
+    <Content Include="Pages\Parametrizacion\Usuariosp.aspx" />
+    <Content Include="Pages\ScriptsPage\Seguridad\CierreCaja.js" />
+    <Content Include="Pages\ScriptsPage\Parametrizacion\Empresa.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\FacturasPos.js" />
+    <Content Include="Pages\ScriptsPage\Parametrizacion\Turnos.js" />
+    <Content Include="Pages\Seguridad\SaldosIniciales.aspx" />
+    <Content Include="Pages\Xslt\FacturacionResponse.xslt" />
+    <Content Include="Pages\Xslt\FaturacionXmlPdf.xslt" />
+    <Content Include="Systems\analisis.aspx" />
+    <Content Include="Systems\analisisExc.aspx" />
+    <Content Include="Systems\cierrecontable.aspx" />
+    <Content Include="Systems\consolidacion.aspx" />
+    <Content Include="Systems\RecaudoCartera.aspx" />
+    <Content Include="Systems\notascartera.aspx" />
+    <Content Include="Systems\facturasrecurrentes.aspx" />
+    <Content Include="Systems\cotizaciones.aspx" />
+    <Content Include="Systems\devanticipos.aspx" />
+    <Content Include="Systems\gestioncartera.aspx" />
+    <Content Include="Systems\LineasCreditos.aspx" />
+    <Content Include="Systems\listsncount.aspx" />
+    <Content Include="Systems\perfiles.aspx" />
+    <Content Include="Systems\permisos.aspx" />
+    <Content Include="Systems\searchcliente.aspx" />
+    <Content Include="Systems\ServiciosFinanciero.aspx" />
+    <Content Include="Systems\Solicitud.aspx" />
+    <Content Include="Systems\tercerointegral.aspx" />
+    <Content Include="Systems\cierrecaja.aspx" />
+    <Content Include="Systems\empresa.aspx" />
+    <Content Include="Systems\facturacionPos.aspx" />
+    <Content Include="Systems\parametros.aspx" />
+    <Content Include="Systems\saldosiniciales.aspx" />
+    <Content Include="Pages\ScriptsPage\Inventario\Ajustes.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\Anticipos.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Bodegas.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Cajas.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\CNTCatFiscal.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\CNTCentrocostos.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\CNTCuentas.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\CNTImpuestos.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\CNTResoluciones.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\CNTTerceros.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\CategoriaProducto.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\CNTTipodocumentos.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\ConversionArticulos.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Deventrada.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Devfactura.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\Comprobantes.js" />
+    <Content Include="Pages\ScriptsPage\Seguridad\DiasFact.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Facturas.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\FormaPago.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Lote.js" />
+    <Content Include="Pages\ScriptsPage\Parametrizacion\Reporteador.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Vendedores.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Marcas.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Ordencompra.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Entradas.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\ComprobanteEgreso.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Productos.js" />
+    <Content Include="Pages\ScriptsPage\Contabilidad\RecibosCaja.js" />
+    <Content Include="Pages\ScriptsPage\Inventario\Traslados.js" />
+    <Content Include="Pages\ScriptsPage\Parametrizacion\Usuarios.js" />
+    <Content Include="Pages\Xslt\Dashboard.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Xslt\FacturacionElectronica.xslt" />
+    <Content Include="Pages\Xslt\FacturacionnNoteCredito.xslt" />
+    <Content Include="Pages\Xslt\FacturacionnNoteDebito.xslt" />
+    <Content Include="Pages\Xslt\TempateEmailFE.xslt" />
+    <Content Include="Systems\catfiscal.aspx" />
+    <Content Include="Systems\cajaresolucion.aspx" />
+    <Content Include="Systems\ajustes.aspx" />
+    <Content Include="Systems\periodos.aspx" />
+    <Content Include="Systems\reporteador.aspx" />
+    <Content Include="Systems\turnos.aspx" />
+    <Content Include="Systems\vendedores.aspx" />
+    <Content Include="Systems\recibocaja.aspx" />
+    <Content Include="Systems\comprobantescontables.aspx" />
+    <Content Include="Systems\cuentas.aspx" />
+    <Content Include="Systems\conversionarticulos.aspx" />
+    <Content Include="Systems\traslados.aspx" />
+    <Content Include="Systems\devfactura.aspx" />
+    <Content Include="Systems\usuarios.aspx" />
+    <Content Include="Systems\resoluciones.aspx" />
+    <Content Include="Systems\deventrada.aspx" />
+    <Content Include="Systems\anticipos.aspx" />
+    <Content Include="Systems\facturacion.aspx" />
+    <Content Include="Systems\lotes.aspx" />
+    <Content Include="Systems\cajas.aspx" />
+    <Content Include="Systems\comprobanteegreso.aspx" />
+    <Content Include="Systems\ordencompras.aspx" />
+    <Content Include="Systems\entradas.aspx" />
+    <Content Include="Systems\CategoriaProducto.aspx" />
+    <Content Include="Systems\Marcas.aspx" />
+    <Content Include="Systems\Formapago.aspx" />
+    <Content Include="Systems\CNTTipoimpuestos.aspx" />
+    <Content Include="Systems\CNTTipodocumentos.aspx" />
+    <Content Include="Systems\Centrocostos.aspx" />
+    <Content Include="Systems\terceros.aspx" />
+    <Content Include="UserCaja.aspx" />
+    <Content Include="Package\Others\js\autoNumeric-1.9.41.js" />
+    <Content Include="Package\Vendor\css\bootstrap.min.css" />
+    <Content Include="Package\Vendor\css\plugins\Autocomplete\autocomplet.css" />
+    <Content Include="Package\Vendor\css\plugins\bootstrap-calendar\bootstrap-datetimepicker.css" />
+    <Content Include="Package\Vendor\css\plugins\dropify\css\demo.css" />
+    <Content Include="Package\Vendor\css\plugins\dropify\css\dropify.css" />
+    <Content Include="Package\Vendor\css\plugins\dropify\css\dropify.min.css" />
+    <Content Include="Package\Vendor\css\plugins\dropify\fonts\dropify.svg" />
+    <Content Include="Package\Vendor\js\bootstrap.min3.js" />
+    <Content Include="Package\Vendor\js\plugins\Autocomplete\countries.js" />
+    <Content Include="Package\Vendor\js\plugins\Autocomplete\jquery.autocomplete.js" />
+    <Content Include="Package\Vendor\js\plugins\bootstrap-calendar\bootstrap-datetimepicker.js" />
+    <Content Include="Package\Vendor\js\plugins\bootstrap-calendar\Moment.js" />
+    <Content Include="Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.css" />
+    <Content Include="Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.min.css" />
+    <Content Include="Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.js" />
+    <Content Include="Package\Vendor\js\plugins\bootstrap-select\bootstrap-select2.js" />
+    <Content Include="Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.min.js" />
+    <Content Include="Components\Contents\images\perfilfemale.png" />
+    <Content Include="Components\Contents\images\perfilmale.png" />
+    <Content Include="Components\Contents\images\Principal.png" />
+    <Content Include="Components\Contents\images\VerticalTransparente.png" />
+    <Content Include="Package\Others\js\jquery-1.9.1.js" />
+    <Content Include="Components\Contents\styles\compiled.min.css" />
+    <Content Include="Components\Contents\styles\OthersStyle.css" />
+    <Content Include="Components\Contents\styles\PagesGeneral.css" />
+    <Content Include="Components\Contents\styles\SitePage.css" />
+    <Content Include="Package\Vendor\css\animate.css" />
+    <Content Include="Package\Vendor\css\bootstrap.css" />
+    <Content Include="Package\Vendor\css\bootstrap.min__.css" />
+    <Content Include="Package\Vendor\css\patterns\1.png" />
+    <Content Include="Package\Vendor\css\patterns\2.png" />
+    <Content Include="Package\Vendor\css\patterns\3.png" />
+    <Content Include="Package\Vendor\css\patterns\4.png" />
+    <Content Include="Package\Vendor\css\patterns\5.png" />
+    <Content Include="Package\Vendor\css\patterns\6.png" />
+    <Content Include="Package\Vendor\css\patterns\7.png" />
+    <Content Include="Package\Vendor\css\patterns\congruent_pentagon.png" />
+    <Content Include="Package\Vendor\css\patterns\header-profile-skin-1.png" />
+    <Content Include="Package\Vendor\css\patterns\header-profile-skin-2.png" />
+    <Content Include="Package\Vendor\css\patterns\header-profile-skin-3.png" />
+    <Content Include="Package\Vendor\css\patterns\header-profile.png" />
+    <Content Include="Package\Vendor\css\patterns\otis_redding.png" />
+    <Content Include="Package\Vendor\css\patterns\shattered.png" />
+    <Content Include="Package\Vendor\css\patterns\triangular.png" />
+    <Content Include="Package\Vendor\css\plugins\awesome-bootstrap-checkbox\awesome-bootstrap-checkbox.css" />
+    <Content Include="Package\Vendor\css\plugins\datapicker\datepicker3.css" />
+    <Content Include="Package\Vendor\css\plugins\daterangepicker\daterangepicker-bs3.css" />
+    <Content Include="Package\Vendor\css\plugins\dropzone\basic.css" />
+    <Content Include="Package\Vendor\css\plugins\dropzone\dropzone.css" />
+    <Content Include="Package\Vendor\css\plugins\iCheck\custom.css" />
+    <Content Include="Package\Vendor\css\plugins\iCheck\green%402x.png" />
+    <Content Include="Package\Vendor\css\plugins\iCheck\green.png" />
+    <Content Include="Package\Vendor\css\plugins\images\bootstrap-colorpicker\alpha-horizontal.png" />
+    <Content Include="Package\Vendor\css\plugins\images\bootstrap-colorpicker\alpha.png" />
+    <Content Include="Package\Vendor\css\plugins\images\bootstrap-colorpicker\hue-horizontal.png" />
+    <Content Include="Package\Vendor\css\plugins\images\bootstrap-colorpicker\hue.png" />
+    <Content Include="Package\Vendor\css\plugins\images\bootstrap-colorpicker\saturation.png" />
+    <Content Include="Package\Vendor\css\plugins\images\sort.png" />
+    <Content Include="Package\Vendor\css\plugins\images\sort_asc.png" />
+    <Content Include="Package\Vendor\css\plugins\images\sort_desc.png" />
+    <Content Include="Package\Vendor\css\plugins\images\sprite-skin-flat.png" />
+    <Content Include="Package\Vendor\css\plugins\images\sprite-skin-flat2.png" />
+    <Content Include="Package\Vendor\css\plugins\images\sprite-skin-nice.png" />
+    <Content Include="Package\Vendor\css\plugins\images\sprite-skin-simple.png" />
+    <Content Include="Package\Vendor\css\plugins\images\spritemap%402x.png" />
+    <Content Include="Package\Vendor\css\plugins\images\spritemap.png" />
+    <Content Include="Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.css" />
+    <Content Include="Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinFlat.css" />
+    <Content Include="Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinNice.css" />
+    <Content Include="Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinSimple.css" />
+    <Content Include="Package\Vendor\css\plugins\jasny\jasny-bootstrap.min.css" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\animated-overlay.gif" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-icons_222222_256x240.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-icons_454545_256x240.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-icons_888888_256x240.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Package\Vendor\css\plugins\jQueryUI\jquery-ui.css" />
+    <Content Include="Package\Vendor\css\plugins\select2\select2.min.css" />
+    <Content Include="Package\Vendor\css\plugins\switchery\switchery.css" />
+    <Content Include="Package\Vendor\css\plugins\toastr\toastr.min.css" />
+    <Content Include="Package\Vendor\css\style.css" />
+    <Content Include="Package\Vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="Package\Vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Package\Vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Package\Vendor\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Package\Vendor\js\bootstrap.js" />
+    <Content Include="Package\Vendor\js\demo\dashboard-demo.js" />
+    <Content Include="Package\Vendor\js\demo\flot-demo.js" />
+    <Content Include="Package\Vendor\js\demo\flot-demo2.js" />
+    <Content Include="Package\Vendor\js\demo\morris-demo.js" />
+    <Content Include="Package\Vendor\js\demo\peity-demo.js" />
+    <Content Include="Package\Vendor\js\demo\rickshaw-demo.js" />
+    <Content Include="Package\Vendor\js\demo\sparkline-demo.js" />
+    <Content Include="Package\Vendor\js\dashboard.js" />
+    <Content Include="Package\Vendor\js\jquery-2.1.1.js" />
+    <Content Include="Package\Vendor\js\jquery-ui-1.10.4.min.js" />
+    <Content Include="Package\Vendor\js\jquery-ui.custom.min.js" />
+    <Content Include="Package\Vendor\js\plugins\chart-js\Chart.min.js" />
+    <Content Include="Package\Vendor\js\plugins\datapicker\bootstrap-datepicker.js" />
+    <Content Include="Package\Vendor\js\plugins\daterangepicker\daterangepicker.js" />
+    <Content Include="Package\Vendor\js\plugins\diff_match_patch\javascript\diff_match_patch.js" />
+    <Content Include="Package\Vendor\js\plugins\diff_match_patch\README.txt" />
+    <Content Include="Package\Vendor\js\plugins\dotdotdot\jquery.dotdotdot.min.js" />
+    <Content Include="Package\Vendor\js\plugins\dropify\js\dropify.js" />
+    <Content Include="Package\Vendor\js\plugins\dropify\js\dropify.min.js" />
+    <Content Include="Package\Vendor\js\plugins\gritter\images\gritter-light.png" />
+    <Content Include="Package\Vendor\js\plugins\gritter\images\gritter-long.png" />
+    <Content Include="Package\Vendor\js\plugins\gritter\images\gritter.png" />
+    <Content Include="Package\Vendor\js\plugins\gritter\images\ie-spacer.gif" />
+    <Content Include="Package\Vendor\js\plugins\gritter\jquery.gritter.css" />
+    <Content Include="Package\Vendor\js\plugins\gritter\jquery.gritter.min.js" />
+    <Content Include="Package\Vendor\js\plugins\iCheck\icheck.min.js" />
+    <Content Include="Package\Vendor\js\plugins\ionRangeSlider\ion.rangeSlider.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery-ui-i18n.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-af.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ar-DZ.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ar.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-az.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-be.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-bg.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-bs.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ca.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-cs.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-cy-GB.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-da.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-de.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-el.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-AU.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-GB.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-NZ.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-eo.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-es.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-et.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-eu.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fa.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fi.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fo.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr-CA.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr-CH.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-gl.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-he.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hi.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hr.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hu.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hy.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-id.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-is.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-it.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ja.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ka.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-kk.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-km.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ko.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ky.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lb.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lt.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lv.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-mk.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ml.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ms.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nb.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nl-BE.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nl.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nn.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-no.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pl.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pt-BR.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pt.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-rm.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ro.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ru.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sk.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sl.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sq.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sr-SR.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sr.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sv.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ta.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-th.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-tj.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-tr.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-uk.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-vi.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-CN.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-HK.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-TW.min.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\animated-overlay.gif" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-icons_454545_256x240.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-icons_888888_256x240.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\jquery-ui.css" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\jquery-ui.js" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\jquery-ui.min.css" />
+    <Content Include="Package\Vendor\js\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Package\Vendor\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="Package\Vendor\js\plugins\peity\jquery.peity.min.js" />
+    <Content Include="Package\Vendor\js\plugins\preetyTextDiff\jquery.pretty-text-diff.min.js" />
+    <Content Include="Package\Vendor\js\plugins\select2\select2.full.min.js" />
+    <Content Include="Package\Vendor\js\plugins\slimscroll\jquery.slimscroll.js" />
+    <Content Include="Package\Vendor\js\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Package\Vendor\js\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="Package\Vendor\js\plugins\switchery\switchery.js" />
+    <Content Include="Package\Vendor\js\plugins\toastr\toastr.min.js" />
+    <Content Include="Package\Vendor\material\css\bootstrap-material-design.css" />
+    <Content Include="Package\Vendor\material\css\compiled.min.css" />
+    <Content Include="Package\Vendor\material\js\material.js" />
+    <Content Include="Package\Vendor\material\js\mdb.js" />
+    <Content Include="Pages\Inventario\Productos.aspx" />
+    <Content Include="Pages\Inventario\Bodegas.aspx" />
+    <Content Include="Pages\Contabilidad\CNTResoluciones.aspx" />
+    <Content Include="Pages\Contabilidad\CNTTerceros.aspx" />
+    <Content Include="Pages\Contabilidad\CNTCuenta.aspx" />
+    <Content Include="Package\Others\js\ComplementScript.js" />
+    <Content Include="Pages\ScriptGeneral\FuncionesGlobales.js" />
+    <Content Include="Pages\ScriptGeneral\FuncionesGScript.js" />
+    <Content Include="Pages\ScriptGeneral\GeneralSearch.js" />
+    <Content Include="Pages\ScriptGeneral\json2.js" />
+    <Content Include="Pages\ScriptGeneral\JW_SintesisFrame.js" />
+    <Content Include="Pages\ScriptGeneral\ObjetoXML.js" />
+    <Content Include="Pages\ScriptGeneral\validador.js" />
+    <Content Include="Components\Contents\BootGrid\css\jquery.bootgrid.css" />
+    <Content Include="Components\Contents\BootGrid\js\jquery.bootgrid.js" />
+    <Content Include="Components\Contents\BootGrid\js\jquery.bootgrid.min.js" />
+    <Content Include="Components\Contents\BootGrid\js\moderniz.2.8.1.js" />
+    <Content Include="index.aspx" />
+    <Content Include="Systems\bodegas.aspx" />
+    <Content Include="Systems\productos.aspx" />
+    <Content Include="Systems\Default.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Data\Code\Extensiones.cs" />
+    <Compile Include="App_Data\Code\CrearExcel.cs" />
+    <Compile Include="App_Data\Code\MailTask.cs" />
+    <Compile Include="App_Data\Code\ReporteadorFE.cs" />
+    <Compile Include="App_Data\Code\SintesisFW.cs" />
+    <Compile Include="App_Data\Code\Dbase.cs" />
+    <Compile Include="App_Data\Code\Session_Entity.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\Anticipos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CierreContable.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\Consolidacion.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\Contabilizar.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\DiasFact.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\NotasCartera.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Credito\Analisis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Credito\Solicitudes.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\FE\MailTask.cs" />
+    <Compile Include="App_Data\Model\Financiero\LineasCredito.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Financiero\RecaudoCartera.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Financiero\ServiciosFinanciero.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Gestion\ClientesGestion.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\FacturasRecurrentes.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Parametrizacion\Empresa.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Parametrizacion\Parametros.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\Productos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Code\Reconexion.cs" />
+    <Compile Include="App_Data\Model\Contabilidad\Cajas.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CNTResoluciones.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\Devoluciones.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\Comprobantes.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\Facturas.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\ReciboCaja.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\PagoProveedores.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CNTCatFiscal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\Lote.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\OrdenCompras.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\Entradas.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\Marcas.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CNTTerceros.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\FormaPago.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CNTCuenta.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CNTImpuestotipoimp.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CNTImpuestos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CNTTipodocumentos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Contabilidad\CNTCentroCostos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\Bodegas.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\CategoriaProducto.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Parametrizacion\Perfiles.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Parametrizacion\Reportes.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Inventario\Traslados.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Parametrizacion\Turno.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Parametrizacion\Usuarios.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Parametrizacion\General.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\Masters\MasterPages.Master.cs">
+      <DependentUpon>MasterPages.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\Masters\MasterPages.Master.designer.cs">
+      <DependentUpon>MasterPages.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Connectors\ConnectorFilesFolder.ashx.cs">
+      <DependentUpon>ConnectorFilesFolder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Connectors\ConnectorGetFile.ashx.cs">
+      <DependentUpon>ConnectorGetFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CierreContable.aspx.cs">
+      <DependentUpon>CierreContable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CierreContable.aspx.designer.cs">
+      <DependentUpon>CierreContable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Consolidacion.aspx.cs">
+      <DependentUpon>Consolidacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Consolidacion.aspx.designer.cs">
+      <DependentUpon>Consolidacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\listsncount.aspx.cs">
+      <DependentUpon>listsncount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\listsncount.aspx.designer.cs">
+      <DependentUpon>listsncount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\NotasCartera.aspx.cs">
+      <DependentUpon>NotasCartera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\NotasCartera.aspx.designer.cs">
+      <DependentUpon>NotasCartera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Controles\AnalisisCre.ascx.cs">
+      <DependentUpon>AnalisisCre.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Controles\AnalisisCre.ascx.designer.cs">
+      <DependentUpon>AnalisisCre.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Controles\ClienteInfo.ascx.cs">
+      <DependentUpon>ClienteInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Controles\ClienteInfo.ascx.designer.cs">
+      <DependentUpon>ClienteInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Controles\Solicitud.ascx.cs">
+      <DependentUpon>Solicitud.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Controles\Solicitud.ascx.designer.cs">
+      <DependentUpon>Solicitud.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Credito\Analisis.aspx.cs">
+      <DependentUpon>Analisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Credito\Analisis.aspx.designer.cs">
+      <DependentUpon>Analisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Credito\Solicitudes.aspx.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Credito\Solicitudes.aspx.designer.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Facturacion\FacturacionElectronica.aspx.cs">
+      <DependentUpon>FacturacionElectronica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Facturacion\FacturacionElectronica.aspx.designer.cs">
+      <DependentUpon>FacturacionElectronica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Financiero\LineasCredito.aspx.cs">
+      <DependentUpon>LineasCredito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Financiero\LineasCredito.aspx.designer.cs">
+      <DependentUpon>LineasCredito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Financiero\RecaudoCartera.aspx.cs">
+      <DependentUpon>RecaudoCartera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Financiero\RecaudoCartera.aspx.designer.cs">
+      <DependentUpon>RecaudoCartera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Financiero\ServiciosFinanciero.aspx.cs">
+      <DependentUpon>ServiciosFinanciero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Financiero\ServiciosFinanciero.aspx.designer.cs">
+      <DependentUpon>ServiciosFinanciero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Gestion\GestionCartera.aspx.cs">
+      <DependentUpon>GestionCartera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Gestion\GestionCartera.aspx.designer.cs">
+      <DependentUpon>GestionCartera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Gestion\SearchCliente.aspx.cs">
+      <DependentUpon>SearchCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Gestion\SearchCliente.aspx.designer.cs">
+      <DependentUpon>SearchCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Cajas.aspx.cs">
+      <DependentUpon>Cajas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Cajas.aspx.designer.cs">
+      <DependentUpon>Cajas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Categoriafiscal.aspx.cs">
+      <DependentUpon>Categoriafiscal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Categoriafiscal.aspx.designer.cs">
+      <DependentUpon>Categoriafiscal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Tercerointegral.aspx.cs">
+      <DependentUpon>Tercerointegral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Tercerointegral.aspx.designer.cs">
+      <DependentUpon>Tercerointegral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Cotizacion.aspx.cs">
+      <DependentUpon>Cotizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Cotizacion.aspx.designer.cs">
+      <DependentUpon>Cotizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Devolucionanticipos.aspx.cs">
+      <DependentUpon>Devolucionanticipos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Devolucionanticipos.aspx.designer.cs">
+      <DependentUpon>Devolucionanticipos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\FacturasRecurrentes.aspx.cs">
+      <DependentUpon>FacturasRecurrentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\FacturasRecurrentes.aspx.designer.cs">
+      <DependentUpon>FacturasRecurrentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Perfiles.aspx.cs">
+      <DependentUpon>Perfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Perfiles.aspx.designer.cs">
+      <DependentUpon>Perfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Permisos.aspx.cs">
+      <DependentUpon>Permisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Permisos.aspx.designer.cs">
+      <DependentUpon>Permisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Seguridad\CierreCaja.aspx.cs">
+      <DependentUpon>CierreCaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Seguridad\CierreCaja.aspx.designer.cs">
+      <DependentUpon>CierreCaja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Seguridad\Periodos.aspx.cs">
+      <DependentUpon>Periodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Seguridad\Periodos.aspx.designer.cs">
+      <DependentUpon>Periodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Lote.aspx.cs">
+      <DependentUpon>Lote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Lote.aspx.designer.cs">
+      <DependentUpon>Lote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Turnos.aspx.cs">
+      <DependentUpon>Turnos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Turnos.aspx.designer.cs">
+      <DependentUpon>Turnos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Vendedores.aspx.cs">
+      <DependentUpon>Vendedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Vendedores.aspx.designer.cs">
+      <DependentUpon>Vendedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Marcas.aspx.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Marcas.aspx.designer.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\CategoriaProducto.aspx.cs">
+      <DependentUpon>CategoriaProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\CategoriaProducto.aspx.designer.cs">
+      <DependentUpon>CategoriaProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Connectors\ConnectorExcel.ashx.cs">
+      <DependentUpon>ConnectorExcel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Connectors\ConnectorHtml.ashx.cs">
+      <DependentUpon>ConnectorHtml.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Connectors\ConnectorReport.ashx.cs">
+      <DependentUpon>ConnectorReport.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Formaspago.aspx.cs">
+      <DependentUpon>Formaspago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Formaspago.aspx.designer.cs">
+      <DependentUpon>Formaspago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTImpuestos.aspx.cs">
+      <DependentUpon>CNTImpuestos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTImpuestos.aspx.designer.cs">
+      <DependentUpon>CNTImpuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTTipodocumentos.aspx.cs">
+      <DependentUpon>CNTTipodocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTTipodocumentos.aspx.designer.cs">
+      <DependentUpon>CNTTipodocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTCentrocostos.aspx.cs">
+      <DependentUpon>CNTCentrocostos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTCentrocostos.aspx.designer.cs">
+      <DependentUpon>CNTCentrocostos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\ReciboCajas.aspx.cs">
+      <DependentUpon>ReciboCajas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\ReciboCajas.aspx.designer.cs">
+      <DependentUpon>ReciboCajas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\ComprobantesContables.aspx.cs">
+      <DependentUpon>ComprobantesContables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\ComprobantesContables.aspx.designer.cs">
+      <DependentUpon>ComprobantesContables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\FacturaPos.aspx.cs">
+      <DependentUpon>FacturaPos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\FacturaPos.aspx.designer.cs">
+      <DependentUpon>FacturaPos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\ComprobanteEgreso.aspx.cs">
+      <DependentUpon>ComprobanteEgreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\ComprobanteEgreso.aspx.designer.cs">
+      <DependentUpon>ComprobanteEgreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Traslados.aspx.cs">
+      <DependentUpon>Traslados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Traslados.aspx.designer.cs">
+      <DependentUpon>Traslados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Anticipos.aspx.cs">
+      <DependentUpon>Anticipos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\Anticipos.aspx.designer.cs">
+      <DependentUpon>Anticipos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Conversionarticulos.aspx.cs">
+      <DependentUpon>Conversionarticulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Conversionarticulos.aspx.designer.cs">
+      <DependentUpon>Conversionarticulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Devolucionentradas.aspx.cs">
+      <DependentUpon>Devolucionentradas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Devolucionentradas.aspx.designer.cs">
+      <DependentUpon>Devolucionentradas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Devolucionfacturas.aspx.cs">
+      <DependentUpon>Devolucionfacturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Devolucionfacturas.aspx.designer.cs">
+      <DependentUpon>Devolucionfacturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Ajustes.aspx.cs">
+      <DependentUpon>Ajustes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Ajustes.aspx.designer.cs">
+      <DependentUpon>Ajustes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Facturas.aspx.cs">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Facturas.aspx.designer.cs">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\PagoProveedoresOld.aspx.cs">
+      <DependentUpon>PagoProveedoresOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\PagoProveedoresOld.aspx.designer.cs">
+      <DependentUpon>PagoProveedoresOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\OrdenCompras.aspx.cs">
+      <DependentUpon>OrdenCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\OrdenCompras.aspx.designer.cs">
+      <DependentUpon>OrdenCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Entradas.aspx.cs">
+      <DependentUpon>Entradas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Entradas.aspx.designer.cs">
+      <DependentUpon>Entradas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Reporteador.aspx.cs">
+      <DependentUpon>Reporteador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Reporteador.aspx.designer.cs">
+      <DependentUpon>Reporteador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Empresas.aspx.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Empresas.aspx.designer.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Parametrosp.aspx.cs">
+      <DependentUpon>Parametrosp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Parametrosp.aspx.designer.cs">
+      <DependentUpon>Parametrosp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Usuariosp.aspx.cs">
+      <DependentUpon>Usuariosp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Parametrizacion\Usuariosp.aspx.designer.cs">
+      <DependentUpon>Usuariosp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Seguridad\SaldosIniciales.aspx.cs">
+      <DependentUpon>SaldosIniciales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Seguridad\SaldosIniciales.aspx.designer.cs">
+      <DependentUpon>SaldosIniciales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCaja.aspx.cs">
+      <DependentUpon>UserCaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCaja.aspx.designer.cs">
+      <DependentUpon>UserCaja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SintesisLayout.Master.cs">
+      <DependentUpon>SintesisLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\SintesisLayout.Master.designer.cs">
+      <DependentUpon>SintesisLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SintesisMaster.Master.cs">
+      <DependentUpon>SintesisMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\SintesisMaster.Master.designer.cs">
+      <DependentUpon>SintesisMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Pages\Inventario\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inventario\Bodegas.aspx.cs">
+      <DependentUpon>Bodegas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inventario\Bodegas.aspx.designer.cs">
+      <DependentUpon>Bodegas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Connectors\ConnectorList.ashx.cs">
+      <DependentUpon>ConnectorList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Connectors\ConnectorUpload.ashx.cs">
+      <DependentUpon>ConnectorUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTResoluciones.aspx.cs">
+      <DependentUpon>CNTResoluciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTResoluciones.aspx.designer.cs">
+      <DependentUpon>CNTResoluciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Connectors\Connector.ashx.cs">
+      <DependentUpon>Connector.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTTerceros.aspx.cs">
+      <DependentUpon>CNTTerceros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTTerceros.aspx.designer.cs">
+      <DependentUpon>CNTTerceros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTCuenta.aspx.cs">
+      <DependentUpon>CNTCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contabilidad\CNTCuenta.aspx.designer.cs">
+      <DependentUpon>CNTCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Systems\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Systems\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.css.map" />
+    <Content Include="Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.js.map" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Components\Masters\MasterPages.Master" />
+    <Content Include="Pages\Connectors\Connector.ashx" />
+    <Content Include="Masters\SintesisMaster.Master" />
+    <Content Include="Package\Vendor\css\bootstrap.css.map" />
+    <Content Include="Package\Vendor\css\bootstrap.min.css.map" />
+    <Content Include="Package\Vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Package\Vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Package\Vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Package\Vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Package\Vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Package\Vendor\font-awesome\less\animated.less" />
+    <Content Include="Package\Vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Package\Vendor\font-awesome\less\core.less" />
+    <Content Include="Package\Vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="Package\Vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="Package\Vendor\font-awesome\less\icons.less" />
+    <Content Include="Package\Vendor\font-awesome\less\larger.less" />
+    <Content Include="Package\Vendor\font-awesome\less\list.less" />
+    <Content Include="Package\Vendor\font-awesome\less\mixins.less" />
+    <Content Include="Package\Vendor\font-awesome\less\path.less" />
+    <Content Include="Package\Vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Package\Vendor\font-awesome\less\stacked.less" />
+    <Content Include="Package\Vendor\font-awesome\less\variables.less" />
+    <Content Include="Package\Vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_core.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_list.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_path.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="Package\Vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Package\Vendor\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Package\Vendor\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Package\Vendor\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Package\Vendor\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Package\Vendor\js\plugins\diff_match_patch\COPYING" />
+    <Content Include="Package\Vendor\locales\en.json" />
+    <Content Include="Package\Vendor\locales\es.json" />
+    <Content Include="Package\Vendor\material\font\fa\fontawesome-webfont.woff2" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Bold.eot" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Bold.woff" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Bold.woff2" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Light.eot" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Light.ttf" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Light.woff" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Light.woff2" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Medium.eot" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Medium.woff" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Medium.woff2" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Regular.eot" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Regular.woff" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Regular.woff2" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Thin.eot" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Thin.ttf" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Thin.woff" />
+    <Content Include="Package\Vendor\material\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="Package\Vendor\css\plugins\dropify\fonts\dropify.eot" />
+    <Content Include="Package\Vendor\css\plugins\dropify\fonts\dropify.ttf" />
+    <Content Include="Package\Vendor\css\plugins\dropify\fonts\dropify.woff" />
+    <Content Include="Pages\Connectors\ConnectorList.ashx" />
+    <Content Include="Pages\Connectors\ConnectorUpload.ashx" />
+    <Content Include="Masters\SintesisLayout.Master" />
+    <Content Include="Pages\Connectors\ConnectorReport.ashx" />
+    <Content Include="Informes\ExistenciaGeneral.frx" />
+    <Content Include="Informes\Generados\pdfblank.pdf" />
+    <Content Include="Informes\ReteFuente.frx" />
+    <Content Include="Informes\ReteIca.frx" />
+    <Content Include="Informes\ReteIva.frx" />
+    <Content Include="Informes\VentasDiarias.frx" />
+    <Content Include="Informes\ArtFacturados.frx" />
+    <Content Include="Informes\IvaDescontable.frx" />
+    <Content Include="Informes\IvaGenerado.frx" />
+    <Content Include="Informes\RentabilidadArticulo.frx" />
+    <Content Include="Pages\Connectors\ConnectorExcel.ashx" />
+    <Content Include="Informes\EntradasDiarias.frx" />
+    <Content Include="Informes\VentasDiariasTotal.frx" />
+    <Content Include="Informes\BalanceGeneral.frx" />
+    <Content Include="Informes\ComprasProductos.frx" />
+    <Content Include="Informes\ComprasProveedorNew.frx" />
+    <Content Include="Informes\EntradasBodegas.frx" />
+    <Content Include="Informes\EstadoClientes.frx" />
+    <Content Include="Informes\ExtractoClientes.frx" />
+    <Content Include="Informes\MovimientoArticulos.frx" />
+    <Content Include="Informes\RentabilidadProducto.frx" />
+    <Content Include="Informes\SaldoClientes.frx" />
+    <Content Include="Informes\SaldoCuentas.frx" />
+    <Content Include="Informes\VentasClientes.frx" />
+    <Content Include="Informes\VentasProductos.frx" />
+    <Content Include="Informes\VentasUsuarios.frx" />
+    <Content Include="Informes\AuxiliaresContable.frx" />
+    <Content Include="Informes\AuxiliarImpuestos.frx" />
+    <Content Include="Informes\CarteraCliente.frx" />
+    <Content Include="Informes\CarteraProveedor.frx" />
+    <Content Include="Informes\MOVAjuste.frx" />
+    <Content Include="Informes\MOVDevEntrada.frx" />
+    <Content Include="Informes\MOVOrdenCompra.frx" />
+    <Content Include="Informes\MOVTraslado.frx" />
+    <Content Include="Informes\FacturaElectronicaInt.frx" />
+    <Content Include="Informes\FacturaElectronicaSin.frx" />
+    <Content Include="Informes\FacturaTirilla.frx" />
+    <Content Include="Informes\MOVAnticipo.frx" />
+    <Content Include="Informes\MOVCompras.frx" />
+    <Content Include="Informes\MOVComprobanteContable.frx" />
+    <Content Include="Informes\MOVComprobanteEgresos.frx" />
+    <Content Include="Informes\MOVRecibo.frx" />
+    <Content Include="Informes\MOVCotizacion.frx" />
+    <Content Include="Informes\MOVDevFactura.frx" />
+    <Content Include="Informes\CntCuentas.frx" />
+    <Content Include="Informes\SolicitudCredito.frx" />
+    <Content Include="Informes\MOVRecaudoC.frx" />
+    <None Include="packages.config" />
+    <Content Include="Pages\Connectors\ConnectorHtml.ashx" />
+    <Content Include="Package\Vendor\font-awesome\fonts\icomoon.eot" />
+    <Content Include="Package\Vendor\font-awesome\fonts\icomoon.ttf" />
+    <Content Include="Package\Vendor\font-awesome\fonts\icomoon.woff" />
+    <Content Include="Package\Vendor\font-awesome1\fonts\fontawesome-webfont.eot" />
+    <Content Include="Package\Vendor\font-awesome1\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Package\Vendor\font-awesome1\fonts\fontawesome-webfont.woff" />
+    <Content Include="Package\Vendor\font-awesome1\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Package\Vendor\font-awesome1\fonts\FontAwesome.otf" />
+    <Content Include="Package\Vendor\font-awesome1\less\animated.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\bordered-pulled.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\core.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\fixed-width.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\font-awesome.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\icons.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\larger.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\list.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\mixins.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\path.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\rotated-flipped.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\stacked.less" />
+    <Content Include="Package\Vendor\font-awesome1\less\variables.less" />
+    <Content Include="Package\Vendor\font-awesome1\scss\font-awesome.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_animated.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_bordered-pulled.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_core.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_fixed-width.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_icons.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_larger.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_list.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_mixins.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_path.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_rotated-flipped.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_stacked.scss" />
+    <Content Include="Package\Vendor\font-awesome1\scss\_variables.scss" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\bower.json" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\example\browserify\README.md" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\package.json" />
+    <Content Include="Package\Vendor\js\daterangepicker-master\README.md" />
+    <Content Include="Package\Vendor\js\plugins\Tooltipminimal\LICENSE" />
+    <Content Include="Package\Vendor\js\plugins\Tooltipminimal\README.md" />
+    <Content Include="Pages\Connectors\ConnectorFilesFolder.ashx" />
+    <Content Include="Pages\Connectors\ConnectorGetFile.ashx" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="TokenString\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>18749</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SintesisERP</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\build\MSBuild.Microsoft.VisualStudio.Web.targets.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\build\MSBuild.Microsoft.VisualStudio.Web.targets.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

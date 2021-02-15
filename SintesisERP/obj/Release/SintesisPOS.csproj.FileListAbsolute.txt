@@ -1,0 +1,950 @@
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\bin\SintesisPOS.dll.config
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\bin\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\bin\SintesisPOS.pdb
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\obj\Release\SintesisPOS.csprojResolveAssemblyReference.cache
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\obj\Release\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOS\SintesisPOS\obj\Release\SintesisPOS.pdb
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.dll.config
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.pdb
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\SintesisPOS.csprojResolveAssemblyReference.cache
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\SintesisPOS.pdb
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\SintesisPOS.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\DocumentFormat.OpenXml.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\DynamicClassLoader.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\Estructura.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\J_W.Herramientas.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\Licenciamiento.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\SintesisSecurity.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\favicon.ico
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\custom.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Filetemp\Principal.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Images\Principal.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Imgarticulos\Principal.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\CierreCaja.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\DiasFact.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\CajaResolucion.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Anticipos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Cotizacion.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Inveninicial.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Ajustes.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Devolucionentradas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Devolucionfacturas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Facturas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Reporteador.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Anticipos.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Cotizacion.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Inveninicial.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CajaResolucion.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CierreCaja.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\DiasFact.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Ajustes.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Deventrada.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Devfactura.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Facturas.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Reporteador.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\anticipos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cierrecaja.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cotizaciones.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\inveninicial.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\diasfacturables.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cajaresolucion.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\ajustes.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\devfactura.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\deventrada.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\reporteador.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\UserCaja.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Others\js\autoNumeric-1.9.41.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.min4.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\Autocomplete\autocomplet.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\bootstrap-calendar\bootstrap-datetimepicker.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\css\demo.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\css\dropify.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\css\dropify.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\fonts\dropify.svg
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\bootstrap.min3.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\jquery-2.1.4.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\Autocomplete\countries.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\Autocomplete\jquery.autocomplete.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-calendar\bootstrap-datetimepicker.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-calendar\Moment.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-select\bootstrap-select2.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\perfilfemale.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\perfilmale.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\Principal.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\VerticalTransparente.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Others\js\jquery-1.9.1.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\compiled.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\OthersStyle.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\PagesGeneral.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\SitePage.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\animate.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\1.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\2.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\3.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\4.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\5.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\6.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\7.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\congruent_pentagon.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\header-profile-skin-1.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\header-profile-skin-2.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\header-profile-skin-3.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\header-profile.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\otis_redding.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\shattered.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\triangular.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\awesome-bootstrap-checkbox\awesome-bootstrap-checkbox.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\datapicker\datepicker3.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\daterangepicker\daterangepicker-bs3.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropzone\basic.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropzone\dropzone.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\iCheck\custom.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\iCheck\green@2x.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\iCheck\green.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\alpha-horizontal.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\alpha.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\hue-horizontal.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\hue.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\saturation.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sort.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sort_asc.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sort_desc.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sprite-skin-flat.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sprite-skin-flat2.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sprite-skin-nice.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sprite-skin-simple.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\spritemap@2x.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\spritemap.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinFlat.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinNice.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinSimple.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jasny\jasny-bootstrap.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\animated-overlay.gif
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_flat_0_aaaaaa_40x100.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_flat_75_ffffff_40x100.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_55_fbf9ee_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_65_ffffff_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_75_dadada_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_75_e6e6e6_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_95_fef1ec_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_highlight-soft_75_cccccc_1x100.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_222222_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_2e83ff_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_454545_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_888888_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_cd0a0a_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\jquery-ui-1.10.4.custom.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\jquery-ui.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\select2\select2.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\switchery\switchery.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\toastr\toastr.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\style.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\css\font-awesome.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\css\font-awesome.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.svg
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.svg
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\bootstrap.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\bootstrap.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\chartjs-demo.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\dashboard-demo.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\flot-demo.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\flot-demo2.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\morris-demo.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\peity-demo.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\rickshaw-demo.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\sparkline-demo.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\dashboard.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\jquery-2.1.1.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\jquery-ui-1.10.4.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\jquery-ui.custom.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\chartJs\Chart.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\datapicker\bootstrap-datepicker.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\daterangepicker\daterangepicker.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\diff_match_patch\javascript\diff_match_patch.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\diff_match_patch\README.txt
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\dotdotdot\jquery.dotdotdot.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\dropify\js\dropify.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\dropify\js\dropify.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\images\gritter-light.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\images\gritter-long.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\images\gritter.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\images\ie-spacer.gif
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\jquery.gritter.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\jquery.gritter.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\iCheck\icheck.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\ionRangeSlider\ion.rangeSlider.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery-ui-i18n.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-af.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ar-DZ.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ar.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-az.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-be.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-bg.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-bs.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ca.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-cs.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-cy-GB.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-da.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-de.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-el.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-AU.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-GB.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-NZ.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-eo.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-es.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-et.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-eu.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fa.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fi.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fo.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr-CA.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr-CH.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-gl.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-he.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hi.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hr.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hu.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hy.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-id.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-is.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-it.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ja.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ka.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-kk.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-km.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ko.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ky.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lb.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lt.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lv.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-mk.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ml.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ms.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nb.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nl-BE.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nl.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nn.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-no.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pl.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pt-BR.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pt.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-rm.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ro.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ru.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sk.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sl.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sq.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sr-SR.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sr.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sv.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ta.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-th.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-tj.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-tr.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-uk.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-vi.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-CN.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-HK.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-TW.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\animated-overlay.gif
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_flat_75_ffffff_40x100.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_55_fbf9ee_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_75_dadada_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_75_e6e6e6_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_95_fef1ec_1x400.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_highlight-soft_75_cccccc_1x100.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_222222_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_2e83ff_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_454545_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_888888_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_cd0a0a_256x240.png
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\jquery-ui.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\jquery-ui.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\jquery-ui.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\jquery-ui.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\metisMenu\jquery.metisMenu.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\peity\jquery.peity.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\preetyTextDiff\jquery.pretty-text-diff.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\select2\select2.full.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\slimscroll\jquery.slimscroll.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\slimscroll\jquery.slimscroll.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\sparkline\jquery.sparkline.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\switchery\switchery.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\toastr\toastr.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\css\bootstrap-material-design.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\css\compiled.min.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\js\material.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\js\mdb.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Articulos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Bodegas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Categoriafiscal.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Clientes.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Cajas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Contabilidad\CNTResoluciones.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Turnos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Formulacion.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Formaspago.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\TipoArticulo.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Proveedores.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Contabilidad\CNTTerceros.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Conceptos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Contabilidad\CNTCuentas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Cargarinventario.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Traslados.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Pagoproveedor.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Documentocaja.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Facturacion.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Entradas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Activarfecha.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Empresa.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Usuarios.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Parametros.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Others\js\ComplementScript.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\FuncionesGlobales.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\FuncionesGScript.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\GeneralSearch.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\json2.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\JW_SintesisFrame.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\ObjetoXML.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\validador.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CNTCatFiscal.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Articulos.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Empresa.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Cajas.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Clientes.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CNTCuentas.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Conceptos.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\BootGrid\css\jquery.bootgrid.css
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\BootGrid\js\jquery.bootgrid.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\BootGrid\js\jquery.bootgrid.min.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\BootGrid\js\moderniz.2.8.1.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Documentocaja.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Traslados.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Facturacion.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\FormaPago.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Usuarios.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CNTResoluciones.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CNTTerceros.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Proveedores.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Bodegas.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Turnos.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Tipoart.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Entradas.js
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\index.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Permisos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\parametros.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\usuarios.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\traslados.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\pagoproveedor.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\documentocaja.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\facturacion.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\entradas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\empresa.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\resoluciones.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\conceptos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\terceros.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cuentas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\tipoarticulo.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\formulacion.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\bodegas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cajas.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\clientes.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\catfiscal.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\formapago.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\proveedores.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\turnos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\articulos.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\Default.aspx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.css.map
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.js.map
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Masters\MasterPages.Master
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\Connector.ashx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Masters\SintesisMaster.Master
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.css.map
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.min.css.map
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.eot
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.ttf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.woff
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.woff2
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\FontAwesome.otf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\animated.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\bordered-pulled.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\core.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\fixed-width.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\font-awesome.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\icons.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\larger.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\list.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\mixins.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\path.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\rotated-flipped.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\stacked.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\variables.less
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\font-awesome.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_animated.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_bordered-pulled.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_core.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_fixed-width.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_icons.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_larger.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_list.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_mixins.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_path.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_rotated-flipped.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_stacked.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_variables.scss
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.eot
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.ttf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.woff
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.woff2
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\diff_match_patch\COPYING
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\locales\en.json
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\locales\es.json
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\fa\fontawesome-webfont.woff2
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Bold.eot
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Bold.ttf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Bold.woff
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Bold.woff2
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Light.eot
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Light.ttf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Light.woff
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Light.woff2
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Medium.eot
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Medium.ttf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Medium.woff
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Medium.woff2
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Regular.eot
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Regular.ttf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Regular.woff
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Regular.woff2
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Thin.eot
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Thin.ttf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Thin.woff
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Thin.woff2
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\fonts\dropify.eot
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\fonts\dropify.ttf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\fonts\dropify.woff
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\ConnectorList.ashx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\ConnectorUpload.ashx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Masters\SintesisLayout.Master
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\ConnectorReport.ashx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\DocumentoCaja.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ExistenciaGeneral.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\FacturaTirilla.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\InformePlantilla.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVEntrada.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVTraslado.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\Generados\pdfblank.pdf
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ReteFuente.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ReteIca.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ReteIva.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\CuadreCaja.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVAjuste.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\VentasDiarias.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVDevFactura.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ArtFacturados.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\IvaDescontable.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\IvaGenerado.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\RentabilidadArticulo.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\CotizacionTirilla.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVAnticipo.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\CuadreCajaAdmin.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\ConnectorExcel.ashx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\EntradasDiarias.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\VentasDiariasTotal.frx
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\FastReport.Bars.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\FastReport.DLL
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\FastReport.Web.dll
+D:\SINTESIS 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Web.config
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.dll.config
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\bin\SintesisPOS.pdb
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\bin\ZeusImpKey.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\SintesisPOS.csprojResolveAssemblyReference.cache
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\SintesisPOS.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\SintesisPOS.pdb
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\SintesisPOS.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\DocumentFormat.OpenXml.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\DynamicClassLoader.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\Estructura.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\J_W.Herramientas.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\Licenciamiento.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\SintesisSecurity.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\favicon.ico
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\custom.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Filetemp\Principal.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Images\Principal.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Imgarticulos\Principal.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\chart-js\Chart.bundle.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\chart-js\utils.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\CierreCaja.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\DiasFact.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\CajaResolucion.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Devolucionanticipos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Anticipos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Cotizacion.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Conversionarticulos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Inveninicial.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Ajustes.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Devolucionentradas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Devolucionfacturas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Facturas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Reporteadorgrafic.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Reporteador.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Devanticipos.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Anticipos.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Cotizacion.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\ConversionArticulos.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Inveninicial.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CajaResolucion.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CierreCaja.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\DiasFact.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Ajustes.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Deventrada.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Devfactura.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Facturas.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\ReporteadorGrafic.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Reporteador.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\devanticipos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\anticipos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cierrecaja.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cotizaciones.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\conversionarticulos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\inveninicial.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\diasfacturables.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cajaresolucion.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\ajustes.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\devfactura.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\deventrada.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\reporteadorgrafic.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\reporteador.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\UserCaja.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Others\js\autoNumeric-1.9.41.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.min4.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\Autocomplete\autocomplet.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\bootstrap-calendar\bootstrap-datetimepicker.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\css\demo.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\css\dropify.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\css\dropify.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\fonts\dropify.svg
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\bootstrap.min3.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\jquery-2.1.4.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\Autocomplete\countries.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\Autocomplete\jquery.autocomplete.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-calendar\bootstrap-datetimepicker.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-calendar\Moment.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-select\bootstrap-select2.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\perfilfemale.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\perfilmale.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\Principal.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\images\VerticalTransparente.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Others\js\jquery-1.9.1.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\compiled.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\OthersStyle.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\PagesGeneral.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\styles\SitePage.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\animate.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\1.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\2.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\3.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\4.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\5.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\6.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\7.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\congruent_pentagon.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\header-profile-skin-1.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\header-profile-skin-2.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\header-profile-skin-3.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\header-profile.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\otis_redding.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\shattered.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\patterns\triangular.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\awesome-bootstrap-checkbox\awesome-bootstrap-checkbox.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\datapicker\datepicker3.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\daterangepicker\daterangepicker-bs3.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropzone\basic.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropzone\dropzone.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\iCheck\custom.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\iCheck\green@2x.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\iCheck\green.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\alpha-horizontal.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\alpha.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\hue-horizontal.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\hue.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\bootstrap-colorpicker\saturation.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sort.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sort_asc.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sort_desc.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sprite-skin-flat.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sprite-skin-flat2.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sprite-skin-nice.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\sprite-skin-simple.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\spritemap@2x.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\images\spritemap.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinFlat.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinNice.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\ionRangeSlider\ion.rangeSlider.skinSimple.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jasny\jasny-bootstrap.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\animated-overlay.gif
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_flat_0_aaaaaa_40x100.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_flat_75_ffffff_40x100.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_55_fbf9ee_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_65_ffffff_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_75_dadada_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_75_e6e6e6_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_glass_95_fef1ec_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-bg_highlight-soft_75_cccccc_1x100.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_222222_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_2e83ff_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_454545_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_888888_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\images\ui-icons_cd0a0a_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\jquery-ui-1.10.4.custom.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\jQueryUI\jquery-ui.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\select2\select2.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\switchery\switchery.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\toastr\toastr.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\style.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\css\font-awesome.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\css\font-awesome.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.svg
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.svg
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\bootstrap.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\bootstrap.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\dashboard-demo.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\flot-demo.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\flot-demo2.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\morris-demo.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\peity-demo.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\rickshaw-demo.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\demo\sparkline-demo.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\dashboard.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\jquery-2.1.1.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\jquery-ui-1.10.4.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\jquery-ui.custom.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\chartJs\Chart.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\datapicker\bootstrap-datepicker.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\daterangepicker\daterangepicker.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\diff_match_patch\javascript\diff_match_patch.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\diff_match_patch\README.txt
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\dotdotdot\jquery.dotdotdot.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\dropify\js\dropify.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\dropify\js\dropify.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\images\gritter-light.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\images\gritter-long.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\images\gritter.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\images\ie-spacer.gif
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\jquery.gritter.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\gritter\jquery.gritter.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\iCheck\icheck.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\ionRangeSlider\ion.rangeSlider.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery-ui-i18n.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-af.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ar-DZ.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ar.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-az.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-be.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-bg.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-bs.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ca.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-cs.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-cy-GB.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-da.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-de.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-el.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-AU.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-GB.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-en-NZ.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-eo.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-es.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-et.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-eu.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fa.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fi.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fo.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr-CA.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr-CH.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-fr.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-gl.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-he.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hi.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hr.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hu.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-hy.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-id.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-is.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-it.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ja.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ka.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-kk.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-km.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ko.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ky.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lb.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lt.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-lv.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-mk.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ml.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ms.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nb.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nl-BE.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nl.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-nn.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-no.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pl.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pt-BR.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-pt.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-rm.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ro.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ru.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sk.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sl.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sq.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sr-SR.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sr.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-sv.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-ta.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-th.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-tj.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-tr.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-uk.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-vi.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-CN.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-HK.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\i18n\jquery.ui.datepicker-zh-TW.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\animated-overlay.gif
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_flat_75_ffffff_40x100.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_55_fbf9ee_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_75_dadada_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_75_e6e6e6_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_glass_95_fef1ec_1x400.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-bg_highlight-soft_75_cccccc_1x100.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_222222_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_2e83ff_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_454545_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_888888_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\images\ui-icons_cd0a0a_256x240.png
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\jquery-ui.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\jquery-ui.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\jquery-ui.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\jquery-ui\jquery-ui.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\metisMenu\jquery.metisMenu.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\peity\jquery.peity.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\preetyTextDiff\jquery.pretty-text-diff.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\select2\select2.full.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\slimscroll\jquery.slimscroll.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\slimscroll\jquery.slimscroll.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\sparkline\jquery.sparkline.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\switchery\switchery.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\toastr\toastr.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\css\bootstrap-material-design.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\css\compiled.min.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\js\material.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\js\mdb.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Articulos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Bodegas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Categoriafiscal.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Clientes.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Cajas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Contabilidad\CNTResoluciones.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Turnos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Formulacion.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Formaspago.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\TipoArticulo.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Proveedores.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Contabilidad\CNTTerceros.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Configuracion\Conceptos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Contabilidad\CNTCuentas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Cargarinventario.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Traslados.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Pagoproveedor.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Documentocaja.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Facturacion.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Operativas\Entradas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Activarfecha.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Empresa.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Usuarios.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Parametros.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Others\js\ComplementScript.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\FuncionesGlobales.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\FuncionesGScript.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\GeneralSearch.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\json2.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\JW_SintesisFrame.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\ObjetoXML.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptGeneral\validador.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CNTCatFiscal.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Articulos.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Empresa.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Cajas.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Clientes.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CNTCuentas.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Conceptos.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\BootGrid\css\jquery.bootgrid.css
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\BootGrid\js\jquery.bootgrid.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\BootGrid\js\jquery.bootgrid.min.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Contents\BootGrid\js\moderniz.2.8.1.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Documentocaja.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Traslados.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Facturacion.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\FormaPago.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Usuarios.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CNTResoluciones.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\CNTTerceros.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Proveedores.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Bodegas.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Turnos.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Tipoart.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\ScriptsPage\Entradas.js
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\index.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Parametrizacion\Permisos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\parametros.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\usuarios.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\traslados.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\pagoproveedor.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\documentocaja.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\facturacion.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\entradas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\empresa.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\resoluciones.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\conceptos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\terceros.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cuentas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\tipoarticulo.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\formulacion.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\bodegas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\cajas.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\clientes.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\catfiscal.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\formapago.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\proveedores.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\turnos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\articulos.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Systems\Default.aspx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\bootstrap-select\bootstrap-select.css.map
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\bootstrap-select\bootstrap-select.js.map
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Components\Masters\MasterPages.Master
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\Connector.ashx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Masters\SintesisMaster.Master
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.css.map
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\bootstrap.min.css.map
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.eot
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.ttf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.woff
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\fontawesome-webfont.woff2
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\fonts\FontAwesome.otf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\animated.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\bordered-pulled.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\core.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\fixed-width.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\font-awesome.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\icons.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\larger.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\list.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\mixins.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\path.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\rotated-flipped.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\stacked.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\less\variables.less
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\font-awesome.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_animated.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_bordered-pulled.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_core.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_fixed-width.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_icons.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_larger.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_list.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_mixins.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_path.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_rotated-flipped.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_stacked.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\font-awesome\scss\_variables.scss
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.eot
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.ttf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.woff
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\fonts\glyphicons-halflings-regular.woff2
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\js\plugins\diff_match_patch\COPYING
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\locales\en.json
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\locales\es.json
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\fa\fontawesome-webfont.woff2
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Bold.eot
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Bold.ttf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Bold.woff
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Bold.woff2
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Light.eot
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Light.ttf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Light.woff
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Light.woff2
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Medium.eot
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Medium.ttf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Medium.woff
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Medium.woff2
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Regular.eot
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Regular.ttf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Regular.woff
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Regular.woff2
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Thin.eot
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Thin.ttf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Thin.woff
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\material\font\roboto\Roboto-Thin.woff2
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\fonts\dropify.eot
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\fonts\dropify.ttf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Package\Vendor\css\plugins\dropify\fonts\dropify.woff
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\ConnectorList.ashx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\ConnectorUpload.ashx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Masters\SintesisLayout.Master
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\ConnectorReport.ashx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\DocumentoCaja.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ExistenciaGeneral.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\FacturaTirilla.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\InformePlantilla.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVEntrada.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVTraslado.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\Generados\pdfblank.pdf
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ReteFuente.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ReteIca.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ReteIva.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\CuadreCaja.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVAjuste.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\VentasDiarias.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVDevFactura.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\ArtFacturados.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\IvaDescontable.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\IvaGenerado.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\RentabilidadArticulo.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\CotizacionTirilla.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\MOVAnticipo.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\CuadreCajaAdmin.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Pages\Connectors\ConnectorExcel.ashx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\EntradasDiarias.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Informes\VentasDiariasTotal.frx
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\FastReport.Bars.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\FastReport.DLL
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\FastReport.Web.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\bin\ZeusImpKey.dll
+G:\Desarrollo\Sintesis Tecnologia\POS\Version 2.0\SintesisPOSZ\SintesisPOS\obj\Release\Package\PackageTmp\Web.config

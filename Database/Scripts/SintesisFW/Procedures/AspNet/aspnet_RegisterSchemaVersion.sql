@@ -1,0 +1,31 @@
+--liquibase formatted sql
+--changeset ,jtous:1 dbms:mssql runOnChange:true endDelimiter:GO stripComments:false
+If exists (select 1 from dbo.sysobjects where id = object_id(N'[dbo].[aspnet_RegisterSchemaVersion]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+Drop Procedure [dbo].[aspnet_RegisterSchemaVersion]
+GO
+CREATE PROCEDURE [dbo].[aspnet_RegisterSchemaVersion]
+    @Feature                   nvarchar(128),
+    @CompatibleSchemaVersion   nvarchar(128),
+    @IsCurrentVersion          bit,
+    @RemoveIncompatibleSchema  bit
+WITH ENCRYPTION
+AS
+BEGIN
+    IF( @RemoveIncompatibleSchema = 1 )
+    BEGIN
+        DELETE FROM dbo.aspnet_SchemaVersions WHERE Feature = LOWER( @Feature )
+    END
+    ELSE
+    BEGIN
+        IF( @IsCurrentVersion = 1 )
+        BEGIN
+            UPDATE dbo.aspnet_SchemaVersions
+            SET IsCurrentVersion = 0
+            WHERE Feature = LOWER( @Feature )
+        END
+    END
+
+    INSERT  dbo.aspnet_SchemaVersions( Feature, CompatibleSchemaVersion, IsCurrentVersion )
+    VALUES( LOWER( @Feature ), @CompatibleSchemaVersion, @IsCurrentVersion )
+END
+GO

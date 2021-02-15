@@ -1,0 +1,420 @@
+﻿body
+{
+    color: #73879C;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.471;
+}
+
+/*.btn.dropdown-toggle.btn-default
+{
+    height: 28px !important;
+    padding: 3px 5px !important;
+    font-size: 13px !important;
+}
+
+.bootstrap-select
+{
+    height: 28px !important;
+}*/
+
+
+
+
+/* table info */
+table.info a:link
+{
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table.info a:visited
+{
+    color: #999999;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table.info a:active, table a:hover
+{
+    color: #bd5a35;
+    text-decoration: underline;
+}
+
+table.info
+{
+    background: #eaebec none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #d1d1d1;
+    color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 2px 0;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+    table.info tr:first-child
+    {
+        background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top, #ededed, #ebebeb) repeat scroll 0 0;
+        border-bottom: 1px solid #e0e0e0;
+        border-top: 1px solid #fafafa;
+        padding: 4px;
+        text-align: center;
+        font-size: 12px !important;
+    }
+
+    table.info th.total
+    {
+        text-align: right;
+    }
+
+    table.info th
+    {
+        border-right: 1px solid #e0e0e0;
+        border-left: 1px solid #e0e0e0;
+        padding: 5px !important;
+        text-align: left;
+    }
+
+    table.info tr:first-child th:first-child
+    {
+        border-top-left-radius: 3px;
+    }
+
+    table.info tr:first-child th:last-child
+    {
+        border-top-right-radius: 3px;
+    }
+
+    table.info tr
+    {
+        padding-left: 20px;
+        /*text-align: center;*/
+    }
+
+    table.info td
+    {
+        background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top, #fbfbfb, #fafafa) repeat scroll 0 0;
+        border-bottom: 1px solid #e0e0e0;
+        border-left: 1px solid #e0e0e0;
+        border-top: 1px solid #ffffff;
+        padding: 3px 5px 3px 5px !important;
+        /*text-align: right;*/
+    }
+
+    table.info tr.even td
+    {
+        background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top, #f8f8f8, #f6f6f6) repeat scroll 0 0;
+    }
+
+    table.info tr:last-child td
+    {
+        border-bottom: 0 none;
+    }
+
+        table.info tr:last-child td:first-child
+        {
+            border-bottom-left-radius: 3px;
+        }
+
+        table.info tr:last-child td:last-child
+        {
+            border-bottom-right-radius: 3px;
+        }
+
+    table.info tr:hover td
+    {
+        background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top, #f2f2f2, #f0f0f0) repeat scroll 0 0;
+    }
+
+    table.info th, table.info td
+    {
+        color: #333 !important;
+    }
+
+        table.info a i, table.info td i
+        {
+            font-size: 16px !important;
+        }
+/*.container {
+    width: 100% !important; 
+    padding-right: 0  !important;
+    padding-left: 0 !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important
+}*/
+
+.btn-circle
+{
+    border-radius: 47% !important;
+    color: #fff !important;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.btn-success
+{
+    background: #26B99A !important;
+    border: 1px solid #169F85 !important;
+}
+
+/*.breadcrumbs
+{
+    margin-bottom: 2px !important;
+}
+
+.snPadding
+{
+    padding: 3px 3px !important;
+    margin-bottom: 5px !important;
+}
+
+.sidebar-footer > a
+{
+    color: #fff !important;
+    font-size: 12px;
+}
+
+span.legend
+{
+    border-bottom: dotted 1px #1ABB9C;
+    border-radius: 0 !important;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.toolbar
+{
+    background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 38%, rgba(223,223,223,1) 67%, rgba(222,222,222,1) 72%, rgba(212,212,212,1) 96%, rgba(255,255,255,1) 100%);
+}
+
+.btn-sin
+{
+    background: #374C6C;
+}
+
+.btn-sin:hover
+{
+    background: #54636B;
+}
+
+p.title
+{
+    font-size: 150%;
+    font-weight: bold;
+    margin-top: 3px;
+    color: #153341;
+}
+
+.inpuchek
+{
+    margin-top: 3px;
+    margin-bottom: 4px !important;
+}
+
+.form-control
+{
+    padding: 0;
+    height: 37px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-color: rgba(12, 12, 12, 0.12);
+    background: transparent;
+    color: #0c0c0c;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}*/
+
+.text-center
+{
+    text-align: center !important;
+}
+
+.text-danger
+{
+    color: red;
+}
+
+.text-success
+{
+    color: green;
+}
+
+.text-info
+{
+    color: blue !important;
+}
+
+.paginator a
+{
+    border: solid 1px black !important;
+}
+
+input.form-control
+{
+    padding: 0px !important;
+    font-size: 14px !important;
+}
+
+
+button.dropdown-toggle
+{
+    padding: 0 0 0 0 !important;
+    height: 28px !important;
+}
+
+.dropdown-menu li.active a span.text
+{
+    color: #fff !important;
+}
+
+.bs-searchbox input.form-control
+{
+    height: 24px !important;
+}
+
+.input-group-addon
+{
+    padding: 0 !important;
+}
+
+.btnsearch
+{
+    margin: 0 !important;
+    padding: 10px !important;
+}
+
+button.dropdown-toggle span.filter-option
+{
+    padding-top: 5px !important;
+}
+
+.bootstrap-select .dropdown-toggle
+{
+    color: #555 !important;
+    box-shadow: 0 !important;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+    .bootstrap-select .dropdown-toggle:focus
+    {
+        outline: none !important;
+    }
+
+.dropdown-menu li:focus, .dropdown-menu li:hover
+{
+    background: black !important;
+}
+
+.form-group .bootstrap-select
+{
+    padding-top: 5px !important;
+    box-shadow: none !important;
+}
+
+.modal-header
+{
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+button.dropdown-toggle:hover, button.dropdown-toggle:focus, button.dropdown-toggle:active, .open > .dropdown-toggle.btn-default
+{
+    background: #337ab7 !important;
+    color: #fff !important;
+    outline: none !important;
+}
+
+
+input, textarea
+{
+    color: #555 !important;
+}
+
+label.active
+{
+    color: #757575 !important;
+    opacity: 0.8 !important;
+    font-size:14px !important;
+}
+
+    label.active .cr
+    { font-size:  1.5em !important;
+    }
+
+.goTop
+{
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 10000;
+    font-size: 250% !important;
+    opacity: 0.5;
+}
+
+    .goTop:hover
+    {
+        opacity: 1;
+    }
+
+.masterlist
+{
+    background: #ADBABD !important;
+}
+
+.icontable2
+{
+    width: 60px !important;
+    max-width: 60px !important;
+}
+
+.icontable
+{
+    width: 50px !important;
+    max-width: 50px !important;
+}
+
+.inputsearch
+{
+    background: #fff !important;
+    font-size: 13px !important;
+}
+
+.input-group
+{
+    margin-bottom: 0 !important;
+}
+
+
+
+.btn-pag-option
+{
+    cursor: pointer !important;
+}
+
+
+a.action
+{
+    cursor: pointer !important;
+}
+
+.ulselect
+{
+    pointer-events: none;
+    font-weight: bold !important;
+}
+
+.title-master
+{
+    font-size: 30px !important;
+}

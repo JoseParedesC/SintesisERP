@@ -1,0 +1,372 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SintesisLayout.Master.cs" Inherits="SintesisERP.Masters.SintesisLayout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title runat="server"  id="titlemaster">Sintesis ERP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="../Components/Contents/images/favicon.ico" />
+    <link href="../Package/Vendor/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Package/Vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="../Package/Vendor/css/animate.css" rel="stylesheet" />
+    <link href="../Package/Vendor/css/plugins/iCheck/custom.css" rel="stylesheet" />
+    <link href="../Package/Vendor/material/css/bootstrap-material-design.css" rel="stylesheet" />
+    <!-- Toastr style -->
+    <link href="../Package/Vendor/css/plugins/toastr/toastr.min.css" rel="stylesheet" />
+
+    <!-- Gritter -->
+    <link href="../Package/Vendor/js/plugins/gritter/jquery.gritter.css" rel="stylesheet" />
+	
+    <link href="../Package/Vendor/css/style2.css" rel="stylesheet" />
+    <link href="../Package/Vendor/css/style.css" rel="stylesheet" />
+    <link href="../Package/Vendor/css/plugins/bootstrap-select/bootstrap-select.css" rel="stylesheet" />
+    <link href="../Package/Vendor/css/plugins/bootstrap-calendar/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="../Package/Vendor/js/daterangepicker-master/example/daterangepicker.css" rel="stylesheet" />
+    <link href="../Components/Contents/BootGrid/css/jquery.bootgrid.css" rel="stylesheet" />
+    <link href="../Package/Vendor/css/plugins/Tooltipminimal/jquery.minimalTips.css" rel="stylesheet" />    
+    <link href="../Package/Vendor/css/plugins/Autocomplete/autocomplet.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Package/Vendor/js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/jquery-ui-1.10.4.min.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/bootstrap.min.js"></script>
+    <link href="../Package/Vendor/css/plugins/dropify/css/dropify.min.css" rel="stylesheet" />
+    <style>
+        .top-navigation.body-small .navbar-brand.waves-effect.waves-light {
+            margin-left: 10px !important;
+        }
+
+
+        .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+            /*background: #293846;*/
+        }
+
+
+        .top-navigation.body-small nav .navbar-collapse .dropdown-menu {
+            background: #fff !important;
+            padding-top: 1px !important;
+        }
+
+            .top-navigation.body-small nav .navbar-collapse .dropdown-menu li > a {
+                color: #293846 !important;
+                border-bottom: solid 1px #293846 !important;
+            }
+
+                .top-navigation.body-small nav .navbar-collapse .dropdown-menu li > a:hover {
+                    color: #fff !important;
+                }
+
+
+        .dropdown-menu li a {
+            padding: 6px 8px !important;
+        }
+
+        .dropdown-menu .divider {
+            margin: 0px;
+        }
+
+        .dropdown-menu li:focus, .dropdown-menu li:hover a {
+            background: #d0e1ec !important;
+            opacity: 1 !important;
+            font-weight: bold !important;
+        }
+
+        .top-navigation .navbar-nav .dropdown-menu {
+            box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+        }
+
+        .dropdown a.dropdown-toggle {
+            padding: 5px 8px !important;
+        }
+
+        .dropdown-messages-box, .dropdown-menu.dropdown-alerts div {
+            /*color: #fff !important;*/
+        }
+
+        .nav.navbar-top-links.navbar-right {
+            position: absolute !important;
+            right: 1px !important;
+            top: 0;
+        }
+
+        .top-navigation.body-small .nav.navbar-nav {
+            margin: 7.5px 0px !important;
+        }
+
+        .wrapper {
+            padding: 0 !important;
+        }
+
+        span.nav-label {
+            font-size: 10px !important;
+            display: block !important;
+        }
+
+        .top-navigation .nav > li > a {
+            text-align: center;
+        }
+
+        .fa-21x {
+            font-size: 2.1em !important;
+        }
+
+        .navbar-header .logo img {
+            width: 60px;
+            height: 55px;
+            margin: 0 auto;
+            display: block;
+            margin-left: 30px;
+        }
+
+        .mini .logo {
+            width: 120px !important;
+        }
+
+        .mini .logo img{
+            height:45px !important;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .dropdown-toggle.count-info img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+
+        .navbar-collapse.collapse {
+            box-shadow: 0 1px 15px rgba(0,0,0,.04), 0 1px 12px rgba(0,0,0,.04);
+            padding-top:8px;
+        }
+
+        .mini .nav.navbar-nav .dropdown-menu {
+            position: fixed;
+            margin-left: 145px;
+            top: 105px;
+        }
+
+        .mini .navbar-collapse.collapse.in {
+            width: 155px;
+        }
+
+        .navbar-toggle {
+            background-color: #fff;
+            color: #0074bcf0;
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body class="top-navigation">
+
+    <div id="wrapper">
+        <%-- <div class="page-wrapper" class="gray-bg">
+            ORIGINAL--%>
+        <div id="page-wrapper2" class="gray-bg">
+            <div class="row white-bg">
+                <nav class="navbar navbar-static-top" role="navigation" style="position: fixed; width: 101.5%;">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button" style="float: left; left: 20px;">
+                            <i class="fa fa-reorder"></i>
+                        </button>
+                        <div class="logo">
+                            <img src="../Images/SINTESIS_CLOUD_LOGO.png" alt="">
+                        </div>
+                        <a href="#" class="navbar-brand" style="display: none">
+                            <asp:Literal runat="server" ID="UserName"></asp:Literal>
+                        </a>
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                    <div class="btn btn-circle" id="alert2">
+                                        <span class="fa fa-bell" style="color: #6c91abe0; font-size: 1.8em !important;"></span>
+                                    </div>
+                                    <div class="btn btn-circle" id="alert" style="top: 0; right: 1.5px;">
+                                        <asp:Literal ID="count" runat="server" Text=""></asp:Literal>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-alerts" style="left: -100px !important;">
+                                    <asp:Literal ID="hiddenalert" runat="server" Text=""></asp:Literal>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                    <img src="../Images/user.jpg" id="userDropdown">
+                                </a>
+                                <ul class="dropdown-menu dropdown-alerts ulconfigmaster" style="left: -30px !important; margin-right: 40px !important;">
+                                    <li>
+                                        <a href="#" id="changepass">
+                                            <div>
+                                                <i class="fa fa-key fa-fw"></i>&nbsp;Cambiar Password
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="../index.aspx">
+                                            <div>
+                                                <i class="fa fa-sign-out"></i>&nbsp;Salir
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="default.aspx" class="dropdown-toggle" data-ref="DEFAULT.ASPX" style="padding-top: 2px !important;">
+                                    <i class="fa fa-home fa-23x"></i><span class="nav-label">Inicio</span></a>
+                            </li>
+                            <asp:Literal ID="lblmenus" runat="server" Text=""></asp:Literal>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+            <div class="wrapper wrapper-content" style="padding-top: 20px; margin-top: 65px !important; width: 100%; padding-bottom: 10px !important;">
+                <div class="container-fluid">
+                    <div class="separator-breadcrumb border-top"></div>
+                    <%--<form runat="server" action="#">--%>
+                    <asp:ContentPlaceHolder ID="ContentPage" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <%--</form>--%>
+                </div>
+            </div>
+            <div class="footer" style="position: fixed">
+                <div>
+                    <strong>Copyright</strong> Sintesis Cloud 2020
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="customizer" class="customizer">
+        <div class="handle"><i class="fa fa-gear fa-spin"></i></div>
+        <section class="ps-container customizer-body ps rtl-ps-none ps--active-y">
+            <div>
+                <div id="headingOne" class="card-header">
+                    <p class="mb-0">Maestros de Configuración</p>
+                </div>
+                <div class="container-body">
+                    <div class="card-body scrolling">
+                        <div class="layouts">
+                            <asp:Literal ID="LiteralMasters" runat="server" Text=""></asp:Literal>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+																											   
+																				 
+									   
+																  
+									 
+																			 
+										  
+																															 
+																													  
+																	 
+											 
+								  
+							  
+														 
+																																					   
+							  
+						  
+					  
+				  
+			  
+		  
+			  
+    <div class="modal fade" id="ModalSearch" tabindex="-1" data-focus-on="input:first" style="display: none;">
+        <div class="modal-dialog modal-xs" role="document" style="z-index: 2550">
+            <input type="hidden" id="generalsearch" value="" />
+            <input type="hidden" id="generalselect" value="" />
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title" id="titlesearch">Buscador</h3>
+                </div>
+                <div class="modal-body" style="padding-top: 5px;">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0; margin-bottom: 5px;">
+                            <div class="table-responsive" style="max-height: 300px !important;">
+                                <table class="table table-striped jambo_table" id="GridGeneralSearch">
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <div class="modal fade" id="reportviewer" tabindex="-1" data-focus-on="input:first" style="display: none;">
+        <div class="modal-dialog modal-lg" role="document" style="z-index: 2550">
+            <div class="modal-content">
+                <div class="modal-body" style="padding-top: 5px;">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                            <div id="pdf">
+                                <div style="display: none;" id="loadingDiv">
+                                    <div class="loader">Loading...</div>
+                                </div>
+                                <iframe id="iframeprint" src="" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12">
+                            <button type="button" data-id="0" class="pull-right btn btn-danger" data-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/bootstrap-select/bootstrap-select.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/material/js/material.js"></script>
+    <script type="text/javascript" src="../Package/Others/js/autoNumeric-1.9.41.js"></script>
+
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/bootstrap-calendar/Moment.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/bootstrap-calendar/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/daterangepicker-master/example/daterangepicker.js"></script>
+
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/iCheck/icheck.min.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/peity/jquery.peity.min.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/demo/peity-demo.js"></script>
+
+
+    <script type="text/javascript" src="../Package/Vendor/js/dashboard.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/gritter/jquery.gritter.min.js"></script>
+    <!-- Toastr -->
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="../Components/Contents/BootGrid/js/jquery.bootgrid.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/Tooltipminimal/jquery.minimalTips.js"></script>
+
+    <script type="text/javascript" src="../Package/Others/js/ComplementScript.js"></script>
+    <script type="text/javascript" src="../Pages/ScriptGeneral/GeneralSearch.js?1"></script>
+    <script type="text/javascript" src="../Pages/ScriptGeneral/FuncionesGlobales.js?1"></script>
+    <script type="text/javascript" src="../Pages/ScriptGeneral/JW_SintesisFrame.js?1"></script>    
+	<script type="text/javascript" src="../Package/Vendor/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="../Package/Vendor/js/plugins/Autocomplete/jquery.autocomplete.js"></script>
+	<script type="text/javascript" src="../Package/Vendor/js/plugins/dropify/js/dropify.js"></script>
+    <script type="text/javascript">
+        window.NameUser = "<%=sNameUser%>";
+        $(function () {
+            //$.material.init();
+            $.minimalTips();
+        });
+    </script>
+</body>
+</html>

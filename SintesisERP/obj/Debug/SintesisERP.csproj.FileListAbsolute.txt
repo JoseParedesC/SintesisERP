@@ -1,0 +1,39 @@
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll.config
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\bin\SintesisERP.pdb
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.csprojAssemblyReference.cache
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.csproj.CoreCompileInputs.cache
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.csproj.CopyComplete
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.dll
+C:\Users\joset\Desktop\jesid\Proyecto Cloud 20200508\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.pdb
+F:\Sintesis Nuevo\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll.config
+F:\Sintesis Nuevo\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll
+F:\Sintesis Nuevo\SintesisERP\SintesisContabilidad\bin\SintesisERP.pdb
+F:\Sintesis Nuevo\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.csproj.CopyComplete
+F:\Sintesis Nuevo\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.dll
+F:\Sintesis Nuevo\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.pdb
+F:\Sintesis Nuevo\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.csprojAssemblyReference.cache
+C:\Users\joset\Documents\Nuevo sitio ERP\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.csprojAssemblyReference.cache
+C:\Users\joset\Documents\Nuevo sitio ERP\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.csproj.CoreCompileInputs.cache
+C:\Users\joset\Documents\Nuevo sitio ERP\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.dll
+C:\Users\joset\Documents\Nuevo sitio ERP\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.pdb
+C:\Users\joset\Documents\Nuevo sitio ERP\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll.config
+C:\Users\joset\Documents\Nuevo sitio ERP\SintesisERP\SintesisContabilidad\bin\SintesisERP.dll
+C:\Users\joset\Documents\Nuevo sitio ERP\SintesisERP\SintesisContabilidad\bin\SintesisERP.pdb
+C:\Users\joset\Documents\Nuevo sitio ERP\SintesisERP\SintesisContabilidad\obj\Debug\SintesisERP.csproj.CopyComplete
+D:\Desarrollo\OneDrive\Sintesis Tecnologia\SintesisERP\Version1.0\SintesisERP\SintesisERP\bin\SintesisERP.dll.config
+D:\Desarrollo\OneDrive\Sintesis Tecnologia\SintesisERP\Version1.0\SintesisERP\SintesisERP\bin\SintesisERP.dll
+D:\Desarrollo\OneDrive\Sintesis Tecnologia\SintesisERP\Version1.0\SintesisERP\SintesisERP\bin\SintesisERP.pdb
+D:\Desarrollo\OneDrive\Sintesis Tecnologia\SintesisERP\Version1.0\SintesisERP\SintesisERP\obj\Debug\SintesisERP.csprojAssemblyReference.cache
+D:\Desarrollo\OneDrive\Sintesis Tecnologia\SintesisERP\Version1.0\SintesisERP\SintesisERP\obj\Debug\SintesisERP.csproj.CoreCompileInputs.cache
+D:\Desarrollo\OneDrive\Sintesis Tecnologia\SintesisERP\Version1.0\SintesisERP\SintesisERP\obj\Debug\SintesisERP.csproj.CopyComplete
+D:\Desarrollo\OneDrive\Sintesis Tecnologia\SintesisERP\Version1.0\SintesisERP\SintesisERP\obj\Debug\SintesisERP.dll
+D:\Desarrollo\OneDrive\Sintesis Tecnologia\SintesisERP\Version1.0\SintesisERP\SintesisERP\obj\Debug\SintesisERP.pdb
+D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\obj\Debug\SintesisERP.csprojAssemblyReference.cache
+D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\obj\Debug\SintesisERP.csproj.CoreCompileInputs.cache
+D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\obj\Debug\SintesisERP.dll
+D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\obj\Debug\SintesisERP.pdb
+D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\bin\SintesisERP.dll.config
+D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\bin\SintesisERP.dll
+D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\bin\SintesisERP.pdb
+D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\obj\Debug\SintesisERP.csproj.CopyComplete

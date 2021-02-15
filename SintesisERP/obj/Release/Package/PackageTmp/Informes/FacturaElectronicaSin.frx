@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" StartReportEvent="_StartReport" ReportInfo.Name="Zeus®MarcaRegistrada" ReportInfo.Created="07/17/2013 11:29:42" ReportInfo.Modified="02/04/2021 16:35:23" ReportInfo.CreatorVersion="2017.4.6.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+    
+    private void Picture1_AfterData(object sender, EventArgs e)
+    {                    
+      Picture2.ImageLocation = ((String)Report.GetColumnValue(&quot;cabeceraCompany.urlimg&quot;));
+    }  
+    
+    private void Garantia_StartPage(object sender, EventArgs e)
+    {
+      string a = Report.GetColumnValue(&quot;DataInfo.modalidad&quot;).ToString().ToUpper();
+                                    
+      if(a.Equals(&quot;A CREDITO&quot;)){
+        Subreport1.Visible = false;
+        Table1.Visible = true;         
+      }
+      else{                              
+        Subreport1.Visible = true;
+        Table1.Visible = false;
+      }
+    }
+  }
+} </ScriptText>
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqN3m3PA5vTWXdgYxRusNWXH0P5myR1WW+esAlhBSMeff3iOWHUexZln4Jn9vpJMdDoSOTPk7DcQEPBdcWx/mGSkrYV+aRLiR6AXgZ6svgJds7njwf08u+/P3YKk40P1g/6a1r6GW1rdsQApLOlud566VQ3+VaOiYGNIOnHXzjlFslyEkjUqGeCT3oOVdof2zybmr6bHRUj+KGCG+28uJf/LlH+2D7OWXbpehXFklUD3U5gFr7AQZEeRjR5WV9SU/p" CommandTimeout="0">
+      <TableDataSource Name="Table11" Alias="cabeceraCompany" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  Exec [Dbo].[ST_Rpt_CabeceraCompania] @id_user = @id_user ">
+        <Column Name="Nombre" DataType="System.String"/>
+        <Column Name="Nit" DataType="System.String"/>
+        <Column Name="Direccion" DataType="System.String"/>
+        <Column Name="Telefono" DataType="System.String"/>
+        <Column Name="Ciudad" DataType="System.String"/>
+        <Column Name="usuario" DataType="System.String"/>
+        <Column Name="urlimg" DataType="System.String"/>
+        <CommandParameter Name="@id_user" DataType="8" Expression="[id_user]" DefaultValue="1"/>
+      </TableDataSource>
+      <TableDataSource Name="Table12" Alias="DataInfo" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  EXEC [dbo].[ST_Rpt_FacturacionElectronica] @id=@id, @op = 'C'">
+        <Column Name="Resolucion" DataType="System.String"/>
+        <Column Name="Consecutivo" DataType="System.Decimal"/>
+        <Column Name="Prefijo" DataType="System.String"/>
+        <Column Name="Cliente" DataType="System.String"/>
+        <Column Name="Moneda" DataType="System.String"/>
+        <Column Name="Usuario" DataType="System.String"/>
+        <Column Name="id" DataType="System.Int64"/>
+        <Column Name="leyenda" DataType="System.String"/>
+        <Column Name="fechadoc" DataType="System.String"/>
+        <Column Name="direccion" DataType="System.String"/>
+        <Column Name="telefono" DataType="System.String"/>
+        <Column Name="ciudad" DataType="System.String"/>
+        <Column Name="ssubtotal" DataType="System.Decimal"/>
+        <Column Name="subtotal" DataType="System.Decimal"/>
+        <Column Name="iva" DataType="System.Decimal"/>
+        <Column Name="inc" DataType="System.Decimal"/>
+        <Column Name="total" DataType="System.Decimal"/>
+        <Column Name="relacionado" DataType="System.String"/>
+        <Column Name="modalidad" DataType="System.String"/>
+        <Column Name="estado" DataType="System.String"/>
+        <Column Name="descuento" DataType="System.Decimal"/>
+        <Column Name="detalle" DataType="System.String"/>
+        <Column Name="totalletra" DataType="System.String"/>
+        <Column Name="nomusuario" DataType="System.String"/>
+        <Column Name="cufeimp" DataType="System.String"/>
+        <Column Name="cufe" DataType="System.String"/>
+        <Column Name="cuotas" DataType="System.Int32"/>
+        <Column Name="cambio" DataType="System.Decimal"/>
+        <Column Name="fechavence" DataType="System.String"/>
+        <Column Name="correo" DataType="System.String"/>
+        <Column Name="anticipo" DataType="System.Decimal"/>
+        <Column Name="descuentogen" DataType="System.Decimal"/>
+        <Column Name="iden" DataType="System.String"/>
+        <CommandParameter Name="@id" DataType="8" Expression="id" DefaultValue="13"/>
+      </TableDataSource>
+      <TableDataSource Name="Table15" Alias="DataItems" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  EXEC [dbo].[ST_Rpt_FacturacionElectronica] @id=@id, @op = 'I'">
+        <Column Name="codigo" DataType="System.String"/>
+        <Column Name="detalleconcepto" DataType="System.String"/>
+        <Column Name="cantidad" DataType="System.Decimal"/>
+        <Column Name="porinc" DataType="System.Decimal"/>
+        <Column Name="poriva" DataType="System.Decimal"/>
+        <Column Name="descuento" DataType="System.Int32"/>
+        <Column Name="total" DataType="System.Decimal"/>
+        <Column Name="valor" DataType="System.Decimal"/>
+        <Column Name="pordcto" DataType="System.Decimal"/>
+        <Column Name="preciobruto" DataType="System.Decimal"/>
+        <Column Name="totalA" DataType="System.Decimal"/>
+        <Column Name="tdescuento" DataType="System.Decimal"/>
+        <Column Name="id" DataType="System.Int64"/>
+        <CommandParameter Name="@id" DataType="8" Expression="id" DefaultValue="13"/>
+      </TableDataSource>
+      <TableDataSource Name="Table" Alias="DataPagos" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  EXEC [dbo].[ST_Rpt_FacturacionElectronica] @id=@id, @op = 'F'">
+        <Column Name="forma" DataType="System.String"/>
+        <Column Name="valor" DataType="System.Decimal"/>
+        <Column Name="voucher" DataType="System.String"/>
+        <CommandParameter Name="@id" DataType="8" Expression="id" DefaultValue="13"/>
+      </TableDataSource>
+      <TableDataSource Name="Table3" Alias="ReportSeries" DataType="System.Int32" Enabled="true" SelectCommand="SET FMTONLY OFF;  EXEC [dbo].[ST_Rpt_FacturacionElectronica] @id=@id, @op = 'S'">
+        <Column Name="serie" DataType="System.String"/>
+        <CommandParameter Name="@id" DataType="22" Expression="[DataItems.id]"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+    <Parameter Name="urlimg" DataType="System.String"/>
+    <Parameter Name="id" DataType="System.Int32" Expression="15"/>
+    <Parameter Name="id_user" DataType="System.Int32"/>
+    <Total Name="Tdescuento" Expression="[DataItems.tdescuento]" Evaluator="MasterData1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="215.5" PaperHeight="279.4" RawPaperSize="119" LeftMargin="9" TopMargin="9" RightMargin="9" BottomMargin="9" FirstPageSource="15" OtherPagesSource="15" Guides="746.55,746.55,746.55,746.55,746.55,746.55,746.55" StartPageEvent="Garantia_StartPage" FinishPageEvent="Garantia_StartPage">
+    <PageHeaderBand Name="PageHeader1" Width="746.55">
+      <ChildBand Name="Child9" Top="4" Width="746.55" Height="128.52" CanGrow="true" CanShrink="true">
+        <TextObject Name="Memo6" Left="136.07" Top="73.7" Width="481.95" Height="15.12" GrowToBottom="true" Text="[cabeceraCompany.Ciudad]" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial Narrow, 11pt, style=Italic"/>
+        <TextObject Name="Memo116" Top="88.82" Width="746.55" Height="24.57" Text="FACTURA DE VENTA" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial Narrow, 11pt, style=Bold, Italic"/>
+        <TextObject Name="Text6" Left="132.28" Top="15.12" Width="481.95" Height="18.9" CanGrow="true" Text="[cabeceraCompany.Nombre]" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial Narrow, 11pt, style=Bold, Italic"/>
+        <TextObject Name="Text7" Left="132.28" Top="32.13" Width="483.77" Height="13.23" CanGrow="true" Text="[cabeceraCompany.Nit]" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial Narrow, 11pt, style=Italic"/>
+        <TextObject Name="Text8" Left="132.28" Top="45.35" Width="481.95" Height="13.23" CanGrow="true" Text="[cabeceraCompany.Direccion]" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial Narrow, 11pt, style=Italic"/>
+        <TextObject Name="Text9" Left="132.28" Top="58.58" Width="481.95" Height="13.23" CanGrow="true" Text="[cabeceraCompany.Telefono]" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial Narrow, 11pt, style=Italic"/>
+        <PictureObject Name="Picture2" Top="9.45" Width="132.28" Height="100.16" Fill.Color="White" AfterDataEvent="Picture1_AfterData" Image=""/>
+        <TextObject Name="Text19" Top="113.4" Width="179.55" Height="15.12" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="Página: [Page#] de [TotalPages#]" Padding="0, 0, 2, 0" VertAlign="Center" Font="Microsoft Sans Serif, 8pt"/>
+        <TextObject Name="Text31" Left="-1.89" Top="122.85" Width="748.44" Height="5.67" Border.Lines="Bottom" Border.Color="DarkGray" Border.Width="2" CanGrow="true" GrowToBottom="true" Padding="2, 1, 2, 1" Format="Date" Format.Format="MMMM dd, yyyy" HorzAlign="Right" Font="Arial, 8pt"/>
+        <TextObject Name="Memo8" Left="523.91" Top="113.4" Width="228.69" Height="15.12" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="Fecha impresión:[FormatDateTime([Date])]" Padding="2, 1, 2, 1" Format="Custom" Format.Format="dd/MM/yyyy H:mm #" HorzAlign="Right" VertAlign="Center" Font="Microsoft Sans Serif, 8pt"/>
+      </ChildBand>
+    </PageHeaderBand>
+    <ColumnHeaderBand Name="ColumnHeader1" Top="136.52" Width="746.55" Height="185.22">
+      <TableObject Name="Table8" Width="745.56" Height="64.26" Border.Lines="Left" Border.Color="DarkGray">
+        <TableColumn Name="Column1" Width="121.78"/>
+        <TableColumn Name="Column2" Width="211"/>
+        <TableColumn Name="Column3" Width="412.78"/>
+        <TableRow Name="Row4" Height="15.12">
+          <TableCell Name="Cell19" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="No. Factura:" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell20" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.Prefijo][DataInfo.Consecutivo]" Font="Arial, 8pt"/>
+          <TableCell Name="Cell21" Border.Lines="All" Border.Color="DarkGray" RowSpan="4">
+            <TextObject Name="Text29" Left="3.88" Top="0.76" Width="402.47" Height="56.7" Text="[DataInfo.leyenda]" Padding="2, 1, 2, 1" HorzAlign="Justify" Font="Arial, 7pt"/>
+          </TableCell>
+        </TableRow>
+        <TableRow Name="Row1" Height="15.12">
+          <TableCell Name="Cell1" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Nº Interno:" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell2" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.id]&#13;&#10;" Font="Arial, 8pt"/>
+          <TableCell Name="Cell3" Border.Lines="All" Border.Color="DarkGray" Font="Arial, 8pt"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="15.12">
+          <TableCell Name="Cell6" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Fecha:" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell7" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.fechadoc]" Font="Arial, 8pt"/>
+          <TableCell Name="Cell8" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row24">
+          <TableCell Name="Cell106" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Vencimiento:" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell107" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.fechavence]" VertAlign="Center" Font="Arial, 8pt"/>
+          <TableCell Name="Cell108"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table9" Top="66.15" Width="746.55" Height="94.5" Border.Lines="Top" Border.Color="DarkGray">
+        <TableColumn Name="Column7" Width="121.72"/>
+        <TableColumn Name="Column8" Width="316.04"/>
+        <TableColumn Name="Column9" Width="109.86"/>
+        <TableColumn Name="Column10" Width="198.93"/>
+        <TableRow Name="Row9" AutoSize="true">
+          <TableCell Name="Cell43" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Cliente:" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell44" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.iden] - [DataInfo.cliente]" VertAlign="Center" Font="Arial, 8pt" ColSpan="3"/>
+          <TableCell Name="Cell45" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell46" Border.Lines="All" Border.Color="DarkGray" VertAlign="Center" Font="Arial, 8pt"/>
+        </TableRow>
+        <TableRow Name="Row10" AutoSize="true">
+          <TableCell Name="Cell47" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Dirección:" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell48" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.direccion]" VertAlign="Center" Font="Arial, 8pt"/>
+          <TableCell Name="Cell49" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Teléfono:" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell50" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.telefono]" VertAlign="Center" Font="Arial, 8pt"/>
+        </TableRow>
+        <TableRow Name="Row11" AutoSize="true">
+          <TableCell Name="Cell51" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Vendedor:" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell52" Border.Lines="All" Border.Color="DarkGray" Text=": ([DataInfo.Usuario]) [DataInfo.nomusuario]" VertAlign="Center" Font="Arial, 8pt"/>
+          <TableCell Name="Cell53" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Ciudad:" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell54" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.ciudad]" VertAlign="Center" Font="Arial, 8pt"/>
+        </TableRow>
+        <TableRow Name="Row7" AutoSize="true">
+          <TableCell Name="Cell55" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Moneda:" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell56" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.Moneda]" VertAlign="Center" Font="Arial, 8pt"/>
+          <TableCell Name="Cell57" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Correo: " VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell37" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.correo]" VertAlign="Center" Font="Arial, 8pt"/>
+        </TableRow>
+        <TableRow Name="Row8" AutoSize="true">
+          <TableCell Name="Cell39" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Orden de Compra:" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell40" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.relacionado]" VertAlign="Center" Font="Arial, 8pt"/>
+          <TableCell Name="Cell41" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Estado: " VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell42" Border.Lines="All" Border.Color="DarkGray" Text=": [DataInfo.estado]" VertAlign="Center" Font="Arial, 8pt"/>
+        </TableRow>
+      </TableObject>
+      <TextObject Name="Memo32" Top="170.1" Width="132.3" Height="15.12" Border.Lines="All" Border.Color="DarkGray" Fill.Color="109, 211, 211, 211" ShiftMode="Never" Text="Código" Padding="2, 1, 2, 1" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Memo33" Left="132.3" Top="170.1" Width="226.8" Height="15.12" Border.Lines="All" Border.Color="DarkGray" Fill.Color="109, 211, 211, 211" ShiftMode="Never" Text="Nombre" Padding="2, 1, 2, 1" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Memo37" Left="359.1" Top="170.1" Width="56.7" Height="15.12" Border.Lines="All" Border.Color="DarkGray" Fill.Color="109, 211, 211, 211" ShiftMode="Never" Text="Cant" Padding="2, 1, 2, 1" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Memo38" Left="415.74" Top="170.1" Width="85.05" Height="15.12" Border.Lines="All" Border.Color="DarkGray" Fill.Color="109, 211, 211, 211" ShiftMode="Never" Text="Precio" Padding="2, 1, 2, 1" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Memo39" Left="500.85" Top="170.1" Width="47.25" Height="15.12" Border.Lines="All" Border.Color="DarkGray" Fill.Color="109, 211, 211, 211" ShiftMode="Never" Text="%Dcto" Padding="0, 1, 0, 1" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Memo40" Left="548.1" Top="170.1" Width="41.58" Height="15.12" Border.Lines="All" Border.Color="DarkGray" Fill.Color="109, 211, 211, 211" ShiftMode="Never" Text="%Iva" Padding="0, 1, 0, 1" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Memo41" Left="633.15" Top="170.1" Width="113.4" Height="15.12" Border.Lines="All" Border.Color="DarkGray" Fill.Color="109, 211, 211, 211" ShiftMode="Never" Text="Total Bruto" Padding="2, 1, 2, 1" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text38" Left="589.68" Top="170.1" Width="43.47" Height="15.12" Border.Lines="All" Border.Color="DarkGray" Fill.Color="109, 211, 211, 211" ShiftMode="Never" Text="%Inc" Padding="0, 1, 0, 1" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+    </ColumnHeaderBand>
+    <DataBand Name="MasterData1" Top="325.74" Width="746.55" Height="11.34" CanGrow="true" CanShrink="true" BeforePrintEvent="MasterData1_BeforePrint" DataSource="Table15">
+      <TextObject Name="Memo42" Width="132.3" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataItems.codigo]" Padding="0, 1, 0, 1" Font="Arial, 8pt"/>
+      <TextObject Name="Memo43" Left="132.3" Width="226.8" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataItems.detalleconcepto]" Padding="0, 1, 0, 1" Font="Arial, 8pt"/>
+      <TextObject Name="Memo47" Left="359.1" Width="56.7" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataItems.cantidad]" Padding="0, 1, 0, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Memo48" Left="415.74" Width="85.05" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataItems.valor]" Padding="0, 1, 0, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Memo49" Left="500.85" Width="47.25" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataItems.pordcto]" Padding="0, 1, 0, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Memo50" Left="548.1" Width="41.58" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataItems.poriva]" Padding="0, 1, 0, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Memo51" Left="633.15" Width="113.4" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataItems.total]" Padding="0, 1, 0, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text37" Left="589.68" Width="43.47" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataItems.porinc]" Padding="0, 1, 0, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" Font="Arial, 8pt"/>
+      <ChildBand Name="Child1" Top="341.08" Width="746.55" Height="9.45">
+        <SubreportObject Name="Subreport2" Width="756" ReportPage="Page3"/>
+      </ChildBand>
+      <DataFooterBand Name="DataFooter1" Top="354.53" Width="746.55" Height="66.15">
+        <TableObject Name="Table1" Top="30.24" Width="292.95" Height="30.24" Visible="false">
+          <TableColumn Name="Column15" Width="122.85"/>
+          <TableColumn Name="Column16" Width="94.5"/>
+          <TableColumn Name="Column17" Width="75.6"/>
+          <TableRow Name="Row21" Height="15.12">
+            <TableCell Name="Cell95" Border.Lines="Left, Top, Bottom" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Forma Pago" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+            <TableCell Name="Cell96" Border.Lines="Left, Top, Bottom" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Valor" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+            <TableCell Name="Cell97" Border.Lines="Left, Top, Bottom" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Cuotas" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableRow>
+          <TableRow Name="Row22" Height="15.12">
+            <TableCell Name="Cell100" Text="CREDITO PROPIO" VertAlign="Center" Font="Arial, 7pt"/>
+            <TableCell Name="Cell101" Text="[DataInfo.total]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+            <TableCell Name="Cell102" Text="[DataInfo.cuotas]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+          </TableRow>
+        </TableObject>
+        <TextObject Name="Memo98" Left="-3.78" Top="9.45" Width="205.99" Height="18.9" Text="Resumen de Pago" Padding="2, 1, 2, 1" Font="Arial, 8pt, style=Bold"/>
+        <SubreportObject Name="Subreport1" Top="18.9" Width="85.05" Height="18.9" ReportPage="Page2" PrintOnParent="true"/>
+      </DataFooterBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="424.68" Width="746.55" Height="359.1">
+      <TextObject Name="Text1" Top="340.2" Width="378" Height="18.9" Text="Realizado por Sintesis Cloud S.A.S" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Memo109" Left="491.43" Top="308.71" Width="226.77" Height="26.46" Text="Nombre, C.C y Sello de quien recibe&#13;&#10;Fecha de Recibido: " Padding="2, 1, 2, 1" Font="Arial, 8pt"/>
+      <TextObject Name="Memo56" Left="491.43" Top="283.59" Width="226.77" Height="15.12" Text="Firma y sello del cliente" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+      <LineObject Name="Line30" Left="491.43" Top="283.59" Width="226.77" Diagonal="true"/>
+      <TextObject Name="Memo54" Left="24.65" Top="283.59" Width="226.77" Height="15.12" Text="Elaborado Por" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+      <LineObject Name="Line28" Left="24.65" Top="283.59" Width="226.77" Diagonal="true"/>
+      <TextObject Name="Memo57" Left="24.65" Top="264.69" Width="226.77" Height="18.9" GrowToBottom="true" Text="[cabeceraCompany.usuario]" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Memo53" Left="1.98" Top="207.9" Width="744.57" Height="49.13" Text="Esta factura Cambiaria se asimila para todos los efectos legales a la letra de cambio, conforme al articulo 774 del codigo de comercio.&#13;&#10;El comprador declara haber recibido todas las mercancias antes descritas y enumeradas, a las cuales aplican las garantias ofertadas separadamente por escrito. La mora en el pago ocasionara intereses sobre saldos a la tasa mas alta permitida, sin perjuicio de las acciones ejecutivas pertinentes." Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TableObject Name="Table10" Top="9.45" Width="748.46" Height="189">
+        <TableColumn Name="Column11" Width="229.64"/>
+        <TableColumn Name="Column12" Width="248.54"/>
+        <TableColumn Name="Column13" Width="116.24"/>
+        <TableColumn Name="Column14" Width="154.04"/>
+        <TableRow Name="Row17">
+          <TableCell Name="Cell79" Border.Lines="All" Border.Color="DarkGray" Text="&#13;&#10;" Font="Arial, 8pt" ColSpan="2" RowSpan="3">
+            <TextObject Name="Memo68" Left="28.35" Top="3.02" Width="445.99" Height="47.25" Text="[DataInfo.totalletra]" Padding="2, 1, 2, 1" HorzAlign="Justify" Font="Arial, 6pt"/>
+            <TextObject Name="Text26" Width="39.69" Height="18.9" Text="Son:" Padding="2, 1, 2, 1" Font="Arial, 8pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell80" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell81" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Valor Bruto" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell82" Border.Lines="All" Border.Color="DarkGray" Text="[DataInfo.subtotal]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="12" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row18">
+          <TableCell Name="Cell83" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell84" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell85" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Dsto Comercial" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell86" Border.Lines="All" Border.Color="DarkGray" Text="[DataInfo.descuento]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="12" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row19">
+          <TableCell Name="Cell87" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell88" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell89" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Venta Neta" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell90" Border.Lines="All" Border.Color="DarkGray" Text="[DataInfo.ssubtotal]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="12" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row12">
+          <TableCell Name="Cell58" Border.Lines="All" Border.Color="DarkGray" RowSpan="7">
+            <BarcodeObject Name="Barcode2" Left="28.35" Top="35.9" Width="170.7" Height="49.15" AutoSize="false" Expression="[DataInfo.id]" Text="1" ShowText="false" AllowExpressions="true" Barcode="Code128" Barcode.AutoEncode="true"/>
+            <TextObject Name="Text27" Left="22.68" Top="11.34" Width="185.2" Height="11.34" Text="No Marque ni escriba sobre el código de barras" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Arial, 6pt"/>
+          </TableCell>
+          <TableCell Name="Cell59" Border.Lines="All" Border.Color="DarkGray" RowSpan="7">
+            <TextObject Name="Memo67" Left="3.81" Top="18.9" Width="241.89" Height="96.38" Text="[DataInfo.detalle]" Padding="2, 1, 2, 1" HorzAlign="Justify" Font="Arial, 7pt"/>
+            <TextObject Name="Text28" Left="3.78" Width="124.46" Height="18.9" Text="Observaciones:" Padding="2, 1, 2, 1" Font="Arial, 8pt, style=Bold"/>
+          </TableCell>
+          <TableCell Name="Cell60" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Iva" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell61" Border.Lines="All" Border.Color="DarkGray" Text="[DataInfo.iva]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="12" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row28">
+          <TableCell Name="Cell121"/>
+          <TableCell Name="Cell122"/>
+          <TableCell Name="Cell123" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Inc" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell124" Border.Lines="All" Border.Color="DarkGray" Text="[DataInfo.inc]" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row27">
+          <TableCell Name="Cell117"/>
+          <TableCell Name="Cell118"/>
+          <TableCell Name="Cell119" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Subtotal" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell120" Border.Lines="All" Border.Color="DarkGray" Text="[DataInfo.total]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="9" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row26">
+          <TableCell Name="Cell113"/>
+          <TableCell Name="Cell114"/>
+          <TableCell Name="Cell115" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Anticipo" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell116" Border.Lines="All" Border.Color="DarkGray" Text="- [DataInfo.anticipo]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="9" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row25">
+          <TableCell Name="Cell109"/>
+          <TableCell Name="Cell110"/>
+          <TableCell Name="Cell111" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Dsto Financiero" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell112" Border.Lines="All" Border.Color="DarkGray" Text="- [DataInfo.descuentogen]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="9" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row13">
+          <TableCell Name="Cell63" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell64" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell65" Border.Lines="All" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Total Factura" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell66" Border.Lines="All" Border.Color="DarkGray" Text="[[DataInfo.total] - [DataInfo.anticipo]-[DataInfo.descuentogen]]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="12" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row14">
+          <TableCell Name="Cell67" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell68" Border.Lines="All" Border.Color="DarkGray"/>
+          <TableCell Name="Cell69" Border.Lines="All" Border.Color="Silver" Fill.Color="WhiteSmoke" Text="Cambio" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TableCell Name="Cell70" Border.Lines="All" Border.Color="Silver" Text="[DataInfo.cambio]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="12" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+    </PageFooterBand>
+  </ReportPage>
+  <ReportPage Name="Page2" StartOnOddPage="true">
+    <DataBand Name="Data1" Top="26.68" Width="718.2" Height="11.34" DataSource="Table">
+      <TextObject Name="Text34" Width="113.4" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataPagos.forma]" Padding="0, 1, 0, 1" Font="Arial, 7pt"/>
+      <TextObject Name="Text35" Left="113.4" Width="94.5" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataPagos.valor]" Padding="0, 1, 0, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="2" HorzAlign="Right" Font="Arial, 7pt"/>
+      <TextObject Name="Text36" Left="207.9" Width="117.18" Height="11.34" CanGrow="true" GrowToBottom="true" Text="[DataPagos.voucher]" Padding="0, 1, 0, 1" HorzAlign="Right" Font="Arial, 7pt"/>
+      <DataHeaderBand Name="DataHeader1" Width="718.2" Height="22.68">
+        <TableObject Name="Table2" Top="7.56" Width="324.45" Height="15.12" Border.Lines="All" Border.Color="DarkGray">
+          <TableColumn Name="Column18" MinWidth="113.4" MaxWidth="113.4" Width="113.4"/>
+          <TableColumn Name="Column19" MinWidth="94.5" MaxWidth="94.5" Width="94.5"/>
+          <TableColumn Name="Column20" Width="116.55"/>
+          <TableRow Name="Row23" Height="15.12">
+            <TableCell Name="Cell103" Border.Lines="Left, Top, Bottom" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Forma Pago" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+            <TableCell Name="Cell104" Border.Lines="Left, Top, Bottom" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Valor" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+            <TableCell Name="Cell105" Border.Lines="Left, Top, Bottom" Border.Color="DarkGray" Fill.Color="121, 220, 220, 220" Text="Voucher" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          </TableRow>
+        </TableObject>
+      </DataHeaderBand>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page3" PaperWidth="215.9" PaperHeight="279.4" RawPaperSize="1" TopMargin="0" BottomMargin="0">
+    <DataBand Name="Data2" Width="740.5" Height="3.78">
+      <TextObject Name="Text4" Left="7.56" Top="-9.45" Width="699.3" Height="13.23" CanGrow="true" GrowToBottom="true" CanBreak="false" Text=" [ReportSeries.serie]" Font="Arial, 7pt" HtmlTags="true"/>
+      <TextObject Name="Text5" Top="-9.45" Width="18.9" Height="13.23" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="-" VertAlign="Bottom" Font="Arial, 12pt, style=Bold"/>
+    </DataBand>
+  </ReportPage>
+</Report>

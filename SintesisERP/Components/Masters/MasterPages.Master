@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPages.Master.cs" Inherits="SintesisERP.Components.Masters.MasterPages" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sintesis ERP</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+    </style>
+    <link rel="shortcut icon" href="../Contents/images/favicon.ico" />
+    <link href="../Contents/styles/SitePage.css" rel="stylesheet" />
+    <link href="../../Package/Vendor/css/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="Package/Vendor/js/jquery-2.1.4.js"></script>
+
+</head>
+<body class="nav-md">
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MainLayout" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <script type="text/javascript" src="Package/Vendor/js/plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="Package/Vendor/js/plugins/bootstrap-select/bootstrap-select.js"></script>
+    <script type="text/javascript" src="Package/Others/js/autoNumeric-1.9.41.js"></script>
+
+</body>
+</html>
