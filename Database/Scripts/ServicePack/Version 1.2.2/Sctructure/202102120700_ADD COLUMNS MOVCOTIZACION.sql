@@ -25,3 +25,12 @@ GO
 update I SET I.id_cuenta=S.id_cuenta from [CNT].[MOVReciboCajasItems] I 
 JOIN [CNT].[MOVReciboCajas] R ON I.id_recibo=R.id
 join cnt.saldocliente_cuotas S ON I.id_factura=S.nrofactura and S.anomes=CONVERT(VARCHAR(6),R.fecha,112) and S.id_cliente=R.id_cliente and S.vencimiento_cuota=CONVERT(SMALLDATETIME,I.vencimiento_interes,120)
+
+IF COL_LENGTH('[DBO].[MOVFactura]', 'id_faccau') IS NULL
+BEGIN
+     Alter Table
+         [DBO].[MOVFactura]
+     Add
+         [id_faccau] BIGINT;
+END
+GO

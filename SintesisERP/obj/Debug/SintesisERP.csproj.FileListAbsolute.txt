@@ -37,3 +37,11 @@ D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\bin\SintesisERP.dll.config
 D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\bin\SintesisERP.dll
 D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\bin\SintesisERP.pdb
 D:\Proyectos Sintesis\Sintesis_ERP\SintesisERP\obj\Debug\SintesisERP.csproj.CopyComplete
+D:\Proyectos Sintesis\Sintesis_Cloud_ERP\SintesisERP\bin\SintesisERP.dll.config
+D:\Proyectos Sintesis\Sintesis_Cloud_ERP\SintesisERP\bin\SintesisERP.dll
+D:\Proyectos Sintesis\Sintesis_Cloud_ERP\SintesisERP\bin\SintesisERP.pdb
+D:\Proyectos Sintesis\Sintesis_Cloud_ERP\SintesisERP\obj\Debug\SintesisERP.csprojAssemblyReference.cache
+D:\Proyectos Sintesis\Sintesis_Cloud_ERP\SintesisERP\obj\Debug\SintesisERP.csproj.CoreCompileInputs.cache
+D:\Proyectos Sintesis\Sintesis_Cloud_ERP\SintesisERP\obj\Debug\SintesisERP.csproj.CopyComplete
+D:\Proyectos Sintesis\Sintesis_Cloud_ERP\SintesisERP\obj\Debug\SintesisERP.dll
+D:\Proyectos Sintesis\Sintesis_Cloud_ERP\SintesisERP\obj\Debug\SintesisERP.pdb
