@@ -44,7 +44,7 @@ $(document).ready(function () {
                 return row[column.id].Money();
             },
             "total": function (column, row) {
-                return row.total.Money();
+                return '<span class="text-center total" style="">' + row.total.Money() + '</span>'
             },
             "precio": function (column, row) {
                 return row.precio.Money();
@@ -79,6 +79,33 @@ $(document).ready(function () {
             input.autoNumeric('init');
 
         });
+    });
+    $('#descuento,#v_inicial').blur(function () {
+
+        var count = new Array()
+        $('#tblcommodity td').find('.total').each(function () {
+            count.push(parseFloat(SetNumber($(this).text())))
+        })
+
+        var suma = 0
+        count.forEach(function (numero) {
+
+            suma = parseFloat(numero) + suma
+        });
+
+        Data = {
+            Tiva: parseFloat(SetNumber($('#Tiva').text())),
+            Tprecio: parseFloat(SetNumber($('#Ttventa').text())),
+            Tdctoart: 0,
+            Ttotal: suma,
+            Tdesc: parseFloat(SetNumber($('#Tinicial').text())) ,
+            Tinc: parseFloat(SetNumber($('#Tinc').text())),
+            descuento: 0,
+            costo: 0,
+            Tinicial: parseFloat(SetNumber($('#Tinicial').text()))
+        };
+        
+        TotalizarFactura(Data);
     });
 
     newCotizacion();
@@ -125,14 +152,19 @@ $(document).ready(function () {
     });
 
     $('#Text_Descuento, #m_discount').blur(function () {
+        
         opt = $(this).attr('data-option');
         val = SetNumber($(this).val());
         val = (val != '') ? val : 0;
         anticipo = 0;
-        total = SetNumber($('#Ttotal').attr('data-total'));
+        total = parseFloat(SetNumber($('#m_precio').val()))
         total = Number(total) + anticipo;
-        if (window.tblcommodity.bootgrid("getTotalRowCount") > 0 || window.tblconcepto.bootgrid("getTotalRowCount") > 0) {
-            //if (total > 0) {
+        console.log(opt)
+        console.log(val)
+        console.log(total)
+        //if (window.tblcommodity.bootgrid("getTotalRowCount") > 0 || window.tblconcepto.bootgrid("getTotalRowCount") > 0) {
+
+        //    //if (total > 0) {
             if (opt == 'P') {
                 valor = total * (val / 100);
                 $('#m_discount').val(Number(valor.toFixed(0)).Int());
@@ -141,24 +173,24 @@ $(document).ready(function () {
                 valor = (total <= 0) ? 0.00 : ((val * 100) / total);
                 $('#Text_Descuento').val(Number(valor.toFixed(0)).Int());
             }
-            var Parameter = {};
-            Parameter.idToken = $('#idToken').val();
-            var val1 = SetNumber($('#m_discount').val());
-            var val2 = SetNumber($('#Text_Descuento').val());
-            val1 = (val1 != '') ? val1 : 0;
-            val2 = (val2 != '') ? val2 : 0;
-            Parameter.descuento = val2;
-            Parameter.valdescuento = val1;
-            Parameter.id_anticipo = 0;
-            MethodService("Facturas", "FacturasRecalcular", JSON.stringify(Parameter), "EndCallbackRecalculo");
-        }
-        else {
-            Data = {
-                Tiva: 0, Tprecio: 0, Tdctoart: 0, Ttotal: 0, Tdesc: 0
-            };
-            TotalizarFactura(Data);
-            $('#Text_Descuento, #m_discount').val('0');
-        }
+            //var Parameter = {};
+            //Parameter.idToken = $('#idToken').val();
+            //var val1 = SetNumber($('#m_discount').val());
+            //var val2 = SetNumber($('#Text_Descuento').val());
+            //val1 = (val1 != '') ? val1 : 0;
+            //val2 = (val2 != '') ? val2 : 0;
+            //Parameter.descuento = val2;
+            //Parameter.valdescuento = val1;
+            //Parameter.id_anticipo = 0;
+            //MethodService("Facturas", "FacturasRecalcular", JSON.stringify(Parameter), "EndCallbackRecalculo");
+        //}
+        //else {
+        //    Data = {
+        //        Tiva: 0, Tprecio: 0, Tdctoart: 0, Ttotal: 0, Tdesc: 0, Tinc:0
+        //    };
+        //    TotalizarFactura(Data);
+        //    $('#Text_Descuento, #m_discount').val('0');
+        //}
     });
     $('#id_cal').attr('disabled', 'disabled')
     $('#financiero').on('click', function () {
@@ -195,6 +227,8 @@ $(document).ready(function () {
         $("#Tinicial").text((value != undefined && value != '') ? '$ ' + value.Money() : '$ ' + (0).Money());
 
     }).keyup();
+
+    $('#Text_Descuento, #m_discount').attr('disabled','disabled')
 });
 
 $('#btnCalcular').on('click', function () {
@@ -229,7 +263,7 @@ function EndCallbackArticle(params, answer) {
             $('#existencia').val(row.existencia.Money());
             $('#divaddart select').selectpicker('refresh');
             $('#divaddart').attr({ 'data-serie': row.serie, 'data-lote': row.lote, 'data-inventario': row.inventario });
-
+            $('#Text_Descuento').val(row.pordcto.Money()).trigger('blur');
             $('#m_quantity').focus().select();
         }
     }
@@ -318,7 +352,7 @@ $(document).ready(function () {
             Parameter.id_bodega = ($('#addarticle').attr('data-idbodega') == '') ? '0' : $('#addarticle').attr('data-idbodega');
             Parameter.quantity = SetNumber($('#m_quantity').val());
             Parameter.precio = SetNumber($('#m_precio').val());
-            Parameter.descuento = SetNumber($('#descuento').val());
+            Parameter.descuento =(SetNumber($('#m_discount').val()))//SetNumber($('#descuento').val());
             Parameter.cuota_ini = SetNumber($('#v_inicial').val());
             $('#addarticle').button('loading');
             MethodService("Facturas", "CotizacionAddArticulo", JSON.stringify(Parameter), "EndCallbackAddArticle");
@@ -330,8 +364,6 @@ $(document).ready(function () {
         param = 'id|' + idfactura + ';'
         PrintDocument(param, 'MOVCOTIZACION', 'CODE');
     });
-
-
 
     $('#btnnew').click(function () {
         newCotizacion();
@@ -418,7 +450,7 @@ function EndCallbackGet(Parameter, Result) {
         }
         $('#lineacredit').val(row.lineacredit)
         $('#nrocuotas2').val(row.num_cuot)
-        $('#id_cal').val(row.valor_cuot)
+        $('#id_cal').val((row.valor_cuot).Money())
 
 
         var div = $('#diventrada');
@@ -476,7 +508,7 @@ function EndCallbackAddArticle(Parameter, Result) {
     $('#addarticle').button('reset');
 }
 
-function TotalizarFactura(Data) {
+function TotalizarFactura(Data) { 
     calculos = {
         descuento: parseFloat(SetNumber($('#Tdescuento').text())),
         cuotaini: parseFloat(SetNumber($('#Tinicial').text()))
@@ -515,12 +547,6 @@ function CallbackComodity(Parameter, Result) {
         toastr.error(Result.Message, 'Sintesis POS');
 }
 
-function dividirCadena(cadenaADividir, separador, position) {
-    var array = cadenaADividir.split(separador)[position].replaceAll(',', '');
-
-    return (array)
-}
-
 function Reset() {
     $('#id_cal').val('$ 0.00')
     $('#nrocuotas2').val('0')
@@ -534,4 +560,16 @@ function EndCallBackCuotaMensual(params, answer) {
     } else {
         toastr.error("Verifique los campos requeridos", "Sintesis ERP");
     }
+}
+
+function TotalizarFacturadesc(Data) {
+    calculos = {
+        descuento: parseFloat(SetNumber($('#Tdescuento').text())),
+        cuotaini: parseFloat(SetNumber($('#Tinicial').text()))
+    }
+    $('#Tiva').text('$ ' + Data.Tiva.Money());
+    $('#Tinc').text('$ ' + Data.Tinc.Money());
+    $('#TdescArt').text('$ ' + Data.Tdctoart.Money());
+    $('#Ttventa').text('$ ' + Data.Tprecio.Money());
+        $('#Ttotal').text('$ ' + (Data.Ttotal - calculos.descuento + calculos.cuotaini).Money());
 }

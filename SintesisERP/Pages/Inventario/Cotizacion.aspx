@@ -288,7 +288,7 @@
                                 <input type="text" class="form-control actionautocomple inputsearch" id="ds_bod" aria-describedby="sizing-addon1" data-search="Bodegas" data-method="BodegasBuscador" data-params="op:Z;o:#" data-result="value:name;data:id" data-idvalue="cd_wineridef" />
                             </div>
                         </div>
-                       
+
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 sn-padding" id="div_des">
                             <div class="form-group">
                                 <label for="descuento" class="">Descuento:</label>
@@ -301,10 +301,10 @@
                                 <input id="v_inicial" type="text" placeholder=" " class="form-control inputsearch" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
                             </div>
                         </div>
-                         <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 sn-padding swtich-container">
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 sn-padding swtich-container">
                             <label>Financiero?</label>
                             <label class="switch">
-                                <input type="checkbox" id="financiero" onclick="Reset()"/>
+                                <input type="checkbox" id="financiero" onclick="Reset()" />
                                 <span class="slider round"></span>
 
                             </label>
@@ -322,8 +322,8 @@
                             </div>
                         </div>
                         <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 sn-padding inactive" id="div_calcular">
-                                <label for="Calcular" class="active">Calcular:</label>
-                               <button title="Calcular" id="btnCalcular"class="btn btn-outline btn-primary dim m-l-xs" type="button" style="margin-bottom: 7px !important; margin-top: -3px;margin-left: 7px;"><i class="fa fa-calculator"></i></button>
+                            <label for="Calcular" class="active">Calcular:</label>
+                            <button title="Calcular" id="btnCalcular" class="btn btn-outline btn-primary dim m-l-xs" type="button" style="margin-bottom: 7px !important; margin-top: -3px; margin-left: 7px;"><i class="fa fa-calculator"></i></button>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 sn-padding inactive" id="div_cal">
                             <div class="form-group">
@@ -368,6 +368,18 @@
                                         <input id="m_precio" type="text" class="form-control addart" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
                                     </div>
                                 </div>
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="Text_Descuento" class="active">% Desc:</label>
+                                        <input id="Text_Descuento" type="text" class="form-control addart" data-option="P" placeholder=" " value="0.00" money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-v-max="100" data-a-sign="% " />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="m_discount" class="active">Desc x Valor:</label>
+                                        <input type="text" class="form-control addart" id="m_discount" data-option="V" placeholder=" " value="0.00" money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
+                                    </div>
+                                </div>
                                 <div class="col-lg-1 col-md-1 col-sm-3 col-xs-12">
                                     <button title="Agregar" id="addarticle" class="btn btn-outline btn-primary dim  pull-right" type="button" data-id="0" data-idbodega="0" style="margin-bottom: 0 !important; margin-top: 15px; float: left !important;"><i class="fa fa-plus"></i></button>
                                 </div>
@@ -385,7 +397,7 @@
                                                 <th data-column-id="iva" data-formatter="valor">Iva</th>
                                                 <th data-column-id="inc" data-formatter="valor">Inc</th>
                                                 <th data-column-id="descuento" data-formatter="valor">Descuento</th>
-                                                <th data-column-id="total" data-formatter="total" data-sortable="false">Total</th>
+                                                <th data-column-id="total" data-formatter="total" data-sortable="false" class="total">Total</th>
                                             </tr>
                                         </thead>
                                     </table>
