@@ -304,7 +304,7 @@
                         <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 sn-padding swtich-container">
                             <label>Financiero?</label>
                             <label class="switch">
-                                <input type="checkbox" id="financiero" onclick="Reset()" />
+                                <input type="checkbox" data-validate="false" id="financiero" onclick="Reset()" />
                                 <span class="slider round"></span>
 
                             </label>

@@ -1,6 +1,7 @@
 ﻿var JsonValidate = [{ id: 'Text_Fecha', type: 'DATE', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
 { id: 'ds_vendedor', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-{ id: 'ds_cliente', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' }];
+{ id: 'ds_cliente', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
+{ id: 'ds_bod', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' }];
 
 var JsonCommodity = [{ id: 'v_code', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
 { id: 'nombre', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
@@ -75,7 +76,6 @@ $(document).ready(function () {
             tr = $(this).closest('td');
             max = $(this).attr('data-max');
             min = $(this).attr('data-min');
-            //input = $('<input class="form-control rowedit" date-type="numeric" data-oldvalue="' + data.value + '" data-column="' + data.column + '" data-id="' + data.id + '" value="' + data.value + '" money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="' + min + '" data-v-max="' + max + '">');
             input.autoNumeric('init');
 
         });
@@ -159,12 +159,6 @@ $(document).ready(function () {
         anticipo = 0;
         total = parseFloat(SetNumber($('#m_precio').val()))
         total = Number(total) + anticipo;
-        console.log(opt)
-        console.log(val)
-        console.log(total)
-        //if (window.tblcommodity.bootgrid("getTotalRowCount") > 0 || window.tblconcepto.bootgrid("getTotalRowCount") > 0) {
-
-        //    //if (total > 0) {
             if (opt == 'P') {
                 valor = total * (val / 100);
                 $('#m_discount').val(Number(valor.toFixed(0)).Int());
@@ -173,24 +167,6 @@ $(document).ready(function () {
                 valor = (total <= 0) ? 0.00 : ((val * 100) / total);
                 $('#Text_Descuento').val(Number(valor.toFixed(0)).Int());
             }
-            //var Parameter = {};
-            //Parameter.idToken = $('#idToken').val();
-            //var val1 = SetNumber($('#m_discount').val());
-            //var val2 = SetNumber($('#Text_Descuento').val());
-            //val1 = (val1 != '') ? val1 : 0;
-            //val2 = (val2 != '') ? val2 : 0;
-            //Parameter.descuento = val2;
-            //Parameter.valdescuento = val1;
-            //Parameter.id_anticipo = 0;
-            //MethodService("Facturas", "FacturasRecalcular", JSON.stringify(Parameter), "EndCallbackRecalculo");
-        //}
-        //else {
-        //    Data = {
-        //        Tiva: 0, Tprecio: 0, Tdctoart: 0, Ttotal: 0, Tdesc: 0, Tinc:0
-        //    };
-        //    TotalizarFactura(Data);
-        //    $('#Text_Descuento, #m_discount').val('0');
-        //}
     });
     $('#id_cal').attr('disabled', 'disabled')
     $('#financiero').on('click', function () {
@@ -228,7 +204,14 @@ $(document).ready(function () {
 
     }).keyup();
 
-    $('#Text_Descuento, #m_discount').attr('disabled','disabled')
+    $('#Text_Descuento, #m_discount').attr('disabled', 'disabled')
+
+    $('#nrocuotas2, #lineacredit').change(function () {
+
+        $('#financiero').attr('data-validate','false')
+    })
+
+    
 });
 
 $('#btnCalcular').on('click', function () {
@@ -352,7 +335,7 @@ $(document).ready(function () {
             Parameter.id_bodega = ($('#addarticle').attr('data-idbodega') == '') ? '0' : $('#addarticle').attr('data-idbodega');
             Parameter.quantity = SetNumber($('#m_quantity').val());
             Parameter.precio = SetNumber($('#m_precio').val());
-            Parameter.descuento =(SetNumber($('#m_discount').val()))//SetNumber($('#descuento').val());
+            Parameter.descuento =(SetNumber($('#m_discount').val()))
             Parameter.cuota_ini = SetNumber($('#v_inicial').val());
             $('#addarticle').button('loading');
             MethodService("Facturas", "CotizacionAddArticulo", JSON.stringify(Parameter), "EndCallbackAddArticle");
@@ -372,21 +355,29 @@ $(document).ready(function () {
     $('#btnSave').click(function () {
         if (validate(JsonValidate)) {
             if (window.tblcommodity.bootgrid("getTotalRowCount") > 0) {
-                var sJon = {};
-                sJon.id = ($('#id_factura').val().trim() == "") ? "0" : $('#id_factura').val();
-                sJon.id_vendedor = $('#cd_vendedor').val();
-                sJon.id_cliente = ($('#cd_cliente').val().trim() == "") ? "0" : $('#cd_cliente').val();
-                sJon.id_bodega = ($('#addarticle').attr('data-idbodega') == '') ? '0' : $('#addarticle').attr('data-idbodega');
-                sJon.descuento = SetNumber($('#descuento').val());
-                sJon.valorpagado = 0;
-                sJon.cuota_ini = SetNumber($('#v_inicial').val())
-                sJon.financiero = ($('#financiero').prop('checked')) ? 1 : 0
-                sJon.num_cuot = parseInt($('#nrocuotas2').val());
-                sJon.valor_cuot = SetNumber($('#id_cal').val())
-                sJon.id_lincred = ($('#lineacredit').val().trim() == '' ? null : $('#lineacredit').val())
-                var total = SetNumber($('#Ttotalfac').text());
-                sJon.idToken = $('#idToken').val();
-                MethodService("Facturas", "FacturarCotizacion", JSON.stringify(sJon), "CallbackComodity");
+                if ($('#financiero').prop('checked') && $('#id_cal').val() == '$ 0.00') {
+                    toastr.error('El valor de las cuotas debe ser mayor a 0', 'Sintesis ERP')
+                } else if ($('#financiero').attr('data-validate') == 'false') {
+                    toastr.error('Debe volver a calcular la financiación', 'Sintesis ERP')
+                }
+
+                else {
+                    var sJon = {};
+                    sJon.id = ($('#id_factura').val().trim() == "") ? "0" : $('#id_factura').val();
+                    sJon.id_vendedor = $('#cd_vendedor').val();
+                    sJon.id_cliente = ($('#cd_cliente').val().trim() == "") ? "0" : $('#cd_cliente').val();
+                    sJon.id_bodega = ($('#addarticle').attr('data-idbodega') == '') ? '0' : $('#addarticle').attr('data-idbodega');
+                    sJon.descuento = SetNumber($('#descuento').val());
+                    sJon.valorpagado = 0;
+                    sJon.cuota_ini = SetNumber($('#v_inicial').val())
+                    sJon.financiero = ($('#financiero').prop('checked')) ? 1 : 0
+                    sJon.num_cuot = parseInt($('#nrocuotas2').val());
+                    sJon.valor_cuot = SetNumber($('#id_cal').val())
+                    sJon.id_lincred = ($('#lineacredit').val().trim() == '' ? null : $('#lineacredit').val())
+                    var total = SetNumber($('#Ttotalfac').text());
+                    sJon.idToken = $('#idToken').val();
+                    MethodService("Facturas", "FacturarCotizacion", JSON.stringify(sJon), "CallbackComodity");
+                }
             }
             else
                 toastr.warning("No ha agregado ningun artículo o concepto.", 'Sintesis POS');
@@ -557,6 +548,7 @@ function EndCallBackCuotaMensual(params, answer) {
     if (!answer.Error) {
         data = answer.Table[0];
         $('#id_cal').val('$ ' + data.cuota.Money());
+        $('#financiero').attr('data-validate','true')
     } else {
         toastr.error("Verifique los campos requeridos", "Sintesis ERP");
     }
