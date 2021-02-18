@@ -111,6 +111,13 @@ namespace SintesisERP.App_Data.Model.Inventario
 
         public Result FacturasAddArticulo(Dictionary<string, object> dc_params)
         {
+            float precioobs = 0; 
+
+            if (dc_params.ContainsKey("precioobs")) //JPAREDES
+            {
+                precioobs = float.Parse(dc_params["precioobs"].ToString());
+            }
+
             object id_bodega = (dc_params.GetString("id_bodega").Equals("") ? dc_params.GetString("idbodega") : dc_params.GetString("id_bodega"));
             string dsctofinan = (dc_params.GetString("descuentoFin").Equals("") ? "0" : dc_params.GetString("descuentoFin"));
             return dbase.Procedure("[Dbo].ST_MovFacturaAddArticulo",
@@ -127,6 +134,7 @@ namespace SintesisERP.App_Data.Model.Inventario
             "@lote:BIT", dc_params["lote"],
             "@inventarial:BIT", dc_params["inventarial"],
             "@descuentofin:NUMERIC", dsctofinan,
+            "@preciobsequio:NUMERIC", precioobs,
             "@id_user:int", dc_params["userID"]).RunRow();
         }
 
@@ -200,6 +208,13 @@ namespace SintesisERP.App_Data.Model.Inventario
 
         public Result FacturaSetArticulo(Dictionary<string, object> dc_params)
         {
+            String obs = "";
+
+            if (dc_params.ContainsKey("obs")) //JPAREDES
+            {
+                obs = dc_params["obs"].ToString();
+            }
+
             return dbase.Procedure("[Dbo].[ST_MovFacturaSetItemTemp]",
             "@id_factura:VARCHAR:255", dc_params["id_factura"],
             "@id:INT", dc_params["id"],
@@ -209,8 +224,8 @@ namespace SintesisERP.App_Data.Model.Inventario
             "@op:CHAR:1", dc_params.GetString("op"),
             "@xml:XML", dc_params.GetString("xml"),
             "@column:VARCHAR:20", dc_params["column"],
-            "@id_facturaofi:BIGINT", (dc_params.GetString("id_facturaofi").Equals("") ? "0" : dc_params.GetString("id_facturaofi"))
-            ).RunRow();
+            "@id_facturaofi:BIGINT", (dc_params.GetString("id_facturaofi").Equals("") ? "0" : dc_params.GetString("id_facturaofi")),
+            "@obs:CHAR:2", obs).RunRow();
         }
 
         public Result FacturasDelArticulo(Dictionary<string, object> dc_params)
@@ -558,6 +573,62 @@ namespace SintesisERP.App_Data.Model.Inventario
             return res;
         }
 
+        #endregion
+
+        #region
+
+        //JPAREDES FACTURA DE OBSEQUIOS
+        public object FacturasListObsequio(Dictionary<string, object> dc_params)
+        {
+            try
+            {
+                Dictionary<string, object> outoaram;
+                Result result = dbase.Procedure("[Dbo].[ST_MovFacturasListObsequios]", "@page:int", dc_params.GetString("start"), "@numpage:int",
+                    dc_params.GetString("length"), "@filter:varchar:50", dc_params.GetString("filter"), "@countpage:int:output", 0,
+                    "@id_user:INT", dc_params.GetString("userID")).RunData(out outoaram);
+                if (!result.Error)
+                {
+                    return jsSerialize.Serialize(new { Data = result.Data.Tables[0].ToList(), totalpage = outoaram["countpage"] });
+                }
+                else
+                {
+                    return new { error = 1, errorMesage = "No hay resultado" };
+                }
+            }
+            catch (Exception ex)
+            {
+                return new { error = 1, errorMesage = ex.Message };
+            }
+        }
+
+        public object FacturarFacturaObs(Dictionary<string, object> dc_params)
+        {
+            Result res = dbase.Procedure("[Dbo].[ST_MOVFacturarFacturaObs]",
+                "@id_centrocostos:BIGINT", dc_params["id_centrocostos"],
+                "@fechadoc:VARCHAR:10", dc_params["Fecha"],
+                "@id_tercero:BIGINT", dc_params["id_tercero"],
+                "@id_vendedor:BIGINT", dc_params["id_vendedor"],
+                "@id_ctaobs:BIGINT", dc_params["id_ctaobs"],
+                "@idToken:VARCHAR:255", dc_params["idToken"],
+                "@id_caja:BIGINT", dc_params["idcaja"],
+                "@totalpago:NUMERIC", dc_params["totalpago"],
+                "@formapago:XML", dc_params["forma"],
+                "@id_user:INT", dc_params["userID"]).RunRow();
+
+            if (!res.Error)
+            {
+                String id = res.Row["id"].ToString();
+                String nombreview = res.Row["nombreview"].ToString();
+                String fecha = res.Row["fecha"].ToString();
+                String anomes = res.Row["anomes"].ToString();
+                String id_user = res.Row["id_user"].ToString();
+
+                new Contabilizar().ContabilizarDocumento(id, id_user, fecha, anomes, nombreview, null);
+            }
+
+
+            return new { Error = res.Error, answer = res.Row, Message = res.Message };
+        }
         #endregion
     }
 }
