@@ -10,7 +10,7 @@ var JsonPagos = [
     { id: 'voucher', type: 'TEXT', htmltype: 'INPUT', required: false, depends: false, iddepends: '' }];
 
 window.gridbod;
-window.gridrecibos;   
+window.gridrecibos;
 
 function Loadtable() {
     //Grilla de tabla donde se relaciona las facturas y cuotas por pagar de los clientes.
@@ -107,7 +107,7 @@ function Loadtable() {
             data = $(this).data();
 
             dias = $(this).data("row-dias");
-            //capital = $(this).data("row-capital"); /// Capital de la cuota
+            capital = $(this).data("row-Capital"); /// Capital de la cuota
             //InterCred = $(this).data("row-creditointeres");/// ineteres diarios
             saldocuota = $(this).data("row-saldoc");// Se escoje el valor del saldo de la cuota que esta pendiente
             valrcuota = $(this).data("row-vlr");// Se escoje el valor del saldo de la cuota que esta pendiente
@@ -115,7 +115,7 @@ function Loadtable() {
 
 
             porceinteres = parseFloat(SetNumber($('#interes' + data.rowId).html())) / 30 //Capturamos el valor por defecto del interfes parametizado
-            interes = (saldocuota * porceinteres * dias / 100);// calculamos el valos a pagar en interes teniendo en cuenta la cantidad de dias vencidos
+            interes = (capital * porceinteres * dias / 100);// calculamos el valos a pagar en interes teniendo en cuenta la cantidad de dias vencidos
             interesabonado = parseFloat($('#Tinteresabono' + data.rowId).data().value)
 
 
@@ -239,7 +239,7 @@ function Loadtable() {
         });
         $("#tblPagoPro [money]").autoNumeric('init');
     });
-	//Grilla donde se relaciona las cuotas pagadas en el recibo de caja seleccionado
+    //Grilla donde se relaciona las cuotas pagadas en el recibo de caja seleccionado
     window.gridrecibos = $("#tblrecibos").bootgrid({
         ajax: true,
         post: function () {
@@ -279,7 +279,7 @@ function Loadtable() {
             "porceInteres": function (column, row) {
                 return '% ' + row.porceInMora.Money();
             },
-            
+
             "valorIva": function (column, row) {
                 return '$ ' + row.valorIva.Money();
             },
@@ -733,9 +733,9 @@ function newpay() {
     $('#Tcambio').text("$ 0.00");
     $('#valorforma').val("$ 0.00");
     $('#tbdpagos').empty();
-    window.gridbod.bootgrid('reload');		
+    window.gridbod.bootgrid('reload');
     $('#cajarecibos').hide();
-    $('#cajacuotas').show();							  
+    $('#cajacuotas').show();
     div.find('select').selectpicker('refresh');
 }
 
@@ -839,7 +839,7 @@ function EndCallbackGet(params, answer) {
         $('#btnRev').removeAttr('disabled');
         $('#factura,#m_valor').attr('disabled', 'disabled');
         $('#tabdos').attr('href', "#tab-2");
-		window.gridrecibos.bootgrid('reload');									  
+        window.gridrecibos.bootgrid('reload');
 
         $('#Modalpagos').modal('hide');
     }
