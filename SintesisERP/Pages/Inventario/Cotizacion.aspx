@@ -373,7 +373,7 @@
                                         <label for="Text_Descuento" class="active">% Desc:</label>
                                         <input id="Text_Descuento" type="text" class="form-control addart" data-option="P" placeholder=" " value="0.00" money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-v-max="100" data-a-sign="% " />
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                                     <div class="form-group">
                                         <label for="m_discount" class="active">Desc x Valor:</label>
