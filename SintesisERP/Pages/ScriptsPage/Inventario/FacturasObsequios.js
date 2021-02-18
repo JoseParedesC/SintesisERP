@@ -470,7 +470,7 @@ function Getxmlforma() {
     var xml = "";
     trs = $('#formadepago');
     xml += '<item idforma="' + trs.attr('data-id') + '" vouch="' + trs.attr('data-voucher') + '" valor="' + trs.attr('data-price') + '" />'
-    return xml;
+    return '<Formas>' + xml + '</Formas>';
 }
 
 function EndCallbackRecalculo(Parameter, Result) {
