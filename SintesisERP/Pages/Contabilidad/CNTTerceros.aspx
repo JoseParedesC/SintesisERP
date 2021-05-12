@@ -167,7 +167,7 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sn-padding">
                             <div class="form-group">
                                 <label for="fecha_naci" class="active">Fec Nacimiento:</label>
-                                <input id="fecha_naci" type="text" placeholder=" " class="form-control" current="true" date="true" format="YYYY-MM-DD" max="true" />
+                                <input id="fecha_naci" type="text" placeholder=" " class="form-control"  current="true" date="true" format="YYYY-MM-DD"/>
                             </div>
                         </div>
                     </div>

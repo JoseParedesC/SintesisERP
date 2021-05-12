@@ -37,13 +37,14 @@ namespace SintesisERP.Pages.Connectors
                 Result path = db.Query("SELECT dbo.ST_FnGetValueParam('URLSAVEFILE') valor;", true).RunScalar();
                 string tPath = path.Value.ToString();// context.Server.MapPath("~/" + "Creditos");
                 HttpFileCollection files = context.Request.Files;
+                string option = table.GetString("fileDate");
 
                 object userID = null, tokenID = null;
                 if (context.Session["SesionUserID"] != null)
                     userID = context.Session["SesionUserID"].ToString();
                 if (userID != null)
                 {
-                    string xml = UploadFiles(context, files, tPath, table);
+                    string xml = UploadFiles(context, files, tPath, table, option);
                     tokenID = context.Session["SesionStoken"].ToString();
                     Usuario_Entity user = (Usuario_Entity)Serializacion<Usuario_Entity>.GetIndice(sCarpeta, tokenID.ToString());
                     table.Add("userID", userID);
@@ -69,52 +70,105 @@ namespace SintesisERP.Pages.Connectors
             }
         }
 
-        public string UploadFiles(HttpContext context, HttpFileCollection files, string ruta, Dictionary<string, object> table)
+        public string UploadFiles(HttpContext context, HttpFileCollection files, string ruta, Dictionary<string, object> table, string option)
         {
-            string rutcli = WebConfigurationManager.AppSettings["rutacreditos"].ToString()+ table.GetString("iden");
-            string rutcre = rutcli + "\\CR" + table.GetString("numcredito");
-            string ds_urlname = "";
             string xml = "";
-            HttpPostedFile file = null;
-            if (!Directory.Exists(rutcli))
+            if (option == "S")
             {
-                Directory.CreateDirectory(rutcli);
-            }
 
-            if (!Directory.Exists(rutcre))
-            {
-                Directory.CreateDirectory(rutcre);
-            }
-
-            try
-            {
-                if (files.Count > 0)
+                string rutcli = WebConfigurationManager.AppSettings["rutacreditos"].ToString() + table.GetString("iden");
+                string rutcre = rutcli + "\\CR" + table.GetString("numcredito");
+                string ds_urlname = "";
+                
+                HttpPostedFile file = null;
+                if (!Directory.Exists(rutcli))
                 {
-                    for (int i = 0; i < files.Count; ++i)
-                    {
-                        file = files[i];
-
-                        if(!table.GetString("fileDate").Equals("") && file.FileName.ToUpper() != "FOTOPERFIL_SINTESIS.PNG")
-                            ds_urlname = rutcre + "/" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + "_"+ file.FileName;
-                        else
-                            ds_urlname = rutcli + "/" + file.FileName;
-
-                        if (File.Exists(ds_urlname))
-                            File.Delete(ds_urlname);
-
-                        file.SaveAs(ds_urlname);
-                        xml += "<item serverurl=\"" + ds_urlname + "\" relatiurl=\"" + ds_urlname + "\" name=\"" + file.FileName + "\" />";
-                    }
+                    Directory.CreateDirectory(rutcli);
                 }
 
+                if (!Directory.Exists(rutcre))
+                {
+                    Directory.CreateDirectory(rutcre);
+                }
+
+                try
+                {
+                    if (files.Count > 0)
+                    {
+                        for (int i = 0; i < files.Count; ++i)
+                        {
+                            file = files[i];
+
+                            if (!table.GetString("fileDate").Equals("") && file.FileName.ToUpper() != "FOTOPERFIL_SINTESIS.PNG")
+                                ds_urlname = rutcre + "/" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + "_" + file.FileName;
+                            else
+                                ds_urlname = rutcli + "/" + file.FileName;
+
+                            if (File.Exists(ds_urlname))
+                                File.Delete(ds_urlname);
+
+                            file.SaveAs(ds_urlname);
+                            xml += "<item serverurl=\"" + ds_urlname + "\" relatiurl=\"" + ds_urlname + "\" name=\"" + file.FileName + "\" />";
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al subir los archivos" + ex.Message);
+                }
+
+                
             }
-            catch (Exception ex)
+            else if (option == "N")
             {
-                throw new Exception("Error al subir los archivos" + ex.Message);
+
+                string rutemp = WebConfigurationManager.AppSettings["rutanomina"].ToString() + table.GetString("iden");
+                string rutarch = rutemp + "\\ARCH" + table.GetString("id_empleado");
+                string ds_urlname = "";
+
+                HttpPostedFile file = null;
+                if (!Directory.Exists(rutemp))
+                {
+                    Directory.CreateDirectory(rutemp);
+                }
+
+                if (!Directory.Exists(rutarch))
+                {
+                    Directory.CreateDirectory(rutarch);
+                }
+
+                try
+                {
+                    if (files.Count > 0)
+                    {
+                        for (int i = 0; i < files.Count; ++i)
+                        {
+                            file = files[i];
+
+                            if (!table.GetString("fileDate").Equals("") && file.FileName.ToUpper() != "FOTOEMPLEADO_SINTESIS.PNG")
+                                ds_urlname = rutarch + "/" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + "_" + file.FileName;
+                            else
+                                ds_urlname = rutemp + "/" + file.FileName;
+
+                            if (File.Exists(ds_urlname))
+                                File.Delete(ds_urlname);
+
+                            file.SaveAs(ds_urlname);
+                            xml += "<item serverurl=\"" + ds_urlname + "\" relatiurl=\"" + ds_urlname + "\" name=\"" + file.FileName + "\" />";
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al subir los archivos" + ex.Message);
+                }
+
+                
+
             }
-
             return xml;
-
         }
 
         public bool IsReusable

@@ -239,6 +239,109 @@
     <Content Include="Package\Vendor\js\plugins\fileinput\plugins\purify.min.js" />
     <Content Include="Package\Vendor\js\plugins\fileinput\plugins\sortable.js" />
     <Content Include="Package\Vendor\js\plugins\fileinput\plugins\sortable.min.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\background-events.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\daygrid-views.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\external-dragging-2cals.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\external-dragging-builtin.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\full-height.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\google-calendar.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\icalendar.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\json.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\js\theme-chooser.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\list-sticky-header.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\list-views.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\locales.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\month-view.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\natural-height.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\php\get-events.php" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\php\get-time-zones.php" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\php\utils.php" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\selectable.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\theming.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\time-zones.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\timegrid-sticky-header.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\timegrid-views-hscroll.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\timegrid-views.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\week-numbers.html" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales-all.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales-all.min.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\af.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ar-dz.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ar-kw.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ar-ly.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ar-ma.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ar-sa.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ar-tn.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ar.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\az.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\bg.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\bs.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ca.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\cs.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\cy.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\da.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\de-at.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\de.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\el.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\en-au.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\en-gb.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\en-nz.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\eo.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\es-us.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\es.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\et.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\eu.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\fa.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\fi.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\fr-ca.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\fr-ch.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\fr.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\gl.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\he.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\hi.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\hr.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\hu.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\hy-am.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\id.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\is.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\it.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ja.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ka.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\kk.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ko.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\lb.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\lt.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\lv.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\mk.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ms.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\nb.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ne.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\nl.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\nn.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\pl.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\pt-br.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\pt.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ro.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ru.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\sk.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\sl.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\sq.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\sr-cyrl.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\sr.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\sv.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ta-in.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\th.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\tr.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\ug.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\uk.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\uz.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\vi.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\zh-cn.js" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\locales\zh-tw.js" />
+    <Content Include="Package\Vendor\css\plugins\fullcalendar\main.css" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\main.js" />
+    <Content Include="Package\Vendor\css\plugins\fullcalendar\main.min.css" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\lib\main.min.js" />
     <Content Include="Package\Vendor\js\plugins\logscroll\jquery-albe-timeline.min.js" />
     <Content Include="Package\Vendor\js\plugins\steps\jquery.steps.js" />
     <Content Include="Package\Vendor\js\plugins\steps\jquery.steps.min.js" />
@@ -252,6 +355,7 @@
     <Content Include="Pages\Controles\ClienteInfo.ascx" />
     <Content Include="Pages\Controles\Solicitud.ascx" />
     <Content Include="Pages\Credito\Analisis.aspx" />
+    <Content Include="Pages\Credito\historialSol.aspx" />
     <Content Include="Pages\Credito\Solicitudes.aspx" />
     <Content Include="Pages\Facturacion\FacturacionElectronica.aspx" />
     <Content Include="Pages\Financiero\LineasCredito.aspx" />
@@ -265,6 +369,24 @@
     <Content Include="Pages\Inventario\Cotizacion.aspx" />
     <Content Include="Pages\Contabilidad\Devolucionanticipos.aspx" />
     <Content Include="Pages\Inventario\FacturasRecurrentes.aspx" />
+    <Content Include="Pages\Nomina\Area.aspx" />
+    <Content Include="Pages\Nomina\Afiliados.aspx" />
+    <Content Include="Pages\Nomina\Bancos.aspx" />
+    <Content Include="Pages\Nomina\Embargos.aspx" />
+    <Content Include="Pages\Nomina\Juzgados.aspx" />
+    <Content Include="Pages\Nomina\ParametrosNomina.aspx" />
+    <Content Include="Pages\Nomina\Pila.aspx" />
+    <Content Include="Pages\Nomina\Pres_Social.aspx" />
+    <Content Include="Pages\Nomina\Seg_social.aspx" />
+    <Content Include="Pages\Nomina\Int_Cesantias.aspx" />
+    <Content Include="Pages\Nomina\Horario.aspx" />
+    <Content Include="Pages\Nomina\LiquidacionNom.aspx" />
+    <Content Include="Pages\Nomina\Convenios.aspx" />
+    <Content Include="Pages\Nomina\Cargo.aspx" />
+    <Content Include="Pages\Nomina\Empleados.aspx" />
+    <Content Include="Pages\Nomina\FechaFes.aspx" />
+    <Content Include="Pages\Nomina\SubTiposCotizante.aspx" />
+    <Content Include="Pages\Nomina\TiposCotizante.aspx" />
     <Content Include="Pages\Parametrizacion\Perfiles.aspx" />
     <Content Include="Pages\Parametrizacion\Permisos.aspx" />
     <Content Include="Pages\ScriptsPage\Contabilidad\CierreContable.js" />
@@ -274,6 +396,7 @@
     <Content Include="Pages\ScriptsPage\Contabilidad\Solicitudes.js" />
     <Content Include="Pages\ScriptsPage\Credito\Analisis.js" />
     <Content Include="Pages\ScriptsPage\Credito\AnalisisExc.js" />
+    <Content Include="Pages\ScriptsPage\Credito\Historialsol.js" />
     <Content Include="Pages\ScriptsPage\Credito\Solicitudes.js" />
     <Content Include="Pages\ScriptsPage\Facturacion\FacturacionElectronica.js" />
     <Content Include="Pages\ScriptsPage\Financiero\LineasCreditos.js" />
@@ -285,6 +408,23 @@
     <Content Include="Pages\ScriptsPage\Contabilidad\Devanticipos.js" />
     <Content Include="Pages\ScriptsPage\Contabilidad\TerceroIntegral.js" />
     <Content Include="Pages\ScriptsPage\Inventario\FacturasRecurrentes.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Area.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Afiliados.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Bancos.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Embargos.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Juzgados.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\ParametrosNom.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Pila.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Horario.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\LiquidacionNom.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Pres_Sociales.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Seg_social.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Convenios.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Cargo.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\Empleados.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\FechaFes.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\SubTiposCotizante.js" />
+    <Content Include="Pages\ScriptsPage\Nomina\TiposCotizante.js" />
     <Content Include="Pages\ScriptsPage\Parametrizacion\Parametros.js" />
     <Content Include="Pages\ScriptsPage\Parametrizacion\Perfiles.js" />
     <Content Include="Pages\ScriptsPage\Parametrizacion\Permisos.js" />
@@ -326,8 +466,24 @@
     <Content Include="Pages\Xslt\FaturacionXmlPdf.xslt" />
     <Content Include="Systems\analisis.aspx" />
     <Content Include="Systems\analisisExc.aspx" />
+    <Content Include="Systems\afiliados.aspx" />
+    <Content Include="Systems\bancos.aspx" />
+    <Content Include="Systems\embargos.aspx" />
+    <Content Include="Systems\juzgados.aspx" />
+    <Content Include="Systems\pila.aspx" />
+    <Content Include="Systems\seg_social.aspx" />
+    <Content Include="Systems\pres_social.aspx" />
+    <Content Include="Systems\horario.aspx" />
+    <Content Include="Systems\area.aspx" />
+    <Content Include="Systems\liquidacionnom.aspx" />
+    <Content Include="Systems\parametrosnom.aspx" />
+    <Content Include="Systems\Convenio.aspx" />
     <Content Include="Systems\cierrecontable.aspx" />
     <Content Include="Systems\consolidacion.aspx" />
+    <Content Include="Systems\Cargos.aspx" />
+    <Content Include="Systems\Empleados.aspx" />
+    <Content Include="Systems\FechaFes.aspx" />
+    <Content Include="Systems\historialSol.aspx" />
     <Content Include="Systems\RecaudoCartera.aspx" />
     <Content Include="Systems\notascartera.aspx" />
     <Content Include="Systems\facturasrecurrentes.aspx" />
@@ -341,6 +497,7 @@
     <Content Include="Systems\searchcliente.aspx" />
     <Content Include="Systems\ServiciosFinanciero.aspx" />
     <Content Include="Systems\Solicitud.aspx" />
+    <Content Include="Systems\subtiposcotizante.aspx" />
     <Content Include="Systems\tercerointegral.aspx" />
     <Content Include="Systems\cierrecaja.aspx" />
     <Content Include="Systems\empresa.aspx" />
@@ -389,6 +546,7 @@
     <Content Include="Systems\ajustes.aspx" />
     <Content Include="Systems\periodos.aspx" />
     <Content Include="Systems\reporteador.aspx" />
+    <Content Include="Systems\tiposcotizante.aspx" />
     <Content Include="Systems\turnos.aspx" />
     <Content Include="Systems\vendedores.aspx" />
     <Content Include="Systems\recibocaja.aspx" />
@@ -719,6 +877,51 @@
     <Compile Include="App_Data\Model\Inventario\FacturasRecurrentes.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="App_Data\Model\Nomina\Area.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Afiliados.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Bancos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Juzgados.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Nomina.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Pila.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Embargos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Horario.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Pres_Sociales.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Seg_social.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\Cargos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\FechaFes.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\LiquidacionNom.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\RHumanos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\Model\Nomina\TiposCotizante.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="App_Data\Model\Parametrizacion\Empresa.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -879,6 +1082,13 @@
     <Compile Include="Pages\Credito\Analisis.aspx.designer.cs">
       <DependentUpon>Analisis.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Credito\historialSol.aspx.cs">
+      <DependentUpon>historialSol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Credito\historialSol.aspx.designer.cs">
+      <DependentUpon>historialSol.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Credito\Solicitudes.aspx.cs">
       <DependentUpon>Solicitudes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -888,6 +1098,7 @@
     </Compile>
     <Compile Include="Pages\Facturacion\FacturacionElectronica.aspx.cs">
       <DependentUpon>FacturacionElectronica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Facturacion\FacturacionElectronica.aspx.designer.cs">
       <DependentUpon>FacturacionElectronica.aspx</DependentUpon>
@@ -968,6 +1179,132 @@
     </Compile>
     <Compile Include="Pages\Inventario\FacturasRecurrentes.aspx.designer.cs">
       <DependentUpon>FacturasRecurrentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Area.aspx.cs">
+      <DependentUpon>Area.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Area.aspx.designer.cs">
+      <DependentUpon>Area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Afiliados.aspx.cs">
+      <DependentUpon>Afiliados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Afiliados.aspx.designer.cs">
+      <DependentUpon>Afiliados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Bancos.aspx.cs">
+      <DependentUpon>Bancos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Bancos.aspx.designer.cs">
+      <DependentUpon>Bancos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Embargos.aspx.cs">
+      <DependentUpon>Embargos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Embargos.aspx.designer.cs">
+      <DependentUpon>Embargos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Juzgados.aspx.cs">
+      <DependentUpon>Juzgados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Juzgados.aspx.designer.cs">
+      <DependentUpon>Juzgados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\ParametrosNomina.aspx.cs">
+      <DependentUpon>ParametrosNomina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\ParametrosNomina.aspx.designer.cs">
+      <DependentUpon>ParametrosNomina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Pila.aspx.cs">
+      <DependentUpon>Pila.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Pila.aspx.designer.cs">
+      <DependentUpon>Pila.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Pres_Social.aspx.cs">
+      <DependentUpon>Pres_Social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Pres_Social.aspx.designer.cs">
+      <DependentUpon>Pres_Social.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Seg_social.aspx.cs">
+      <DependentUpon>Seg_social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Seg_social.aspx.designer.cs">
+      <DependentUpon>Seg_social.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Int_Cesantias.aspx.cs">
+      <DependentUpon>Int_Cesantias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Int_Cesantias.aspx.designer.cs">
+      <DependentUpon>Int_Cesantias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Horario.aspx.cs">
+      <DependentUpon>Horario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Horario.aspx.designer.cs">
+      <DependentUpon>Horario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\LiquidacionNom.aspx.cs">
+      <DependentUpon>LiquidacionNom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\LiquidacionNom.aspx.designer.cs">
+      <DependentUpon>LiquidacionNom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Convenios.aspx.cs">
+      <DependentUpon>Convenios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Convenios.aspx.designer.cs">
+      <DependentUpon>Convenios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Cargo.aspx.cs">
+      <DependentUpon>Cargo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Cargo.aspx.designer.cs">
+      <DependentUpon>Cargo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\Empleados.aspx.cs">
+      <DependentUpon>Empleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\Empleados.aspx.designer.cs">
+      <DependentUpon>Empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\FechaFes.aspx.cs">
+      <DependentUpon>FechaFes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\FechaFes.aspx.designer.cs">
+      <DependentUpon>FechaFes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\SubTiposCotizante.aspx.cs">
+      <DependentUpon>SubTiposCotizante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\SubTiposCotizante.aspx.designer.cs">
+      <DependentUpon>SubTiposCotizante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nomina\TiposCotizante.aspx.cs">
+      <DependentUpon>TiposCotizante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Nomina\TiposCotizante.aspx.designer.cs">
+      <DependentUpon>TiposCotizante.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Parametrizacion\Perfiles.aspx.cs">
       <DependentUpon>Perfiles.aspx</DependentUpon>
@@ -1452,6 +1789,7 @@
     <Content Include="Package\Vendor\js\plugins\Tooltipminimal\README.md" />
     <Content Include="Pages\Connectors\ConnectorFilesFolder.ashx" />
     <Content Include="Pages\Connectors\ConnectorGetFile.ashx" />
+    <Content Include="Package\Vendor\js\plugins\fullcalendar\examples\json\events.json" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

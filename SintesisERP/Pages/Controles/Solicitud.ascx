@@ -624,7 +624,7 @@
                             <button type="button" class="btn btn-default w-palabra inputaddress" data-dian="AC " data-dir="AVENIDA CALLE " con-nombre="1">Avenida Calle</button>
                             <button type="button" class="btn btn-default w-palabra inputaddress" data-dian="BRR " data-dir="BARRIO " con-nombre="1">Barrio</button>
                             <button type="button" class="btn btn-default w-palabra inputaddress" data-dian="BLV " data-dir="BOULEVAR " con-nombre="1">Boulevar</button>
-                            <button type="button" class="btn btn-default w-palabra inputaddress" data-dian="CL " data-dir="CALLE " con-nombre="1">Calle</button>
+                            <button type="button" class="btn btn-default w-palabra inputaddress" data-dian="CLL " data-dir="CALLE " con-nombre="1">Calle</button>
                             <button type="button" class="btn btn-default w-palabra inputaddress" data-dian="CR " data-dir="CARRERA " con-nombre="1">Carrera</button>
                             <button type="button" class="btn btn-default w-palabra inputaddress" data-dian="CRV " data-dir="CIRCUNVALAR ">Circunvalar</button>
 

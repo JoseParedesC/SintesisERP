@@ -1,28 +1,28 @@
 ﻿/*json que se usa para verificar que los campos no esten vacios*/
 var JsonValidate = [
-    { id: 'Selectipoper', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'id_tipoiden', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'iden', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'pnombre', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'papellido', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'ecivil', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'pcargo', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'escolaridad', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'scorreo', type: 'EMAIL', htmltype: 'INPUT', required: false, depends: false, iddepends: '' },
-    { id: 'genero', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'estrato', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'scelular', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'direccion', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'Text_city', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'vinmueble', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'TipEmpleo', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, traiddepends: '' },
-    { id: 'sempresa', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'sedireccion', type: 'TEXT', htmltype: 'INPUT', required: false, depends: false, iddepends: '' },
-    { id: 'setelefono', type: 'TEXT', htmltype: 'INPUT', required: false, depends: false, iddepends: '' },
-    { id: 'secargoactual', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'setiemposer', type: 'TEXT', htmltype: 'SELECT', required: true, depends: false, iddepends: '' },
-    { id: 'sesalario', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' },
-    { id: 'foto', type: 'DROPIFY', htmltype: 'DROPIFY', required: true, depends: false, iddepends: '' }
+    { id: 'Selectipoper',   type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'id_tipoiden',    type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'iden',           type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'pnombre',        type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'papellido',      type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'ecivil',         type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'pcargo',         type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'escolaridad',    type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'scorreo',        type: 'EMAIL',  htmltype: 'INPUT',      required: false,    depends: false, iddepends: '' },
+    { id: 'genero',         type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'estrato',        type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'scelular',       type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'direccion',      type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'Text_city',      type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'vinmueble',      type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'TipEmpleo',      type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, traiddepends: '' },
+    { id: 'sempresa',       type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'sedireccion',    type: 'TEXT',   htmltype: 'INPUT',      required: false,    depends: false, iddepends: '' },
+    { id: 'setelefono',     type: 'TEXT',   htmltype: 'INPUT',      required: false,    depends: false, iddepends: '' },
+    { id: 'secargoactual',  type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'setiemposer',    type: 'TEXT',   htmltype: 'SELECT',     required: true,     depends: false, iddepends: '' },
+    { id: 'sesalario',      type: 'TEXT',   htmltype: 'INPUT',      required: true,     depends: false, iddepends: '' },
+    { id: 'foto',           type: 'DROPIFY',htmltype: 'DROPIFY',    required: true,     depends: false, iddepends: '' }
     //,{ id: 'seconceptooi', type: 'TEXT', htmltype: 'INPUT', required: true, depends: false, iddepends: '' }
 
 ];
@@ -274,6 +274,7 @@ $('#btnSol, #btnCod').click(function (e) {
             returns = true;
             titlesol = "DEUDOR";
             $('#iden').val($('#identi_per').val());
+
         }
         else {
             toastr.warning("Ya existe un solicitante.", 'Sintesis Creditos');
