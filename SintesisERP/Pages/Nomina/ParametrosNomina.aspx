@@ -287,19 +287,19 @@
                                             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding" style="padding-right: 12px;">
                                                 <div class="form-group">
                                                     <label for="num_salmin_salud_empleador" class="active">Salarios para salud:</label>
-                                                    <input id="num_salmin_salud_empleador" type="text" placeholder=" " class="form-control" <%--disabled="disabled"--%> />
+                                                    <input id="num_salmin_salud_empleador" type="text" placeholder=" " class="form-control" money="true" />
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
                                                     <label for="num_salmin_ICBF" class="active">Salarios min para ICBF:</label>
-                                                    <input id="num_salmin_ICBF" type="text" placeholder=" " class="form-control" <%--disabled="disabled"--%> />
+                                                    <input id="num_salmin_ICBF" type="text" placeholder=" " class="form-control" money="true"/>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
                                                     <label for="num_salmin_SENA" class="active">Salarios min para SENA:</label>
-                                                    <input id="num_salmin_SENA" type="text" placeholder=" " class="form-control" <%--disabled="disabled"--%> />
+                                                    <input id="num_salmin_SENA" type="text" placeholder=" " class="form-control" money="true"/>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
@@ -319,7 +319,7 @@
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
                                                     <label for="num_max_seguridasocial" class="active">Salarios max para seguridad social:</label>
-                                                    <input id="num_max_seguridasocial" type="text" placeholder=" " class="form-control" <%--disabled="disabled"--%> />
+                                                    <input id="num_max_seguridasocial" type="text" placeholder=" " money="true" class="form-control" <%--disabled="disabled"--%> />
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">

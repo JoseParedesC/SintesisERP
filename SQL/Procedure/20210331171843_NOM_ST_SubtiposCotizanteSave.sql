@@ -27,10 +27,6 @@ AS
 DECLARE @error VARCHAR(MAX)
 BEGIN TRY
 
-	
-	IF EXISTS(SELECT 1 FROM [NOM].[TiposCotizante] WHERE codigo = @code AND id != ISNULL(@id,0))
-			RAISERROR('El codigo ya se encuentra registrado', 16, 0)
-
 
 	IF EXISTS(SELECT 1 FROM [NOM].[TiposCotizante] WHERE codigo_externo = @code_externo AND id != ISNULL(@id,0))
 		RAISERROR('El codigo externo ya se encuentra registrado', 16, 0)

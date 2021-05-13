@@ -25,6 +25,13 @@ AS
 DECLARE @error VARCHAR(MAX)
 BEGIN TRY
 
+	IF EXISTS(SELECT 1 FROM [NOM].[Juzgados] WHERE codigo = @code AND id != ISNULL(@id,0))
+			RAISERROR('El codigo ya se encuentra registrado', 16, 0)
+
+
+	IF EXISTS(SELECT 1 FROM [NOM].[Juzgados] WHERE codigo_externo = @code_externo AND id != ISNULL(@id,0))
+		RAISERROR('El codigo externo ya se encuentra registrado', 16, 0)
+	
 	IF(ISNULL(@id,0) = 0)
 	BEGIN
 

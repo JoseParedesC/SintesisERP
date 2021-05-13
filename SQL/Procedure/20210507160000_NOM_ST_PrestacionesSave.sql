@@ -61,6 +61,9 @@ BEGIN TRY
 
 END TRY
 BEGIN CATCH	
-	SET @error = 'Error  '+ ERROR_MESSAGE();
+	IF ERROR_NUMBER() = 547
+		SET @error = 'La cuenta ingresada no existe'
+	ELSE
+		SET @error = 'Error  '+ ERROR_MESSAGE();
 	RAISERROR(@error,16,0);	
 END CATCH

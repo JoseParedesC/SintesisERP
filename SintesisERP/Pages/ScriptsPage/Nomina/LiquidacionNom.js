@@ -981,3 +981,51 @@ function setTableDeduc(json) {
     $('#tblDeduc tbody').append(tr)
     formReset();
 }
+
+$('#addDeven').on('click', function () {
+    if (validate(ValidateDeven) & (($('#f_fin').val() > $('#f_ini').val()) | $('#f_ini').val() == '')) {
+
+        var json = {
+            'fecha_ini': $('#f_ini').val(), 'fecha_fin': $('#f_fin').val(),
+            'bonificacion': $('#boni').val(), 'comision': $('#comi').val()
+        }
+
+        setTableDevengo(json)
+
+    } else {
+        if ($('#f_fin').val() < $('#f_ini').val()) {
+            a = $('#f_fin').closest('.form-group').addClass('is-focused error');
+        }
+    }
+});
+
+$('#addAusenc').on('click', function () {
+    if (validate(ValidateAusencia) & ($('#fecha_fin').val() > $('#fecha_ini').val())) {
+
+        var json = {
+            'fecha_ini': $('#fecha_ini').val(), 'fecha_fin': $('#fecha_fin').val(),
+            'ds_ausencia': $('#ds_ausencia').find('option:selected').text(), 'ds_diagnostico': $('#ds_diagnostico').val(),
+            'remunerado': $('#remunerado').prop('checked'), 'suspendido': $('#suspendido').prop('checked'),
+            'id_diagnostico': $('#id_diagnostico').val(), 'id_ausencia': $('#ds_ausencia').val()
+        };
+
+        setTableAusen(json);
+    } else {
+        if ($('#fecha_fin').val() < $('#fecha_ini').val()) {
+            $('#fecha_fin').closest('.form-group').addClass('is-focused error')
+        }
+    }
+});
+
+$('#addDeduc').on('click', function () {
+    if (validate(ValidateDeduc)) {
+
+        var json = {
+            'prestamo': $('#prestamo').val(), 'libranza': $('#libranza').val(),
+            'ds_embargo': $('#ds_embargo').val(), 'retencion': $('#retefuente').val(),
+            'id_embargo': $('#id_embargo').val()
+        }
+
+        setTableDeduc(json)
+    }
+});

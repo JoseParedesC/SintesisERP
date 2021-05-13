@@ -75,7 +75,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h2 class="modal-title"><i class="fa fa-2x fa-fighter-jet"></i>&nbsp;&nbsp;Detalles de Cotizante</h2>
+                    <h2 class="modal-title"><i class="fa fa-fw fa-dedent"></i>&nbsp;&nbsp;Detalles de Cotizante</h2>
                 </div>
                 <div class="modal-body clearfix">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-md-12 sn-padding">

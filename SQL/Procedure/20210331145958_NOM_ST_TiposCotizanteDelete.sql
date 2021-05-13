@@ -36,7 +36,7 @@ BEGIN TRY
 
 END TRY
 BEGIN CATCH	
-	IF (ERROR_NUMBER() = 3726)
+	IF (ERROR_NUMBER() = 547)
 		SET @error =  'Error: No se puede eliminar porque hay una referencia hacia él.'
 	ELSE
 		SET @error =  'Error: '+ERROR_MESSAGE();

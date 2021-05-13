@@ -23,7 +23,7 @@ AS
 BEGIN TRY
 	DECLARE @error VARCHAR(MAX)
 	DECLARE @table TABLE (idtable INT identity(1,1), id BIGINT, codigo VARCHAR(25),  nombre VARCHAR(75), nivel INT, 
-						  id_padre VARCHAR(25), tipo char(1)) 
+						  id_padre VARCHAR(50), tipo char(1)) 
 
 	INSERT INTO @table (id, codigo, nombre, id_padre, tipo, nivel)
 	SELECT id_subtipo, codigo, CONCAT(id_padre, CASE WHEN codigo != '' THEN ' - ' ELSE ''END, codigo) AS nombre, id_padre, '' tipo, CAST(ROW_NUMBER() OVER(ORDER BY id_padre DESC) AS INT) AS indice
