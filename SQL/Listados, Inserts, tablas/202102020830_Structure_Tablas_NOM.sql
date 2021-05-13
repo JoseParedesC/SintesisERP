@@ -1,6 +1,6 @@
 /****** Object:  Table [NOM].[Personas_Adicionales]    Script Date: 23/11/2020 9:52:10 a. m. ******/
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Afiliados]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 	CREATE TABLE [NOM].[Afiliados](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_tipoiden] [int] NOT NULL,
@@ -25,7 +25,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Area]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Area](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[nombre] [varchar](50) NOT NULL,
@@ -59,7 +59,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Ausencias]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Ausencias](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_per_cont] [bigint] NOT NULL,
@@ -67,8 +67,8 @@ CREATE TABLE [NOM].[Ausencias](
 	[fecha_fin] [smalldatetime] NULL,
 	[id_diagnostico] [bigint] NULL,
 	[id_tipoausencia] [bigint] NULL,
-	[remunerado] [bit] NOT NULL CONSTRAINT [DF_NOMNovedadesA_created] DEFAULT ((0)),
-	[domingo_suspencion] [bit] NOT NULL CONSTRAINT [DF_NOMNovedadesA_created] DEFAULT ((0)),
+	[remunerado] [bit] NOT NULL CONSTRAINT [DF_NOMNovedadesA_remunerado] DEFAULT ((0)),
+	[domingo_suspencion] [bit] NOT NULL CONSTRAINT [DF_NOMNovedadesA_domingo_suspencion] DEFAULT ((0)),
 	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedadesA_created]  DEFAULT (getdate()),
 	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedadesA_updated]  DEFAULT (getdate()),
 	[id_usercreated] [bigint] NOT NULL,
@@ -82,7 +82,7 @@ PRIMARY KEY CLUSTERED
 GO
 
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Cargo]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Cargo](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[nombre] [varchar](50) NOT NULL,
@@ -104,7 +104,7 @@ SET ANSI_PADDING OFF
 GO
 
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Cesantias]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Cesantias](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[codigo] [int] NULL,
@@ -126,7 +126,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Contrato]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Contrato](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_periodo] [bigint] NULL,
@@ -179,7 +179,7 @@ SET ANSI_PADDING OFF
 GO
 
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Deducciones]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Deducciones](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_per_cont] [bigint] NOT NULL,
@@ -199,7 +199,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Devengos]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Devengos](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_per_cont] [bigint] NOT NULL,
@@ -222,7 +222,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Diagnostico]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Diagnostico](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[codigo] [varchar](20) NOT NULL,
@@ -243,7 +243,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Entidades_de_Salud]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Entidades_de_Salud](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_tiposeg] [bigint] NOT NULL,
@@ -266,7 +266,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[FechaFes]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[FechaFes](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[created] [smalldatetime] NOT NULL CONSTRAINT [DF_FechaFes_created]  DEFAULT (getdate()),
@@ -286,7 +286,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[fondo_solidario_pensional]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[fondo_solidario_pensional](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_parametros] [bigint] NOT NULL,
@@ -305,7 +305,7 @@ CREATE TABLE [NOM].[fondo_solidario_pensional](
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Horario]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Horario](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_padre] [bigint] NULL,
@@ -336,7 +336,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Int_Cesantias]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Int_Cesantias](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[nombre] [varchar](60) NOT NULL,
@@ -354,7 +354,7 @@ CREATE TABLE [NOM].[Int_Cesantias](
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Juzgados]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Juzgados](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[codigo] [varchar](20) NOT NULL,
@@ -373,7 +373,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Novedades]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Novedades](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_per_cont] [bigint] NOT NULL,
@@ -392,7 +392,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[NovedadesDates]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[NovedadesDates](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_per_cont] [bigint] NOT NULL,
@@ -410,7 +410,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Pago_por_Contrato]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Pago_por_Contrato](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_contrato] [bigint] NOT NULL,
@@ -475,7 +475,7 @@ CREATE TABLE [NOM].[Pago_por_Contrato](
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[ParamsAnual](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[salario_MinimoLegal] [numeric](18, 4) NOT NULL,
@@ -504,7 +504,7 @@ CREATE TABLE [NOM].[ParamsAnual](
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual_Empleado]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[ParamsAnual_Empleado](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[porcen_salud] [numeric](6, 2) NOT NULL,
@@ -526,7 +526,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual_Empleador]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[ParamsAnual_Empleador](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[porcen_salud] [numeric](6, 2) NOT NULL,
@@ -544,7 +544,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual_HrsExtras]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[ParamsAnual_HrsExtras](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[extra_diurna] [numeric](18, 4) NOT NULL,
@@ -566,7 +566,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual_Solid]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[ParamsAnual_Solid](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[desde] [numeric](18, 0) NOT NULL,
@@ -585,7 +585,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Periodos_Pago]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Periodos_Pago](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[diaspago] [varchar](max) NOT NULL,
@@ -606,7 +606,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Periodos_Por_Contrato]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Periodos_Por_Contrato](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_contrato] [bigint] NOT NULL,
@@ -626,7 +626,7 @@ CREATE TABLE [NOM].[Periodos_Por_Contrato](
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Pila]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Pila](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[nombre] [varchar](30) NOT NULL,
@@ -645,7 +645,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Prestacion_Por_Contrato]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Prestacion_Por_Contrato](
 	[id] [bigint] NOT NULL,
 	[primas_servi] [numeric](18, 4) NOT NULL,
@@ -662,7 +662,7 @@ CREATE TABLE [NOM].[Prestacion_Por_Contrato](
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Primas]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Primas](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[nombre] [varchar](60) NOT NULL,
@@ -684,7 +684,7 @@ SET ANSI_PADDING OFF
 GO
 
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Sedes]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Sedes](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[nombre] [varchar](20) NOT NULL,
@@ -705,7 +705,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[SubtiposCotizante]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[SubtiposCotizante](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[codigo] [varchar](20) NOT NULL,
@@ -727,7 +727,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Tipos_SubtiposCotizanets]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Tipos_SubtiposCotizanets](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_subtipo] [bigint] NULL,
@@ -744,7 +744,7 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Personas_Adicionales]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[TiposCotizante]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[TiposCotizante](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[codigo] [varchar](20) NOT NULL,
@@ -767,7 +767,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[[Vacaciones]]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Vacaciones]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Vacaciones](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[nombre] [varchar](60) NOT NULL,
@@ -792,77 +792,77 @@ GO
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_Cesantias_CNTCuentas1]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Cesantias_CNTCuentas1')
 ALTER TABLE [NOM].[Cesantias]  WITH CHECK ADD  CONSTRAINT [FK_Cesantias_CNTCuentas1] FOREIGN KEY([contrapartida])
 REFERENCES [dbo].[CNTCuentas] ([id])
 GO
 ALTER TABLE [NOM].[Cesantias] CHECK CONSTRAINT [FK_Cesantias_CNTCuentas1]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_Entidades_de_Salud_CNTCuentas1]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Entidades_de_Salud_CNTCuentas1')
 ALTER TABLE [NOM].[Entidades_de_Salud]  WITH CHECK ADD  CONSTRAINT [FK_Entidades_de_Salud_CNTCuentas1] FOREIGN KEY([contrapartida])
 REFERENCES [dbo].[CNTCuentas] ([id])
 GO
 ALTER TABLE [NOM].[Entidades_de_Salud] CHECK CONSTRAINT [FK_Entidades_de_Salud_CNTCuentas1]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_PagoContrato_TipoSalario]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_PagoContrato_TipoSalario')
 ALTER TABLE [NOM].[Pago_por_Contrato]  WITH CHECK ADD  CONSTRAINT [FK_PagoContrato_TipoSalario] FOREIGN KEY([tipo_salario])
 REFERENCES [dbo].[ST_Listados] ([id])
 GO
 ALTER TABLE [NOM].[Pago_por_Contrato] CHECK CONSTRAINT [FK_PagoContrato_TipoSalario]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_Parametros_Cuentas]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Parametros_Cuentas')
 ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_Parametros_Cuentas] FOREIGN KEY([id_cuentacobrar])
 REFERENCES [dbo].[CNTCuentas] ([id])
 GO
 ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_Parametros_Cuentas]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_Parametros_Cuentas_ARL]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Parametros_Cuentas_ARL')
 ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_Parametros_Cuentas_ARL] FOREIGN KEY([id_cuentaarl])
 REFERENCES [dbo].[CNTCuentas] ([id])
 GO
 ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_Parametros_Cuentas_ARL]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_ParamsAnual_Empleado]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Empleado')
 ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_Empleado] FOREIGN KEY([id_parametrosEmpleado])
 REFERENCES [NOM].[ParamsAnual_Empleado] ([id])
 GO
 ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_ParamsAnual_Empleado]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_ParamsAnual_Empleador]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Empleador')
 ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_Empleador] FOREIGN KEY([id_parametrosEmpleador])
 REFERENCES [NOM].[ParamsAnual_Empleador] ([id])
 GO
 ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_ParamsAnual_Empleador]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_ParamsAnual_HrsExtras]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_HrsExtras')
 ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_HrsExtras] FOREIGN KEY([id_horasExt])
 REFERENCES [NOM].[ParamsAnual_HrsExtras] ([id])
 GO
 ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_ParamsAnual_HrsExtras]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_ParamsAnual_Intereses]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Intereses')
 ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_Intereses] FOREIGN KEY([id_interesCesantias])
 REFERENCES [dbo].[ST_Listados] ([id])
 GO
 ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_ParamsAnual_Intereses]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_ParamsAnual_Solid]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Solid')
 ALTER TABLE [NOM].[ParamsAnual_Solid]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_Solid] FOREIGN KEY([id_parametros])
 REFERENCES [NOM].[ParamsAnual] ([id])
 GO
 ALTER TABLE [NOM].[ParamsAnual_Solid] CHECK CONSTRAINT [FK_ParamsAnual_Solid]
 GO
 
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = '[FK_Sedes_DivPolitica]')
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Sedes_DivPolitica')
 ALTER TABLE [NOM].[Sedes]  WITH CHECK ADD  CONSTRAINT [FK_Sedes_DivPolitica] FOREIGN KEY([id_ciudad])
 REFERENCES [dbo].[DivPolitica] ([id])
 GO
