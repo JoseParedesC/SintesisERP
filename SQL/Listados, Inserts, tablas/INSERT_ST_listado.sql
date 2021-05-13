@@ -286,3 +286,37 @@ INSERT INTO ST_Listados (codigo, iden, nombre, estado, id_user, bloqueo) VALUES(
 
 
 END
+
+-- JPAREDES
+--TIPO DE INCAPACIDAD
+IF NOT EXISTS(SELECT 1 FROM ST_Listados WHERE codigogen = 'TIPOINC')
+BEGIN
+INSERT INTO ST_Listados (codigogen, codigo, iden, nombre, estado, bloqueo) VALUES ('TIPOINC','', '','Tipo de Incapacidad', 1,1)
+
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, bloqueo) VALUES ('TIPOINC', 'INC1','66,67% del dia 1 al 90', 1,1)
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, bloqueo) VALUES ('TIPOINC', 'INC2','100% primeros 2 dias y del 3 al 90 al 66,67%', 1,1)
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, bloqueo) VALUES ('TIPOINC', 'INC3','100% del dia 1 al 90', 1,1)
+END
+
+-- TIPO DE AUSENCIA
+IF NOT EXISTS(SELECT 1 FROM ST_Listados WHERE codigogen = 'TIPOAUSENCIA')
+BEGIN
+INSERT INTO ST_Listados (codigogen, codigo, iden, nombre, estado, bloqueo) VALUES ('TIPOAUSENCIA','', '','Tipo de Ausencia', 1,1)
+
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, bloqueo) VALUES ('TIPOAUSENCIA', 'VAC','Vacaciones', 1,1)
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, bloqueo) VALUES ('TIPOAUSENCIA', 'LIC','Licencia', 1,1)
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, bloqueo) VALUES ('TIPOAUSENCIA', 'INC','Incapacidad', 1,1)
+
+END
+
+-- TIPO PRESTACIONES SOCIALES
+IF NOT EXISTS(SELECT 1 FROM ST_Listados WHERE codigogen = 'TIPOPRESTACION')
+BEGIN
+INSERT INTO ST_Listados (codigogen, codigo, iden, nombre,  estado, id_user, bloqueo) VALUES('TIPOPRESTACION', '', '', 'Tipo Seguridad Social', 1, 1, 0)
+
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, id_user, bloqueo) VALUES('TIPOPRESTACION', 'CESAN', 'Cesantias', '', 1, 0)
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, id_user, bloqueo) VALUES('TIPOPRESTACION', 'INCESAN', 'Int. de cesantias', '', 1, 0)
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, id_user, bloqueo) VALUES('TIPOPRESTACION', 'PRIM', 'Primas', '', 1, 0)
+INSERT INTO ST_Listados (codigo, iden, nombre, estado, id_user, bloqueo) VALUES('TIPOPRESTACION', 'VACA', 'Vacaciones', '', 1, 0)
+
+END

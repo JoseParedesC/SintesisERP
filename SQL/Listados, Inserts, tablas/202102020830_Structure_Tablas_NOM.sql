@@ -1,4 +1,316 @@
-/****** Object:  Table [NOM].[Personas_Adicionales]    Script Date: 23/11/2020 9:52:10 a. m. ******/
+--liquibase formatted sql
+--changeset ,JPAREDES:1 dbms:mssql runOnChange:true endDelimiter:GO stripComments:false
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Prestaciones' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Prestaciones](
+		id BIGINT IDENTITY(1,1) NOT NULL,
+		codigo BIGINT NULL,
+		nombre VARCHAR(60) NOT NULL,
+		contrapartida BIGINT NOT NULL,
+		provision NUMERIC(18,4) NOT NULL,
+		tipo_prestacion INT NOT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_Prestaciones_created] DEFAULT GETDATE(),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_Prestaciones_updated] DEFAULT GETDATE(),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+END
+
+
+GO
+
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Devengos' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Devengos](
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		id_per_cont BIGINT NOT NULL,
+		fecha_inicio SMALLDATETIME NULL,
+		fecha_fin SMALLDATETIME NULL,
+		-- Devengos
+		h_extras BIGINT NULL,
+		dia BIGINT NULL,
+		noche BIGINT NULL,
+		dias_festivos BIGINT NULL,
+		noches_festivos BIGINT NULL,
+		boni BIGINT NULL,
+		comi BIGINT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMNovedadesD_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMNovedadesD_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+END
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Ausencias' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Ausencias](
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		id_per_cont BIGINT NOT NULL,
+		-- Ausencias
+		fecha_ini SMALLDATETIME NOT NULL,
+		fecha_fin SMALLDATETIME NOT NULL, 
+		id_diagnostico BIGINT NULL,
+		id_tipoausencia BIGINT NULL,
+		remunerado BIT NOT NULL DEFAULT 0,
+		domingo_suspencion BIT NOT NULL DEFAULT 0,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMNovedadesA_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMNovedadesA_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+END
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Deducciones' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Deducciones](
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		id_per_cont BIGINT NOT NULL,
+		-- Deducciones
+		prestamos NUMERIC(18,4) NULL,
+		libranzas NUMERIC(14,4) NULL,
+		id_embargo BIGINT,
+		retencion_fuente BIGINT,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMNovedadesDC_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMNovedadesDC_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+END
+
+GO
+
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Novedades' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Novedades] (
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		id_per_cont BIGINT NOT NULL,
+		id_devengo BIGINT NULL,
+		id_ausencia BIGINT NULL,
+		id_deduccion BIGINT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMNovedades_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMNovedades_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+END
+
+GO
+
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Sedes' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Sedes] (
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		nombre VARCHAR(20) NOT NULL,
+		id_ciudad BIGINT NOT NULL,
+		estado BIT NOT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMSedes_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMSedes_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+END
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Diagnostico' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Diagnostico] (
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		codigo VARCHAR(20) NOT NULL,
+		descripcion VARCHAR(MAX) NOT NULL,
+		estado BIT NOT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMDescripcion_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMDescripcion_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+END
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Juzgados' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Juzgados] (
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		codigo VARCHAR(20) NOT NULL,
+		descripcion VARCHAR(MAX) NULL,
+		codigo_externo VARCHAR(20) NULL,
+		estado BIT NOT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMJuzgados_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMJuzgados_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+END
+
+GO
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'TiposCotizante' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[TiposCotizante](
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		codigo VARCHAR(20) NOT NULL,
+		descripcion VARCHAR(MAX) NOT NULL,
+		detalle BIT NOT NULL DEFAULT(0),
+		codigo_externo VARCHAR(20) NOT NULL, 
+		estado BIT NOT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMTiposCotizante_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMTiposCotizante_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+
+END
+
+GO
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'SubtiposCotizante' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[SubtiposCotizante](
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		codigo VARCHAR(20) NOT NULL,
+		descripcion VARCHAR(MAX) NOT NULL,
+		codigo_externo VARCHAR(20) NOT NULL, 
+		estado BIT NOT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMSubTiposCotizante_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMSubTiposCotizante_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+
+END
+
+GO
+
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Tipos_SubtiposCotizantes' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+	CREATE TABLE [NOM].[Tipos_SubtiposCotizantes](
+		id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		id_subtipo BIGINT NOT NULL,
+		id_tipo BIGINT NOT NULL,
+		created SMALLDATETIME NULL CONSTRAINT [DF_NOMTipos_SubtiposCotizante_created] DEFAULT (GETDATE()),
+		updated SMALLDATETIME NULL CONSTRAINT [DF_NOMTipos_SubtiposCotizante_updated] DEFAULT (GETDATE()),
+		id_usercreated BIGINT NOT NULL,
+		id_userupdated BIGINT NOT NULL
+	)
+
+END
+
+GO
+
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ParamsAnual_Solid' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+CREATE TABLE [NOM].[ParamsAnual_Solid](
+	id BIGINT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	desde NUMERIC NOT NULL,
+	hasta NUMERIC NOT NULL,
+	porcentaje NUMERIC(6,2) NOT NULL,
+	id_parametros BIGINT NULL,
+	created SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_Solid_created] DEFAULT (GETDATE()),
+	updated SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_Solid_updated] DEFAULT (GETDATE()),
+	id_usercreated BIGINT NOT NULL,
+	id_userupdated BIGINT NOT NULL
+)
+END
+
+GO
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ParamsAnual_Empleado' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+CREATE TABLE [NOM].[ParamsAnual_Empleado](
+	id BIGINT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	porcen_salud NUMERIC(6,2) NOT NULL,
+	porcen_pension NUMERIC(6,2) NOT NULL,
+	num_salariosMinICBF BIGINT NOT NULL,
+	num_salariosMinSENA BIGINT NOT NULL,
+	num_salariosMinSegSocial BIGINT NOT NULL,
+	porcen_icbf NUMERIC(6,2) NOT NULL,
+	porcen_sena NUMERIC(6,2) NOT NULL,
+	porcen_cajacompensacion NUMERIC(6,2) NOT NULL,
+	created SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_Empleado_created] DEFAULT (GETDATE()),
+	updated SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_Empleado_updated] DEFAULT (GETDATE()),
+	id_usercreated BIGINT NOT NULL,
+	id_userupdated BIGINT NOT NULL
+)
+END
+
+GO
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ParamsAnual_Empleador' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+CREATE TABLE [NOM].[ParamsAnual_Empleador](
+	id BIGINT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	porcen_salud NUMERIC(6,2) NOT NULL,
+	porcen_pension NUMERIC(6,2) NOT NULL,
+	num_salariosMinSalud	NUMERIC(18,2) NOT NULL, -- cuando se cumpla este numero, el empleador paga un porcentaje de la salud
+	created SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_Empleador_created] DEFAULT (GETDATE()),
+	updated SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_Empleador_updated] DEFAULT (GETDATE()),
+	id_usercreated BIGINT NOT NULL,
+	id_userupdated BIGINT NOT NULL
+)
+END
+
+GO
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ParamsAnual_HrsExtras' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+CREATE TABLE [NOM].[ParamsAnual_HrsExtras](
+	id BIGINT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	extra_diurna NUMERIC(18,4) NOT NULL,
+	extra_nocturna NUMERIC(18,4) NOT NULL,
+	extra_fesDiurna NUMERIC(18,4) NOT NULL,
+	extra_fesNoct NUMERIC(18,4) NOT NULL,
+	recargoNocturno NUMERIC(18,4) NOT NULL,
+	HraDomDiurno NUMERIC(18,4) NOT NULL,
+	recarg_DomNoct NUMERIC(18,4) NOT NULL,
+	created SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_HrsExtras_created] DEFAULT (GETDATE()),
+	updated SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_HrsExtras_updated] DEFAULT (GETDATE()),
+	id_usercreated BIGINT NOT NULL,
+	id_userupdated BIGINT NOT NULL
+)
+END
+
+GO
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ParamsAnual' AND TABLE_SCHEMA = 'NOM')
+BEGIN
+CREATE TABLE [NOM].[ParamsAnual] (
+	id BIGINT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	salario_MinimoLegal NUMERIC(18,4) NOT NULL,
+	salario_Integral NUMERIC(18,4) NOT NULL,
+	aux_transporte NUMERIC(18,4) NOT NULL,
+	id_interesCesantias INT NOT NULL,
+	exonerado BIT NOT NULL,
+	id_parametrosEmpleado BIGINT NOT NULL,
+	id_parametrosEmpleador BIGINT NOT NULL,
+	id_horasExt BIGINT NOT NULL,
+	porcen_saludTotal NUMERIC(6,2) NOT NULL,
+	porcen_pencionTotal NUMERIC(6,2) NOT NULL,
+	porcen_cajacompensacion NUMERIC(6,2) NOT NULL,
+	uvt NUMERIC(18,4) NOT NULL,
+	fecha_vigencia SMALLDATETIME NOT NULL,
+	id_cuentacobrar BIGINT NOT NULL,
+	id_cuentaarl BIGINT NOT NULL,
+	created SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_created] DEFAULT (GETDATE()),
+	updated SMALLDATETIME NULL CONSTRAINT [DF_ParamsAnual_updated] DEFAULT (GETDATE()),
+	id_usercreated BIGINT NOT NULL,
+	id_userupdated BIGINT NOT NULL
+)
+END
+
+
+GO
+-- JPAREDES FIN
 
 If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Afiliados]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 	CREATE TABLE [NOM].[Afiliados](
@@ -12,7 +324,6 @@ If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Afilia
 	[id_contrato] [bigint] NULL,
 	[created] [smalldatetime] NOT NULL CONSTRAINT [DF_Afiliados_created]  DEFAULT (getdate()),
 	[updated] [smalldatetime] NOT NULL CONSTRAINT [DF_Afiliados_updated]  DEFAULT (getdate()),
-
 	[id_usercreated] [int] NOT NULL,
 	[id_userupdated] [int] NOT NULL,
  CONSTRAINT [PK_Afiliados] PRIMARY KEY CLUSTERED 
@@ -55,31 +366,6 @@ CREATE TABLE [NOM].[Area](
 	[id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-GO
-
-SET ANSI_PADDING OFF
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Ausencias]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Ausencias](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[id_per_cont] [bigint] NOT NULL,
-	[fecha_ini] [smalldatetime] NULL,
-	[fecha_fin] [smalldatetime] NULL,
-	[id_diagnostico] [bigint] NULL,
-	[id_tipoausencia] [bigint] NULL,
-	[remunerado] [bit] NOT NULL CONSTRAINT [DF_NOMNovedadesA_remunerado] DEFAULT ((0)),
-	[domingo_suspencion] [bit] NOT NULL CONSTRAINT [DF_NOMNovedadesA_domingo_suspencion] DEFAULT ((0)),
-	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedadesA_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedadesA_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
 GO
 
 
@@ -174,72 +460,6 @@ CREATE TABLE [NOM].[Contrato](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 
-GO
-
-SET ANSI_PADDING OFF
-GO
-
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Deducciones]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Deducciones](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[id_per_cont] [bigint] NOT NULL,
-	[prestamos] [numeric](18, 4) NULL,
-	[libranzas] [numeric](14, 4) NULL,
-	[id_embargo] [bigint] NULL,
-	[retencion_fuente] [bigint] NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedadesDC_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedadesDC_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Devengos]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Devengos](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[id_per_cont] [bigint] NOT NULL,
-	[h_extras] [bigint] NULL,
-	[dia] [bigint] NULL,
-	[noche] [bigint] NULL,
-	[dias_festivos] [bigint] NULL,
-	[noches_festivos] [bigint] NULL,
-	[boni] [bigint] NULL,
-	[comi] [bigint] NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedadesD_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedadesD_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Diagnostico]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Diagnostico](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[codigo] [varchar](20) NOT NULL,
-	[descripcion] [varchar](max) NOT NULL,
-	[estado] [bit] NOT NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMDescripcion_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMDescripcion_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
-
-GO
 
 SET ANSI_PADDING OFF
 GO
@@ -355,61 +575,6 @@ CREATE TABLE [NOM].[Int_Cesantias](
 
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Juzgados]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Juzgados](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[codigo] [varchar](20) NOT NULL,
-	[descripcion] [varchar](max) NULL,
-	[codigo_externo] [varchar](20) NULL,
-	[estado] [bit] NOT NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMJuzgados_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMJuzgados_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Novedades]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Novedades](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[id_per_cont] [bigint] NOT NULL,
-	[id_devengo] [bigint] NULL,
-	[id_ausencia] [bigint] NULL,
-	[id_deduccion] [bigint] NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedades_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMNovedades_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[NovedadesDates]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[NovedadesDates](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[id_per_cont] [bigint] NOT NULL,
-	[id_contrato] [bigint] NOT NULL,
-	[id_tipoausencia] [bigint] NULL,
-	[inicio_devengo] [smalldatetime] NULL,
-	[fin_devengo] [smalldatetime] NULL,
-	[inicio_ausencia] [smalldatetime] NULL,
-	[fin_ausencia] [smalldatetime] NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
 
 If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Pago_por_Contrato]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[Pago_por_Contrato](
@@ -469,116 +634,6 @@ CREATE TABLE [NOM].[Pago_por_Contrato](
 	[id_userupdated] [bigint] NOT NULL,
 	[tipo_salario] [int] NOT NULL,
  CONSTRAINT [PK_Pago_por_Contrato] PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[ParamsAnual](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[salario_MinimoLegal] [numeric](18, 4) NOT NULL,
-	[salario_Integral] [numeric](18, 4) NOT NULL,
-	[aux_transporte] [numeric](18, 4) NOT NULL,
-	[id_interesCesantias] [int] NOT NULL,
-	[exonerado] [bit] NOT NULL,
-	[id_parametrosEmpleado] [bigint] NOT NULL,
-	[id_parametrosEmpleador] [bigint] NOT NULL,
-	[id_horasExt] [bigint] NOT NULL,
-	[porcen_saludTotal] [numeric](6, 2) NOT NULL,
-	[porcen_pencionTotal] [numeric](6, 2) NOT NULL,
-	[UVT] [numeric](18, 4) NOT NULL,
-	[fecha_vigencia] [smalldatetime] NOT NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-	[id_cuentacobrar] [bigint] NOT NULL,
-	[id_cuentaarl] [bigint] NOT NULL,
- CONSTRAINT [PK__ParamsAn__3213E83FD621BF82] PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual_Empleado]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[ParamsAnual_Empleado](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[porcen_salud] [numeric](6, 2) NOT NULL,
-	[porcen_pension] [numeric](6, 2) NOT NULL,
-	[num_salariosMinICBF] [bigint] NOT NULL,
-	[num_salariosMinSENA] [bigint] NOT NULL,
-	[num_salariosMinSegSocial] [bigint] NOT NULL,
-	[porcen_icbf] [numeric](6, 2) NOT NULL,
-	[porcen_sena] [numeric](6, 2) NOT NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_Empleado_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_Empleado_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual_Empleador]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[ParamsAnual_Empleador](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[porcen_salud] [numeric](6, 2) NOT NULL,
-	[porcen_pension] [numeric](6, 2) NOT NULL,
-	[num_salariosMinSalud] [numeric](18, 2) NOT NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_Empleador_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_Empleador_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual_HrsExtras]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[ParamsAnual_HrsExtras](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[extra_diurna] [numeric](18, 4) NOT NULL,
-	[extra_nocturna] [numeric](18, 4) NOT NULL,
-	[extra_fesDiurna] [numeric](18, 4) NOT NULL,
-	[extra_fesNoct] [numeric](18, 4) NOT NULL,
-	[recargoNocturno] [numeric](18, 4) NOT NULL,
-	[HraDomDiurno] [numeric](18, 4) NOT NULL,
-	[recarg_DomNoct] [numeric](18, 4) NOT NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_HrsExtras_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_HrsExtras_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[ParamsAnual_Solid]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[ParamsAnual_Solid](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[desde] [numeric](18, 0) NOT NULL,
-	[hasta] [numeric](18, 0) NOT NULL,
-	[porcentaje] [numeric](6, 2) NOT NULL,
-	[id_parametros] [bigint] NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_Solid_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_ParamsAnual_Solid_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -728,22 +783,6 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Tipos_SubtiposCotizantes]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Tipos_SubtiposCotizantes](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[id_subtipo] [bigint] NULL,
-	[id_tipo] [bigint] NOT NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMTipos_SubtiposCotizante_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMTipos_SubtiposCotizante_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
 
 If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[TiposCotizante]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[TiposCotizante](
@@ -789,6 +828,10 @@ GO
 SET ANSI_PADDING OFF
 GO
 
+
+SET ANSI_PADDING OFF
+GO
+
 If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[CNT].[Bancos]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [CNT].[Bancos](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
@@ -809,7 +852,6 @@ GO
 
 SET ANSI_PADDING OFF
 GO
-
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -890,3 +932,65 @@ REFERENCES [dbo].[DivPolitica] ([id])
 GO
 ALTER TABLE [NOM].[Sedes] CHECK CONSTRAINT [FK_Sedes_DivPolitica]
 GO
+
+-- JPAREDES INICIO
+
+
+-- CONSTRAINTS FOREING KEY'S
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Empleado')
+	ALTER TABLE [NOM].[ParamsAnual] WITH CHECK ADD CONSTRAINT [FK_ParamsAnual_Empleado] FOREIGN KEY ([id_parametrosEmpleado]) REFERENCES [NOM].[ParamsAnual_Empleado] (id)
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Empleador')
+	ALTER TABLE [NOM].[ParamsAnual] WITH CHECK ADD CONSTRAINT [FK_ParamsAnual_Empleador] FOREIGN KEY ([id_parametrosEmpleador]) REFERENCES [NOM].[ParamsAnual_Empleador] (id)
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Solid')
+	ALTER TABLE [NOM].[ParamsAnual_Solid] WITH CHECK ADD CONSTRAINT [FK_ParamsAnual_Solid] FOREIGN KEY ([id_parametros]) REFERENCES [NOM].[ParamsAnual] (id)
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Intereses')
+	ALTER TABLE [NOM].[ParamsAnual] WITH CHECK ADD CONSTRAINT [FK_ParamsAnual_Intereses] FOREIGN KEY ([id_interesCesantias]) REFERENCES [dbo].[ST_Listados] (id)
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_HrsExtras')
+	ALTER TABLE [NOM].[ParamsAnual] WITH CHECK ADD CONSTRAINT [FK_ParamsAnual_HrsExtras] FOREIGN KEY ([id_horasExt]) REFERENCES [NOM].[ParamsAnual_HrsExtras] (id)
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Sedes_DivPolitica')
+	ALTER TABLE [NOM].[Sedes] WITH CHECK ADD CONSTRAINT [FK_Sedes_DivPolitica] FOREIGN KEY ([id_ciudad]) REFERENCES [dbo].[DivPolitica] (id)
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_NOMTipoSubCotizante_TiposCotizante')
+	ALTER TABLE [NOM].[Tipos_SubtiposCotizantes] WITH CHECK ADD CONSTRAINT [FK_NOMTipoSubCotizante_TiposCotizante] FOREIGN KEY (id_tipo) REFERENCES [NOM].[TiposCotizante] ([id])
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_NOMTipoSubCotizante_SubtipoCotizante')
+	ALTER TABLE [NOM].[Tipos_SubtiposCotizantes] WITH CHECK ADD CONSTRAINT [FK_NOMTipoSubCotizante_SubtipoCotizante] FOREIGN KEY (id_subtipo) REFERENCES [NOM].[SubtiposCotizante] ([id])
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Prestaciones_Cuentas')
+	ALTER TABLE [NOM].[Prestaciones]  WITH CHECK ADD  CONSTRAINT [FK_Prestaciones_Cuentas] FOREIGN KEY([contrapartida]) REFERENCES [dbo].[CNTCuentas] ([id])
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Parametros_Cuentas')
+	ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_Parametros_Cuentas] FOREIGN KEY([id_cuentacobrar]) REFERENCES [dbo].[CNTCuentas] ([id])
+
+GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Parametros_Cuentas_ARL')
+	ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_Parametros_Cuentas_ARL] FOREIGN KEY([id_cuentaarl]) REFERENCES [dbo].[CNTCuentas] ([id])
+
+GO
+
+--JPAREEDS FIN

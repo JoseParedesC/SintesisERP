@@ -30,10 +30,10 @@ BEGIN TRY
 
 	IF(@codigo = 0) SET @codigo = NULL
 
-	IF EXISTS(SELECT 1 FROM [NOM].[Prestaciones] WHERE codigo = @codigo AND id != @id)
+	IF EXISTS(SELECT 1 FROM [NOM].[Prestaciones] WHERE codigo = @codigo AND id != @id AND tipo_prestacion = @tipo_prestacion)
 		RAISERROR('El Codigo ya existe', 16, 0)
 
-	IF EXISTS(SELECT 1 FROM [NOM].[Prestaciones] WHERE nombre = @nombre AND id != @id)
+	IF EXISTS(SELECT 1 FROM [NOM].[Prestaciones] WHERE nombre = @nombre AND id != @id AND tipo_prestacion = @tipo_prestacion)
 		RAISERROR('El Nombre ya existe', 16, 0)
 
 	IF(ISNULL(@ID,0) = 0)

@@ -294,16 +294,3 @@ CREATE TABLE aspnet_MailConfig (
 )
 GO
 	
-
-	IF COL_LENGTH('[dbo].[Usuarios]', 'color') IS NULL
-BEGIN
-    Alter Table
-        [dbo].[Usuarios]
-    Add
-        [color] VARCHAR(10)
-END
-GO
-Alter Table
-        [dbo].[ST_Listados]
-    ALTER COLUMN
-		[id_usercreated] [bigint] NOT NULL

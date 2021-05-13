@@ -17,7 +17,7 @@ BEGIN
 ----------------------------------------
 *Tipo:			Procedimiento almacenado
 *creaci�n:		17/11/19
-*Desarrollador: (JETEHERAN)
+*Desarrollador: (JARCINIEGAS)
 ***************************************/
 	
 Declare @ds_error varchar(max), @id_articuloT BIGINT = 0, @count DECIMAL(18,2)
@@ -101,9 +101,21 @@ Begin Try
 		INNER JOIN [NOM].[TiposCotizante] TC ON TC.id = T.id_padre
 		WHERE (T.codigo_externo like '%'+@filtro+'%' OR TC.codigo_externo like'%'+@filtro+'%' OR TC.codigo like'%'+@filtro+'%' OR T.codigo like'%'+@filtro+'%')
 		ORDER BY T.id_padre ASC;
+	END 
+	ELSE IF(@opcion = 'D') -- JPAREDES
+	BEGIN
+		SELECT D.id, D.codigo name FROM [NOM].[Diagnostico] D
+		WHERE D.codigo like '%' + @filtro + '%'
 	END
-
-	
+	ELSE IF(@opcion = 'L') -- JPAREDES
+	BEGIN
+		SELECT E.id, E.nombre name FROM [NOM].[Embargos] E
+		WHERE E.nombre like '%' + @filtro + '%'
+	END
+	ELSE IF(@opcion = 'G') -- JPAREDES
+	BEGIN 
+		SELECT id, CONCAT(codigo,' - ',nombre) name FROM CNTCUENTAS where SUBSTRING(codigo,1,1) = 2
+	END
 		
 
 End Try

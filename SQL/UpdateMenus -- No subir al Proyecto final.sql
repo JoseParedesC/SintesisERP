@@ -1,0 +1,1 @@
+update menus set id_padre = (select id from menus where nombrepagina = 'Recursos Humanos') where id_padre = (select id from menus where nombrepagina = 'Maestros de Nomina')

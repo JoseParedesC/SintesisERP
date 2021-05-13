@@ -8,7 +8,7 @@ GO
 CREATE VIEW [NOM].[VW_ParametrosAnuales]
 AS
 
-		SELECT  PA.id id_paramAnuales
+	SELECT  PA.id id_paramAnuales
 			,PA.salario_MinimoLegal
 			,PA.salario_Integral
 			,PA.aux_transporte
@@ -33,4 +33,3 @@ AS
 	[NOM].[ParamsAnual_HrsExtras] HR ON HR.id = PA.id_horasExt INNER JOIN
 	--[NOM].[ParametrosAnuales_Solidaridad] PS ON PS.id = PA.id_solidaridad INNER JOIN
 	[DBO].[ST_Listados] S ON S.id = PA.id_interesCesantias
-GO
