@@ -27,7 +27,7 @@ FROM            NOM.Contrato AS C INNER JOIN
                          NOM.Area AS A ON C.area = A.id INNER JOIN
                          NOM.Cargo AS CAR ON CAR.id = C.cargo INNER JOIN
                          NOM.Horario AS H ON H.id = C.id_horario INNER JOIN
-                         NOM.Tipos_SubtiposCotizanets AS TSTC ON TSTC.id = C.id_tipo_cotizante INNER JOIN
+                         NOM.Tipos_SubtiposCotizantes AS TSTC ON TSTC.id = C.id_tipo_cotizante INNER JOIN
                          NOM.Entidades_de_Salud AS EPS ON C.id_eps = EPS.id AND EPS.id_tiposeg =
                              (SELECT        id
                                FROM            dbo.ST_Listados

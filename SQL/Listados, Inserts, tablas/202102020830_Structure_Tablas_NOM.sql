@@ -12,6 +12,7 @@ If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Afilia
 	[id_contrato] [bigint] NULL,
 	[created] [smalldatetime] NOT NULL CONSTRAINT [DF_Afiliados_created]  DEFAULT (getdate()),
 	[updated] [smalldatetime] NOT NULL CONSTRAINT [DF_Afiliados_updated]  DEFAULT (getdate()),
+
 	[id_usercreated] [int] NOT NULL,
 	[id_userupdated] [int] NOT NULL,
  CONSTRAINT [PK_Afiliados] PRIMARY KEY CLUSTERED 
@@ -727,8 +728,8 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Tipos_SubtiposCotizanets]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Tipos_SubtiposCotizanets](
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Tipos_SubtiposCotizantes]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+CREATE TABLE [NOM].[Tipos_SubtiposCotizantes](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
 	[id_subtipo] [bigint] NULL,
 	[id_tipo] [bigint] NOT NULL,
@@ -778,6 +779,27 @@ CREATE TABLE [NOM].[Vacaciones](
 	[id_usercreated] [int] NOT NULL,
 	[id_userupdated] [int] NOT NULL,
  CONSTRAINT [PK_Vacaciones] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[CNT].[Bancos]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+CREATE TABLE [CNT].[Bancos](
+	[id] [bigint] IDENTITY(1,1) NOT NULL,
+	[nombre] [varchar](50) NOT NULL,
+	[codigo_compensacion] [varchar](4) NOT NULL,
+	[estado] [bit] NOT NULL CONSTRAINT [DF_Bancos_estado]  DEFAULT ((0)),
+	[created] [smalldatetime] NOT NULL CONSTRAINT [DF_Bancos_created]  DEFAULT (getdate()),
+	[updated] [smalldatetime] NOT NULL CONSTRAINT [DF_Bancos_updated]  DEFAULT (getdate()),
+	[id_usercreated] [int] NOT NULL,
+	[id_userupdated] [int] NOT NULL,
+ CONSTRAINT [PK_Bancos] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
