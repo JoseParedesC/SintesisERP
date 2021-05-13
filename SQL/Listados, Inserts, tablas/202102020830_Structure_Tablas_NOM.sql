@@ -810,6 +810,28 @@ GO
 SET ANSI_PADDING OFF
 GO
 
+If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[CNT].[TercerosHijos]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+CREATE TABLE [CNT].[TercerosHijos](
+	[id] [bigint] IDENTITY(1,1) NOT NULL,
+	[id_tercero] [bigint] NOT NULL,
+	[identificacion] [varchar](20) NOT NULL,
+	[nombres] [varchar](30) NOT NULL,
+	[apellidos] [varchar](40) NOT NULL,
+	[genero] [int] NOT NULL,
+	[profesion] [int] NOT NULL,
+	[id_usercreated] [bigint] NOT NULL,
+	[id_userupdated] [bigint] NOT NULL,
+	[created] [smalldatetime] NOT NULL CONSTRAINT [DF_TercerosHijos_created]  DEFAULT (getdate()),
+ CONSTRAINT [PK_TercerosHijos] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -890,3 +912,13 @@ REFERENCES [dbo].[DivPolitica] ([id])
 GO
 ALTER TABLE [NOM].[Sedes] CHECK CONSTRAINT [FK_Sedes_DivPolitica]
 GO
+
+IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_TercerosHijos_Terceros')
+ALTER TABLE [CNT].[TercerosHijos]  WITH CHECK ADD  CONSTRAINT [FK_TercerosHijos_Terceros] FOREIGN KEY([id_tercero])
+REFERENCES [CNT].[Terceros] ([id])
+GO
+ALTER TABLE [CNT].[TercerosHijos] CHECK CONSTRAINT [FK_TercerosHijos_Terceros]
+GO
+
+
+
