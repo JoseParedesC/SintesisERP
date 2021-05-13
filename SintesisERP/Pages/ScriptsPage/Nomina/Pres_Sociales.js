@@ -75,9 +75,11 @@ $(document).ready(function () {
     Loadtable($('li.active'))
 
     $('.nav-item').on('click', function () {
-        $('#tblPresSocial').remove()
-        $('.card').find('.container-fluid').remove()
-        Loadtable($(this));
+        if ($(this).attr('data-nav') != undefined) {
+            $('#tblPresSocial').remove()
+            $('.card').find('.container-fluid').remove()
+            Loadtable($(this));
+        }
     })
 
     $('#id_tipoprestacion').on('change', function () {

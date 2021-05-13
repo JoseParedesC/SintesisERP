@@ -15,7 +15,7 @@ namespace SintesisERP.App_Data.Model.Nomina
         {
             jsSerialize = new JavaScriptSerializer();
         }
-        //esta es la region de FECHAS FESTIVAS 
+        
         #region
 
         /// <summary>

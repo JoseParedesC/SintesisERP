@@ -21,6 +21,7 @@ namespace SintesisERP.App_Data.Model.Nomina
         {
             jsSerialize = new JavaScriptSerializer();
         }
+
         #region
         /*Metodo que se usa para listar las Personas de la base de datos que 
          Tengan una Solicitud creada, solicitada o reprocesada  */

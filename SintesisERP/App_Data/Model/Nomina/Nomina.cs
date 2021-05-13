@@ -223,6 +223,9 @@ namespace SintesisERP.App_Data.Model.Nomina
                 "@porcen_icbf:NUMERIC", dc_params["porcen_icbf"],
                 "@porcen_sena:NUMERIC", dc_params["porcen_sena"],
                 "@num_max_seguridasocial:BIGINT", dc_params["num_max_seguridasocial"],
+                "@porcen_cajacompensacion:NUMERIC", dc_params["caja_compensacion"],
+                "@id_cuentacobrar:BIGINT", dc_params["id_cuenta"],
+                "@id_cuenta_arl:BIGINT", dc_params["id_cuenta_arl"],
 
                 // PRESTACIONES SOCIALES (Empleador)
                 "@porcen_salud_empleador:NUMERIC", dc_params["porcen_salud_empleador"],
@@ -273,7 +276,7 @@ namespace SintesisERP.App_Data.Model.Nomina
                 "@op:CHAR:1", dc_params["op"],
                 "@id_user:BIGINT", dc_params["userID"]).RunData();
 
-            if(data.Data.Tables.Count > 0)
+            if (data.Data.Tables.Count > 0)
             {
                 lista = data.Data.Tables[0].ToList();
 

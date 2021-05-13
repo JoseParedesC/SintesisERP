@@ -214,6 +214,44 @@
         /*.file-loading {
         width: 283px;
     }*/
+	.autocomplete-suggestions {
+            border: medium none;
+            border-radius: 3px;
+            box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+            float: left;
+            font-size: 12px;
+            left: 0;
+            list-style: none outside none;
+            padding: 0;
+            position: absolute;
+            text-shadow: none;
+            top: 100%;
+            z-index: 1000;
+            background: #fff;
+        }
+
+        .autocomplete-suggestion {
+            border-radius: 3px;
+            color: inherit;
+            line-height: 25px;
+            margin: 4px;
+            text-align: left;
+            font-weight: normal;
+            padding: 3px 20px;
+        }
+
+        .autocomplete-selected {
+            color: #fff;
+            text-decoration: none;
+            background-color: #337ab7;
+            outline: 0;
+        }
+
+            .autocomplete-selected strong {
+                color: #fff !important;
+            }
+
+							   
 
 
         .codvalue {

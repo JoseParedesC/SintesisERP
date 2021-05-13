@@ -5,6 +5,44 @@
         window.appPath = "<%=Request.ApplicationPath%>";
     </script>
     <style>
+
+        .autocomplete-suggestions {
+            border: medium none;
+            border-radius: 3px;
+            box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+            float: left;
+            font-size: 12px;
+            left: 0;
+            list-style: none outside none;
+            padding: 0;
+            position: absolute;
+            text-shadow: none;
+            top: 100%;
+            z-index: 1000;
+            background: #fff;
+        }
+
+        .autocomplete-suggestion {
+            border-radius: 3px;
+            color: inherit;
+            line-height: 25px;
+            margin: 4px;
+            text-align: left;
+            font-weight: normal;
+            padding: 3px 20px;
+        }
+
+        .autocomplete-selected {
+            color: #fff;
+            text-decoration: none;
+            background-color: #337ab7;
+            outline: 0;
+        }
+
+            .autocomplete-selected strong {
+                color: #fff !important;
+            }
+
         .rowedit {
             border-color: #1ab394;
         }
@@ -264,21 +302,41 @@
                                                     <input id="num_salmin_SENA" type="text" placeholder=" " class="form-control" <%--disabled="disabled"--%> />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sn-padding">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                                <div class="form-group">
+                                                    <label for="ds_cuenta_arl" class="active">Cuenta ARL:</label>
+                                                    <input type="hidden" id="id_cuenta_arl" />
+                                                    <input id="ds_cuenta_arl" type="text" class="form-control actionautocomple inputsearch nodate" clientidmode="static" runat="server" aria-describedby="sizing-addon1" data-search="RHumanos" data-method="NominaBuscador" data-params="op:G;" data-result="value:name;data:id" data-idvalue="id_cuenta_arl"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                                <div class="form-group">
+                                                    <label for="ds_cuenta" class="active">Cuenta salarios por pagar:</label>
+                                                    <input type="hidden" id="id_cuenta" />
+                                                    <input id="ds_cuenta" type="text" class="form-control actionautocomple inputsearch nodate" clientidmode="static" runat="server" aria-describedby="sizing-addon1" data-search="RHumanos" data-method="NominaBuscador" data-params="op:G;" data-result="value:name;data:id" data-idvalue="id_cuenta"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
                                                     <label for="num_max_seguridasocial" class="active">Salarios max para seguridad social:</label>
                                                     <input id="num_max_seguridasocial" type="text" placeholder=" " class="form-control" <%--disabled="disabled"--%> />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
-                                                    <label for="porcen_icbf" class="active"><br />ICBF:</label>
+                                                    <label for="caja_compensacion" class="active">Caja de compensación:</label>
+                                                    <input id="caja_compensacion"  porcen="true" type="text" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" class="form-control" <%--disabled="disabled"--%> />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                                <div class="form-group">
+                                                    <label for="porcen_icbf" class="active">ICBF:</label>
                                                     <input id="porcen_icbf" porcen="true" type="text" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" class="form-control" <%--disabled="disabled"--%> />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
-                                                    <label for="porcen_sena" class="active"><br />SENA:</label>
+                                                    <label for="porcen_sena" class="active">SENA:</label>
                                                     <input id="porcen_sena" porcen="true" type="text" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" class="form-control" <%--disabled="disabled"--%> />
                                                 </div>
                                             </div>
@@ -339,44 +397,44 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="hediurnas" class="active">H. Ext. Diurnas:</label>
-                                                    <input id="hediurnas" type="text" class="form-control" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
+                                                    <input id="hediurnas" type="text" class="form-control" value="0.00" placeholder=" " porcen="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="% " />
                                                 </div>
                                             </div>
                                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="henoctur" class="active">H. Ext. Nocturnas:</label>
-                                                    <input id="henoctur" type="text" class="form-control" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
+                                                    <input id="henoctur" type="text" class="form-control" value="0.00" placeholder=" " porcen="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="% " />
                                                 </div>
                                             </div>
                                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="henoctur" class="active">H. Ext. Fest. Diurnas:</label>
-                                                    <input id="hefdiurnas" type="text" class="form-control" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
+                                                    <input id="hefdiurnas" type="text" class="form-control" value="0.00" placeholder=" " porcen="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="% " />
                                                 </div>
                                             </div>
                                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="henoctur" class="active">H. Ext. Fest. Nocturnas:</label>
-                                                    <input id="hefnoctur" type="text" class="form-control" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
+                                                    <input id="hefnoctur" type="text" class="form-control" value="0.00" placeholder=" " porcen="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="% " />
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="recnocturno" class="active">Recargo Nocturno:</label>
-                                                    <input id="recnocturno" type="text" class="form-control" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
+                                                    <input id="recnocturno" type="text" class="form-control" value="0.00" placeholder=" " porcen="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="% " />
                                                 </div>
                                             </div>
                                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="recdomfest" class="active">Hora Dominical:</label>
-                                                    <input id="recdomfest" type="text" class="form-control" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
+                                                    <input id="recdomfest" type="text" class="form-control" value="0.00" placeholder=" " porcen="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="% " />
                                                 </div>
                                             </div>
                                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="recdomfest" class="active">Recargo Nocturno dominical:</label>
-                                                    <input id="recnocdomfest" type="text" class="form-control" value="0.00" placeholder=" " money="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="$ " />
+                                                    <input id="recnocdomfest" type="text" class="form-control" value="0.00" placeholder=" " porcen="true" data-a-dec="." data-a-sep="," data-m-dec="2" data-v-min="0" data-a-sign="% " />
                                                 </div>
                                             </div>
                                             </div>

@@ -248,7 +248,7 @@ $('#Rowdesde').on('change', function () {
 
     $.each(tbl, function () {
         if (tbl.find('td:first') < $(this).val()) {
-            toastr.warning('jajaja','sintesis')
+            toastr.warning('jajaja','Sintesis')
         }
     })
 
@@ -363,6 +363,10 @@ $('#btnSave').click(function (e) {
         params.porcen_icbf = SetNumeric($('#porcen_icbf').val());
         params.porcen_sena = SetNumeric($('#porcen_sena').val());
         params.num_max_seguridasocial = $('#num_max_seguridasocial').val();
+        params.id_cuenta = $('#id_cuenta').val();
+        params.id_cuenta_arl = $('#id_cuenta_arl').val();
+        params.caja_compensacion = SetNumeric($('#caja_compensacion').val());
+
 
         // PRESTACIONES SOCIALES (Empleador)
         params.porcen_salud_empleador = SetNumeric($('#porcen_salud_empleador').val());
@@ -439,7 +443,7 @@ function SetFondoSegSocial(answer) {
 function EndCallbackGet(params, answer) {
     if (!answer.Error) {
         data = answer.Row[0];
-
+        console.log(data)
         $('#btnSave').attr('data-id', data.id_param);
         $('#anoactual').val(data.fecha_vigencia);
 
@@ -447,8 +451,7 @@ function EndCallbackGet(params, answer) {
         $('#smmlv').val('$ ' + data.salario_MinimoLegal.Money());
         $('#salInte').val('$ ' + data.salario_Integral.Money())
         $('#auxTrans').val('$ ' + data.aux_transporte.Money());
-        $('#porcen_interes_Cesantias').val(data.id_interesCesantias);
-        $('#porcen_interes_Cesantias').selectpicker('refresh')
+        $('#porcen_interes_Cesantias').val(data.id_interesCesantias).selectpicker('refresh')
         $('#exonerado').prop('checked', data.exonerado).iCheck('update');
 
         // PRESTACIONES SOCIALES (Empleados)
@@ -459,6 +462,13 @@ function EndCallbackGet(params, answer) {
         $('#porcen_icbf').val('% ' + data.porcen_icbf);
         $('#porcen_sena').val('% ' + data.porcen_sena);
         $('#num_max_seguridasocial').val(data.num_salariosMinSegSocial);
+        $('#id_cuenta').val(data.id_cuenta);
+        $('#id_cuenta_arl').val(data.id_cuenta_arl);
+
+        $('#ds_cuenta').val(data.ds_cuenta);
+        $('#ds_cuenta_arl').val(data.ds_cuenta_arl);
+
+        $('#caja_compensacion').val('% ' + data.caja_compensacion);
 
         // PRESTACIONES SOCIALES (Empleador)
         $('#porcen_salud_empleador').val('% ' + data.porcen_saludR);
@@ -471,19 +481,19 @@ function EndCallbackGet(params, answer) {
 
 
         // HORAS EXTRA
-        $('#hediurnas').val('$ ' + data.extra_diurna.Money());
-        $('#henoctur').val('$ ' + data.extra_nocturna.Money());
-        $('#hefdiurnas').val('$ ' + data.extra_fesDiurna.Money());
-        $('#hefnoctur').val('$ ' + data.extra_fesNoct.Money());
-        $('#recnocturno').val('$ ' + data.recargoNocturno.Money());
-        $('#recdomfest').val('$ ' + data.recarg_DomDiurno.Money());
-        $('#recnocdomfest').val('$ ' + data.recarg_DomNoct.Money());
+        $('#hediurnas').val('% ' + data.extra_diurna.Money());
+        $('#henoctur').val('% ' + data.extra_nocturna.Money());
+        $('#hefdiurnas').val('% ' + data.extra_fesDiurna.Money());
+        $('#hefnoctur').val('% ' + data.extra_fesNoct.Money());
+        $('#recnocturno').val('% ' + data.recargoNocturno.Money());
+        $('#recdomfest').val('% ' + data.recarg_DomDiurno.Money());
+        $('#recnocdomfest').val('% ' + data.recarg_DomNoct.Money());
 
         // SOLIDARIDAD PESIONAL
         SetFondoSegSocial(answer)
 
         //RETEFUENTE
-        $('#uvt').val(data.uvt.Money())
+        $('#uvt').val('$ ' + data.uvt.Money())
 
         tr = `<tr >
                 <td class="text-center">${data.fecha_vigencia}</td>
@@ -508,7 +518,7 @@ function EndCallBackUpdate(params, answer) {
         formReset()
         $('#diventrada').css('display', 'block')
         window.tblcommodity.bootgrid('reload');
-        toastr.success("Proceso ejecutado correctamente", "sintesis ERP");
+        toastr.success("Proceso ejecutado correctamente", "Sintesis ERP");
     }
     else {
         toastr.error(answer.Message, 'Sintesis ERP');

@@ -9,17 +9,17 @@ function LoadTable() {
         post: function () {
             return {
                 'params': "",
-                'class': 'Juzgados',
+                'class': 'Nomina',
                 'method': 'JuzgadosList'
             };
         },
         url: window.appPath + "/Pages/Connectors/ConnectorList.ashx",
         formatters: {
             "edit": function (column, row) {
-                return "<a class=\"action command-edit\" data-id=\"" + row.id + "\"><span class=\"fa-2x fa fa-pencil text-success iconfa\"></span></a>";
+                return "<a class=\"action command-edit\" data-id=\"" + row.id + "\"><span class=\"fa-2x fa fa-pencil text-princ iconfa\"></span></a>";
             },
             "delete": function (column, row) {
-                return "<a class=\"action command-delete\" data-id=\"" + row.id + "\"><span class=\"fa-2x fa fa-trash text-danger iconfa\"></span></a>";
+                return "<a class=\"action command-delete\" data-id=\"" + row.id + "\"><span class=\"fa-2x fa fa-trash-o text-danger iconfa\"></span></a>";
             },
             "state": function (column, row) {
                 clas = row.estado == 1 ? "fa-square-o text-danger" : "fa-check-square-o text-success"
@@ -30,17 +30,17 @@ function LoadTable() {
         window.tbljuzgados.find(".command-edit").on("click", function (e) {
             params = {};
             params.id = $(this).attr("data-id");
-            MethodService("Juzgados", "JuzgadosGet", JSON.stringify(params), "EndCallBackGetJuzgados");
+            MethodService("Nomina", "JuzgadosGet", JSON.stringify(params), "EndCallBackGetJuzgados");
         }).end().find(".command-delete").on("click", function (e) {
             if (confirm("Está seguro que desea eliminarlo?")) {
                 params = {};
                 params.id = $(this).attr("data-id");
-                MethodService("Juzgados", "JuzgadosDelete", JSON.stringify(params), "EndCallBackDelete");
+                MethodService("Nomina", "JuzgadosDelete", JSON.stringify(params), "EndCallBackDelete");
             }
         }).end().find(".command-state").on("click", function () {
             params = {};
             params.id = $(this).attr("data-id");
-            MethodService("Juzgados", "JuzgadosState", JSON.stringify(params), "EndCallBackState");
+            MethodService("Nomina", "JuzgadosState", JSON.stringify(params), "EndCallBackState");
         })
     });
 
@@ -73,7 +73,7 @@ function SendJuzgado() {
         params.code = $('#code').val()
         params.code_ext = $('#code_ext').val()
         params.detalle = $('#detalle').val()
-        MethodService("Juzgados", "JuzgadosSaveUpdate", JSON.stringify(params), "EndCallBackSaveUpdate");
+        MethodService("Nomina", "JuzgadosSaveUpdate", JSON.stringify(params), "EndCallBackSaveUpdate");
     }
 }
 

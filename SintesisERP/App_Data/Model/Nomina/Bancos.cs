@@ -15,7 +15,7 @@ namespace SintesisERP.App_Data.Model.Nomina
         {
             jsSerialize = new JavaScriptSerializer();
         }
-        //esta es la region de FECHAS FESTIVAS 
+
         #region
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace SintesisERP.App_Data.Model.Nomina
             try
             {
                 Dictionary<string, object> outoaram;
-                Result result = dbase.Procedure("[NOM].[ST_BancosList]", "@page:int", dc_params.GetString("start"), "@numpage:int", dc_params.GetString("length"), "@filter:varchar:50", dc_params.GetString("filter"), "@countpage:int:output", 0).RunData(out outoaram);
+                Result result = dbase.Procedure("[CNT].[ST_BancosList]", "@page:int", dc_params.GetString("start"), "@numpage:int", dc_params.GetString("length"), "@filter:varchar:50", dc_params.GetString("filter"), "@countpage:int:output", 0).RunData(out outoaram);
                 if (!result.Error)
                 {
                     return jsSerialize.Serialize(new { Data = Props.table2List(result.Data.Tables[0]), totalpage = outoaram["countpage"] });
@@ -52,9 +52,10 @@ namespace SintesisERP.App_Data.Model.Nomina
         el formulario (Bancos.aspx) para guardarlos*/
         public Result BancosSave(Dictionary<string, object> dc_params)
         {
-            Result re = dbase.Procedure("[NOM].[ST_BancosSave]",
+            Result re = dbase.Procedure("[CNT].[ST_BancosSave]",
                "@id:BIGINT", dc_params["id"],
                 "@nombre:VARCHAR:30", dc_params["nombre"],
+                "@coidgo:VARCHAR:30", dc_params["codigo_compensacion"],
                 "@id_user:int", dc_params["userID"]).RunRow();
 
             return re;
@@ -64,15 +65,22 @@ namespace SintesisERP.App_Data.Model.Nomina
          guardado en la BD,enviando el parametro para obtener un registro espesifico*/
         public Result BancosDelete(Dictionary<string, object> dc_params)
         {
-            return dbase.Procedure("[NOM].[ST_BancosDelete]", "@id:BIGINT", dc_params["id"]).RunRow();
+            return dbase.Procedure("[CNT].[ST_BancosDelete]", "@id:BIGINT", dc_params["id"]).RunRow();
         }
 
         /*función que llama al pracedimiento [dbo].[ST_BancosGet] 
          guardado en la BD,enviando el parametro para obtener un registro espesifico*/
         public object BancosGet(Dictionary<string, object> dc_params)
         {
-            return dbase.Procedure("[NOM].[ST_BancosGet]", "@id:BIGINT", dc_params["id"]).RunRow();
+            return dbase.Procedure("[CNT].[ST_BancosGet]", "@id:BIGINT", dc_params["id"]).RunRow();
 
+        }
+
+        public object BancosState(Dictionary<string, object> dc_params)
+        {
+            Result data = dbase.Procedure("[CNT].[ST_BancosState]", "@id:BIGINT", dc_params["id"], "@id_user:BIGINT", dc_params["userID"]).RunRow();
+
+            return new {Error = data.Error, Message = data.Message};
         }
         #endregion
 

@@ -31,6 +31,24 @@ public partial class ParametrosNomina
     protected global::System.Web.UI.HtmlControls.HtmlSelect porcen_interes_Cesantias;
 
     /// <summary>
+    /// Control ds_cuenta_arl.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlInputText ds_cuenta_arl;
+
+    /// <summary>
+    /// Control ds_cuenta.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlInputText ds_cuenta;
+
+    /// <summary>
     /// Control htmlestado.
     /// </summary>
     /// <remarks>

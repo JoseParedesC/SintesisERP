@@ -85,6 +85,14 @@
 
         <div class="tab-pane fade active in" id="collapseOne" role="tabpanel" aria-labelledby="home-tab">
             <div class="card card-body">
+                <div class="row" style="margin: 0px 10px;">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2 class="title-master" style="margin-top: 0;"><span class="fa fa- fa-money"></span>&nbsp;Maestro Cesantías</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card" id="divCesantia">
                     <div class="row" style="margin: 0px 10px;">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -99,6 +107,14 @@
 
         <div class="tab-pane fade" id="collapseTwo" role="tabpanel" aria-labelledby="home-tab">
             <div class="card card-body">
+                <div class="row" style="margin: 0px 10px;">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2 class="title-master" style="margin-top: 0;"><span class="fa fa-money"></span>&nbsp;Maestro Intereses de Cesantias</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card" id="divInteres">
                     <div class="row" style="margin: 0px 10px;">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -113,6 +129,14 @@
 
         <div class="tab-pane fade active" id="collapseThree" role="tabpanel" aria-labelledby="home-tab">
             <div class="card card-body">
+                <div class="row" style="margin: 0px 10px;">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2 class="title-master" style="margin-top: 0;"><span class="fa fa-money"></span>&nbsp;Maestro Primas</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card" id="divPrimas">
                     <div class="row" style="margin: 0px 10px;">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -127,6 +151,14 @@
 
         <div class="tab-pane fade active" id="collapseFour" role="tabpanel" aria-labelledby="home-tab">
             <div class="card card-body">
+                <div class="row" style="margin: 0px 10px;">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2 class="title-master" style="margin-top: 0;"><span class="fa fa-sun-o"></span>&nbsp;Maestro Vacaciones</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card" id="divVacaciones">
                     <div class="row" style="margin: 0px 10px;">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -153,7 +185,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h2 class="modal-title">Descripción</h2>
+                    <h2 class="modal-title"><i class="fa fa-list"></i>&nbsp;Detalles de Prestacion</h2>
                 </div>
 
                 <div class="modal-body clearfix" style="margin-bottom: 0; padding-top: 0 !important">

@@ -80,9 +80,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12 col-md-12" style="margin: 5px">
-                        <button id="btnBack" class="btn btn-danger dim btn-outline pull-right" data-dismiss="modal" aria-label="Close"><i class="fa fa-file-o icon"></i></button>
-                        <button id="btnSave" class="btn btn-success dim btn-outline pull-right"><i class="fa fa-paste icon"></i></button>
+                    <div class="row buttonaction pull-right" style="margin: 5px">
+                        <button id="btnSave" class="btn btn-success dim btn-outline"><i class="fa fa-paste icon"></i></button>
+                        <button id="btnBack" class="btn btn-danger dim btn-outline" data-dismiss="modal" aria-label="Close"><i class="fa fa-file-o icon"></i></button>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
     </div>
 
     <script src="../Package/Vendor/js/plugins/Autocomplete/jquery.autocomplete.js"></script>
-    <script src="../Pages/ScriptsPage/Nomina/Juzgados.js"></script>
+    <script src="../Pages/ScriptsPage/Nomina/Juzgados.js?9"></script>
 
     <script>
         $(document).ready(function () {

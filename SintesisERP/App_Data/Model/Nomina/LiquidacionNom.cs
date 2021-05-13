@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using J_W.Vinculation;
 using SintesisERP.Pages.Connectors;
 using System.Web.Script.Serialization;
 using System.IO;
 using J_W.Estructura;
-using System.Web.Hosting;
-using System.Drawing;
 /// <summary>
 /// Descripción breve de Buscadores
 /// </summary>
@@ -21,6 +18,45 @@ namespace SintesisERP.App_Data.Model.Nomina
         {
             jsSerialize = new JavaScriptSerializer();
         }
+
+
+
+        //Novedades
+        #region
+
+        public object NovedadesGet(Dictionary<string, object> dc_params)
+        {
+            List<Dictionary<string, object>> dev = null;
+            List<Dictionary<string, object>> aus = null;
+            List<Dictionary<string, object>> deduc = null;
+
+            Result data = dbase.Procedure("[NOM].[ST_NovedadesGet]",
+                "@id:BIGINT", dc_params["id"],
+                "@id_user:BIGINT", dc_params["userID"]).RunData();
+
+            dev = data.Data.Tables[0].ToList();
+            aus = data.Data.Tables[1].ToList();
+            deduc = data.Data.Tables[2].ToList();
+
+            return new { Error = data.Error, Message = data.Message, DataDev = dev, DataAus = aus, DataDeduc = deduc };
+        }
+
+        public object NovedadesSaveUpdate(Dictionary<string, object> dc_params)
+        {
+            Result data = dbase.Procedure("[NOM].[ST_NovedadesSave]",
+                "@id_contrato:BIGINT", dc_params["id_contrato"],
+                "@id_per_cont:BIGINT", dc_params["id_periodo_contrato"],
+                "@xmlDeven:XML", dc_params["xmlDeven"],
+                "@xmlAusen:XML", dc_params["xmlAusen"],
+                "@xmlDeduc:XML", dc_params["xmlDeduc"],
+                "@id_user:BIGINT", dc_params["userID"]).RunRow();
+
+            return new { Error = data.Error, Message = data.Message };
+        }
+        #endregion
+
+
+
         /*Metodo que se usa para listar las Personas de la base de datos que 
          Tengan una Solicitud creada, solicitada o reprocesada  */
         public object LiquidacionList(Dictionary<string, object> dc_params)
@@ -316,7 +352,7 @@ namespace SintesisERP.App_Data.Model.Nomina
                 Dictionary<string, object> list = new Dictionary<string, object>();
                 Dictionary<string, object> list2 = new Dictionary<string, object>();
                 Result data = dbase.Procedure("[NOM].[ST_LiquidacionEmpleadoGet]", "@id_contrato:int", dc_params.GetString("id")).RunData();
-               
+
                 if (data.Data.Tables[0].Rows.Count > 0)
                     data.Row = data.Data.Tables[0].Rows[0].ToDictionary();
                 data.Table = data.Data.Tables[1].ToList();
@@ -331,7 +367,7 @@ namespace SintesisERP.App_Data.Model.Nomina
                 return new { Error = true, Message = ex.Message };
             }
         }
-        
+
 
         public object ContratosUpdate(Dictionary<string, object> dc_params)
         {
@@ -345,45 +381,6 @@ namespace SintesisERP.App_Data.Model.Nomina
 
 
 
-        #endregion
-
-        //Novedades
-        #region
-        public object NovedadesGet(Dictionary<string, object> dc_params)
-        {
-            List<Dictionary<string, object>> dates = null;
-            List<Dictionary<string, object>> dev = null;
-            List<Dictionary<string, object>> aus = null;
-            List<Dictionary<string, object>> deduc = null;
-
-            Result data = dbase.Procedure("[NOM].[ST_NovedadesGet]",
-                "@id:BIGINT", dc_params["id"],
-                "@id_user:BIGINT", dc_params["userID"]).RunData();
-
-            if (data.Data.Tables.Count > 0)
-            {
-                dates = data.Data.Tables[0].ToList();
-                dev = data.Data.Tables[1].ToList();
-                aus = data.Data.Tables[2].ToList();
-                deduc = data.Data.Tables[3].ToList();
-            }
-
-            return new { Error = data.Error, Message = data.Message, DataDate = dates, DataDev = dev, DataAus = aus, DataDeduc = deduc };
-        }
-
-        public object NovedadesSaveUpdate(Dictionary<string, object> dc_params)
-        {
-            Result data = dbase.Procedure("[NOM].[ST_NovedadesSave]",
-                "@id:BIGINT", dc_params["id"],
-                "@id_contrato:BIGINT", dc_params["id_contrato"],
-                "@id_per_cont:BIGINT", dc_params["id_periodo_contrato"],
-                "@xmlDeven:XML", dc_params["xmlDeven"],
-                "@xmlAusen:XML", dc_params["xmlAusen"],
-                "@xmlDeduc:XML", dc_params["xmlDeduc"],
-                "@id_user:BIGINT", dc_params["userID"]).RunRow();
-
-            return new { Error = data.Error, Message = data.Message };
-        }
         #endregion
 
 

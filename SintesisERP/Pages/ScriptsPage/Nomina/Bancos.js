@@ -45,12 +45,16 @@ function Loadtable() {
             params.id = id;
             MethodService("Bancos", "BancosGet", JSON.stringify(params), 'EndCallbackGet');
         }).end().find(".command-delete").on("click", function (e) {
-            if (confirm("Desea eliminar esta fecha?")) {
+            if (confirm("Desea eliminar este Banco?")) {
                 id = $(this).data("row-id");
                 params = {};
                 params.id = id;
                 MethodService("Bancos", "BancosDelete", JSON.stringify(params), 'EndCallbackupdate');
             }
+        }).end().find(".command-estado").on("click", function (e) {
+            params = {}
+            params.id = $(this).data("row-id");
+            MethodService("Bancos", "BancosState", JSON.stringify(params), "EndCallBackState")
         });
 
     });
@@ -84,8 +88,8 @@ $('#btnSave').click(function (e) {
         params = {};
         params.id = $(this).attr('data-id');
         params.nombre = $('#nombreBanco').val();
-        var btn = $(this);
-        btn.button('loading');
+        params.codigo_compensacion = $('#codigoBanco').val();
+        $(this).button('loading');
         MethodService("Bancos", "BancosSave", JSON.stringify(params), "EndCallbackArticle");
     }
 });
@@ -110,6 +114,7 @@ function EndCallbackGet(params, answer) {
         data = answer.Row;
         $('#btnSave').attr('data-id', data.id);
         $('#nombreBanco').val(data.nombre);
+        $('#codigoBanco').val(data.codigo_compensacion);
         $('#ModalBanco').modal({ backdrop: 'static', keyboard: false }, 'show');
     }
     else {
@@ -124,5 +129,14 @@ function EndCallbackupdate(params, answer) {
     }
     else {
         toastr.error(answer.Message, 'Sintesis ERP');
+    }
+}
+
+function EndCallBackState(params, answer) {
+    if (!answer.Error) {
+        window.gridbanco.bootgrid('reload')
+        toastr.success('Proceso ejecutado correctamete', 'Sintesis ERP')
+    } else {
+        toastr.error(answer.Message, 'Sintesis ERP')
     }
 }

@@ -32,7 +32,7 @@
                     <br />
                     2. Para editar un Tipo de cotizante debe presionar doble click sobre el.
                     <br />
-                    3. Los Subtipos se añadirtan selecionandolos en los select
+                    3. Los Subtipos se añadiran selecionandolos en los select
                 </div>
             </div>
             <div class="card-body">
@@ -90,13 +90,13 @@
                             <input type="text" id="code_ext" placeholder=" " value="0" class="form-control" />
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-md-12 sn-padding">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-md-12 sn-padding">
                         <div class="form-group">
                             <label for="tipocot">Sub tipo: </label>
                             <select id="tipocot" class="form-control selectpicker" runat="server" clientidmode="static" multiple="true"></select>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-21 col-sm-12 col-md-12 sn-padding">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-md-12 sn-padding">
                         <div class="form-group">
                             <label for="detalle">Descripcion: </label>
                             <textarea id="detalle" rows="3" placeholder=" " class="form-control" style="max-width: 100%; min-width: 100%; min-height: 100px !important; max-height: 200px !important"></textarea>
