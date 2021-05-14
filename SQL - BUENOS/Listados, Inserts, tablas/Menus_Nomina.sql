@@ -426,7 +426,7 @@ END
 
 IF NOT EXISTS (SELECT 1 FROM [dbo].[Menus] WHERE [nombrepagina] = 'Juzgados')
 BEGIN 
-		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Juzgados', 1, N'juzgados.aspx', @id_padre, N'Juzgados', 1, 0, N'', 1, GETDATE())
+		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Juzgados', 1, N'juzgados.aspx', @id_padre, N'Juzgados', 1, 0, N'fa-th-large', 1, GETDATE())
 
 		SET @id_return = SCOPE_IDENTITY();
 
@@ -438,7 +438,7 @@ END
 
 IF NOT EXISTS (SELECT 1 FROM [dbo].[Menus] WHERE [nombrepagina] = 'Tipo de Cotizante')
 BEGIN 
-		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Tipo de Cotizante', 1, N'tiposcotizante.aspx', @id_padre, N'Tipos de Cotizante', 2, 0, N'', 1, GETDATE())
+		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Tipo de Cotizante', 1, N'tiposcotizante.aspx', @id_padre, N'Tipos de Cotizante', 2, 0, N'fa-th-large', 1, GETDATE())
 
 	SET @id_return = SCOPE_IDENTITY();
 
@@ -450,7 +450,7 @@ END
 
 IF NOT EXISTS (SELECT 1 FROM [dbo].[Menus] WHERE [nombrepagina] = 'Subtipos de Cotizante')
 BEGIN 
-		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Subtipos de Cotizante', 1, N'subtiposcotizante.aspx', @id_padre, N'Subtipos de Cotizante', 4, 0, N'', 1, GETDATE())
+		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Subtipos de Cotizante', 1, N'subtiposcotizante.aspx', @id_padre, N'Subtipos de Cotizante', 4, 0, N'fa-th-large', 1, GETDATE())
 
 	SET @id_return = SCOPE_IDENTITY();
 
@@ -462,7 +462,7 @@ END
 
 IF NOT EXISTS (SELECT 1 FROM [dbo].[Menus] WHERE [nombrepagina] = 'Parametros Anuales')
 BEGIN 
-		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Parametros Anuales', 1, N'parametrosnom.aspx', @id_padre, N'Maestro de Parametros Anuales', 1, 0, N'fathlarge', 1, GETDATE())
+		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Parametros Anuales', 1, N'parametrosnom.aspx', @id_padre, N'Maestro de Parametros Anuales', 1, 0, N'fa-th-large', 1, GETDATE())
 
 	SET @id_return = SCOPE_IDENTITY();
 
@@ -474,7 +474,7 @@ END
 
 IF NOT EXISTS (SELECT 1 FROM [dbo].[Menus] WHERE [nombrepagina] = 'Sedes')
 BEGIN 
-		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Sedes', 1, N'sede.aspx', @id_padre, N'Sedes', 1, 0, N'fathlarge', 1, GETDATE())
+		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Sedes', 1, N'sede.aspx', @id_padre, N'Sedes', 1, 0, N'fa-th-large', 1, GETDATE())
 
 	SET @id_return = SCOPE_IDENTITY();
 
@@ -486,7 +486,7 @@ END
 
 IF NOT EXISTS (SELECT 1 FROM [dbo].[Menus] WHERE [nombrepagina] = 'Diagnostico')
 BEGIN 
-		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Diagnostico', 1, N'diagnostico.aspx', @id_padre, N'Diagnosticos', 1, 0, N'fathlarge', 1, GETDATE())
+		INSERT [dbo].[Menus] ([nombrepagina], [estado], [pathpagina], [id_padre], [descripcion], [orden], [padre], [icon], [id_usuario], [created]) VALUES (N'Diagnostico', 1, N'diagnostico.aspx', @id_padre, N'Diagnosticos', 1, 0, N'fa-th-large', 1, GETDATE())
 
 	SET @id_return = SCOPE_IDENTITY();
 

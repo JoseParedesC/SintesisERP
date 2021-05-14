@@ -136,7 +136,7 @@ function addRow() {
     var fila = `<tr id="row${i}" style="border: 1px solid #AAB7B8;">
                 <td class="text-center command-desde" style="font-size: 12px !important;height: 21px !important" id="desde${i}">${parseFloat($('#Rowdesde').val())}</td>
                 <td class="text-center command-hasta" style="font-size: 12px !important;height: 21px !important" id="hasta${i}">${(isNaN($('#Rowhasta').val()) ? $('#Rowhasta').val() : parseFloat($('#Rowhasta').val()) - parseFloat(0.01))}</td>
-                <td class="text-center command-porcen porcen" style="font-size: 12px !important;height: 21px !important; width: 20px !important; padding: 5px" id="porcen${i}"><span class="tdedit">% ${$('#Rowporcen').val()}</span></td>
+                <td class="text-center command-porcen porcen" style="font-size: 12px !important;height: 21px !important; width: 20px !important; padding: 5px" id="porcen${i}"><span class="tdedit"> ${$('#Rowporcen').val()}</span></td>
                 <td class="text-center">${button}</td>
                 </tr>`;
 
@@ -230,11 +230,13 @@ $('#Rowporcen').on('blur', function (e) {
 
 $('#Rowhasta').on('change', function () {
 
-    if (parseFloat($('#Rowhasta').val()) < parseFloat($('#Rowdesde').val())) {
+    if (parseFloat($('#Rowhasta').val()) <= parseFloat($('#Rowdesde').val())) {
         $(this).addClass('error is-focused')
-        toastr.error('No puede ser menor al numero inicial', 'Sintesis ERP');
+        toastr.error('No puede ser menor ni igual al numero inicial', 'Sintesis ERP');
+        $('#Rowporcen').attr('readonly', 'readonly')
     } else {
         $(this).removeClass('error is-focused')
+        $('#Rowporcen').removeAttr('readonly')
     }
 
     Alert()
@@ -286,7 +288,7 @@ function Alert() {
     if (check.che) {
         var div = `<div role="alert" aria-live="polite" style="margin:5px; font-size:12px" aria-atomic="true"
         class="alert alert-dismissible alert-alert alert-card alert-info danger"><div class="warning-message"><strong>Información!</strong><br/>Numero de SMMLV ya esta en uso</div></div>`;
-
+        $('.alert').remove()
         $('#mytable').closest('.divParamAnual').append(div);
         $('#' + check.id).addClass('danger')
     } else {

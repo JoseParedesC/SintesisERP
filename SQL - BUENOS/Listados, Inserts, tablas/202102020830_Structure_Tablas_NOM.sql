@@ -739,28 +739,6 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-
-If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[Sedes]') and OBJECTPROPERTY(id, N'IsTable') = 1)
-CREATE TABLE [NOM].[Sedes](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[nombre] [varchar](20) NOT NULL,
-	[id_ciudad] [bigint] NOT NULL,
-	[estado] [bit] NOT NULL,
-	[created] [smalldatetime] NULL CONSTRAINT [DF_NOMSedes_created]  DEFAULT (getdate()),
-	[updated] [smalldatetime] NULL CONSTRAINT [DF_NOMSedes_updated]  DEFAULT (getdate()),
-	[id_usercreated] [bigint] NOT NULL,
-	[id_userupdated] [bigint] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-GO
-
-SET ANSI_PADDING OFF
-GO
-
 If NOT EXISTS (SELECT 1 FROM dbo.SYSOBJECTS WHERE id = OBJECT_ID(N'[NOM].[SubtiposCotizante]') and OBJECTPROPERTY(id, N'IsTable') = 1)
 CREATE TABLE [NOM].[SubtiposCotizante](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
@@ -912,48 +890,6 @@ ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_Parametros_Cuent
 REFERENCES [dbo].[CNTCuentas] ([id])
 GO
 ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_Parametros_Cuentas_ARL]
-GO
-
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Empleado')
-ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_Empleado] FOREIGN KEY([id_parametrosEmpleado])
-REFERENCES [NOM].[ParamsAnual_Empleado] ([id])
-GO
-ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_ParamsAnual_Empleado]
-GO
-
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Empleador')
-ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_Empleador] FOREIGN KEY([id_parametrosEmpleador])
-REFERENCES [NOM].[ParamsAnual_Empleador] ([id])
-GO
-ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_ParamsAnual_Empleador]
-GO
-
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_HrsExtras')
-ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_HrsExtras] FOREIGN KEY([id_horasExt])
-REFERENCES [NOM].[ParamsAnual_HrsExtras] ([id])
-GO
-ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_ParamsAnual_HrsExtras]
-GO
-
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Intereses')
-ALTER TABLE [NOM].[ParamsAnual]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_Intereses] FOREIGN KEY([id_interesCesantias])
-REFERENCES [dbo].[ST_Listados] ([id])
-GO
-ALTER TABLE [NOM].[ParamsAnual] CHECK CONSTRAINT [FK_ParamsAnual_Intereses]
-GO
-
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_ParamsAnual_Solid')
-ALTER TABLE [NOM].[ParamsAnual_Solid]  WITH CHECK ADD  CONSTRAINT [FK_ParamsAnual_Solid] FOREIGN KEY([id_parametros])
-REFERENCES [NOM].[ParamsAnual] ([id])
-GO
-ALTER TABLE [NOM].[ParamsAnual_Solid] CHECK CONSTRAINT [FK_ParamsAnual_Solid]
-GO
-
-IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_Sedes_DivPolitica')
-ALTER TABLE [NOM].[Sedes]  WITH CHECK ADD  CONSTRAINT [FK_Sedes_DivPolitica] FOREIGN KEY([id_ciudad])
-REFERENCES [dbo].[DivPolitica] ([id])
-GO
-ALTER TABLE [NOM].[Sedes] CHECK CONSTRAINT [FK_Sedes_DivPolitica]
 GO
 
 IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_NAME = 'FK_TercerosHijos_Terceros')

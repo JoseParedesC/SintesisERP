@@ -246,37 +246,37 @@
                                 <div class="panel">
                                     <div class="form-body">
                                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="margin-bottom: 20px">
-                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
                                                     <label for="porcen_salud_empleado" class="active">Salud (Empleado):</label>
                                                     <input id="porcen_salud_empleado" porcen="true" type="text" class="form-control" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12  sn-padding">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  sn-padding">
                                                 <div class="form-group">
                                                     <label for="porcen_salud_empleador" class="active">Salud (Empleador):</label>
                                                     <input id="porcen_salud_empleador" porcen="true" type="text" class="form-control" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
-                                                <div class="form-group">
-                                                    <label for="porcen_salud_total" class="active">Salud total:</label>
-                                                    <input id="porcen_salud_total" porcen="true" type="text" class="form-control" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" disabled="disabled" />
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
                                                     <label for="porcen_pension_empleado" class="active">Pensión (Empleado):</label>
                                                     <input id="porcen_pension_empleado" porcen="true" type="text" class="form-control" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
                                                     <label for="porcen_pension_empleador" class="active">Pensión (Empleador):</label>
                                                     <input id="porcen_pension_empleador" porcen="true" type="text" class="form-control" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
+                                                <div class="form-group">
+                                                    <label for="porcen_salud_total" class="active">Salud total:</label>
+                                                    <input id="porcen_salud_total" porcen="true" type="text" class="form-control" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" disabled="disabled" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="form-group">
                                                     <label for="porcen_pension_total" class="active">Pensión total:</label>
                                                     <input id="porcen_pension_total" porcen="true" type="text" class="form-control" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" disabled="disabled" />
@@ -340,11 +340,12 @@
                                                     <input id="porcen_sena" porcen="true" type="text" placeholder="% 0.0" data-a-sign="% " data-m-dec="2" data-v-min="0.00" data-v-max="100" class="form-control" <%--disabled="disabled"--%> />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 sn-padding">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sn-padding">
                                                 <div class="divParamAnual">
                                                     <table class="table-striped" style="margin: 8px; max-width: 96%">
                                                         <thead>
                                                             <label for="lafila" class="active sn-padding">Fondo de solidaridad pensional:</label>
+                                                            <tr class="text-center"><td colspan="5" > Numero de salarios </td></tr>
                                                             <tr id="lafila" style="border: 1px solid #AAB7B8;">
                                                                 <td style="border-right: 1px solid #AAB7B8;">
                                                                     <input class="form-control command-desde  text-center" placeholder="Desde" id="Rowdesde" />
@@ -353,7 +354,7 @@
                                                                     <input class="form-control command-hasta text-center" readonly="readonly" placeholder="Hasta" id="Rowhasta" />
                                                                 </td>
                                                                 <td class="text-center">
-                                                                    <input class="form-control command-porcen text-center" readonly="readonly" placeholder="%" id="Rowporcen" data-a-sign="%" />
+                                                                    <input class="form-control command-porcen text-center" porcen="true" readonly="readonly" placeholder="%" id="Rowporcen" data-a-sign="% " />
                                                                 </td>
                                                                 <%--<td class="text-center" style="color: white">#</td>--%>
                                                             </tr>
