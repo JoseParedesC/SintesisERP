@@ -360,11 +360,11 @@ $('#btnSave').click(function (e) {
         // PRESTACIONES SOCIALES (Empleados)
         params.porcen_salud_empleado = SetNumeric($('#porcen_salud_empleado').val());
         params.porcen_pension_empleado = SetNumeric($('#porcen_pension_empleado').val());
-        params.num_salmin_icbf = $('#num_salmin_ICBF').val();
-        params.num_salmin_sena = $('#num_salmin_SENA').val();
+        params.num_salmin_icbf = parseInt($('#num_salmin_ICBF').val());
+        params.num_salmin_sena = parseInt($('#num_salmin_SENA').val());
         params.porcen_icbf = SetNumeric($('#porcen_icbf').val());
         params.porcen_sena = SetNumeric($('#porcen_sena').val());
-        params.num_max_seguridasocial = $('#num_max_seguridasocial').val();
+        params.num_max_seguridasocial = parseInt($('#num_max_seguridasocial').val());
         params.id_cuenta = $('#id_cuenta').val();
         params.id_cuenta_arl = $('#id_cuenta_arl').val();
         params.caja_compensacion = SetNumeric($('#caja_compensacion').val());
@@ -373,7 +373,7 @@ $('#btnSave').click(function (e) {
         // PRESTACIONES SOCIALES (Empleador)
         params.porcen_salud_empleador = SetNumeric($('#porcen_salud_empleador').val());
         params.porcen_pension_empleador = SetNumeric($('#porcen_pension_empleador').val());
-        params.num_salmin_salud_empleador = $('#num_salmin_salud_empleador').val();
+        params.num_salmin_salud_empleador = parseInt($('#num_salmin_salud_empleador').val());
 
         // PRESTACIONES SOCIALES (Total)
         params.porcen_salud_total = SetNumeric($('#porcen_salud_total').val());
